@@ -13,12 +13,12 @@ module.exports = function(grunt) {
                 },
                 files: [
                     {
-                        expand: true,
-                        cwd: 'dist',
+                  expand: true,
+                        cwd: 'cfc',
                         src: [
                         "**"
                         ],
-                        dest: '/'
+                        dest: 'sites/all/themes/zen/cfc'
                     }
                 ]
             }
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 
             ftppush: {
                 files: [
-                    '*.*'
+                    '**'
                 ],
                 tasks: ['ftp_push']
             },
@@ -44,6 +44,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-ftp-push');
 
     // register tasks
-    grunt.registerTask('default', ['watch']);
-    grunt.registerTask('jenkins', []);
+    grunt.registerTask('default', ['ftp_push', 'watch']);
+    grunt.registerTask('jenkins', ['ftp_push']);
 };
