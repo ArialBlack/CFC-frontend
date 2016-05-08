@@ -6,13 +6,6 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
-    global $language ;
-    $lang = $language->language;
-    
-    if ($lang == 'uk') {
-        $lang = 'ua';
-    }
- 
 ?>
 
 <div id="page">
@@ -63,31 +56,18 @@
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
-
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      
-      <section id="section1">
-      51111111<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      1
-      </section>
-      
-      <section id="section2">
-      22222<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      2
-      </section>
-      
-      <section id="section3">
-      33333<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      3
-
-      </section>
-      
-      
+      <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
 
