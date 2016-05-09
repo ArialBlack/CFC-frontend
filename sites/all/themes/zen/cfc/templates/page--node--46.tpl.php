@@ -100,6 +100,13 @@
         ?>
       </section>
       
+      <section id="section4">        
+        <?php 
+            $block = module_invoke('views', 'block_view', 'news-block_2'); 
+            print render($block['content']); 
+        ?>
+      </section>
+      
       
       <?php print $feed_icons; ?>
     </div>
