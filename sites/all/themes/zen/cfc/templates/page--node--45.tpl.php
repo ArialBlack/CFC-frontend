@@ -61,7 +61,171 @@
     <!--  </header>-->
 
   <div id="main">
+      <section class="top-story-section">
 
+
+          <div class="line first"></div>
+          <div class="line second"></div>
+          <div class="line third"></div>
+          <div class="line fourth"></div>
+          <div class="line fifth"></div>
+          <div class="line sixth"></div>
+          <div class="line seventh"></div>
+          <div class="line eighth"></div>
+          <div class="logo"></div>
+
+
+          <ul class="services">
+              <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>
+              <li><a href="#">Investor Relations <br> & Financial Communications</a></li>
+              <li><a href="#">Media Relations <br> & Public Affairs</a></li>
+              <li><a href="#">Special Issues <br> & Crises Management</a></li>
+              <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>
+              <li><a href="#">Promotion <br> & Event management</a></li>
+          </ul>
+          <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
+      </section>
+
+      <section class="team-section">
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+
+          <div class="member uppercase"><a class="member-info" href="#">
+                  <h2 class="title">Тактика</h2>
+                  <span class="line"></span>
+
+                  <h1 class="member-name">Gennadiy</h1>
+
+                  <h1 class="member-name">Kurochka</h1>
+
+                  <h2 class="role">Managing Partner</h2>
+                  <span class="line"></span>
+
+                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+              </a></div>
+
+
+      </section>
       <!--    <div id="content" class="column" role="main">-->
       <!--      --><?php //print render($page['highlighted']); ?>
       <!--      --><?php //print $breadcrumb; ?>
@@ -157,10 +321,10 @@
               <div class="right-side-nav">
                   <!-- Icon Bar -->
                   <ul class="icon-bar">
-                      <li><i class="fa fa-google-plus"></i></li>
-                      <li><i class="fa fa-instagram"></i></li>
-                      <li><i class="fa fa-twitter"></i></li>
-                      <li><i class="fa fa-facebook"></i></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
                   </ul>
                   <!-- Icon Bar -->
