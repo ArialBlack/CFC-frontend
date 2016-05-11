@@ -14,6 +14,8 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 
 <head>
+
+
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
@@ -41,6 +43,17 @@
   <?php endif; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+
+<div class="loader animated zoomIn">
+<div class="loader-text">
+<h1 class="animated slideInDown appearence first">Strategic Communications</h1>
+<h1 class="animated slideInDown appearence second" >For Trust,</h1>
+<h1 class="animated slideInDown appearence third">Prosperity</h1>
+<h1 class="animated slideInDown appearence fourth">and Growth</h1>
+</div>
+
+</div>
+
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
       <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>

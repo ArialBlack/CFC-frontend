@@ -37,3 +37,6 @@ xmlrpc.php
 
 .ftpauth
 node_modules
+
+# Ignore IDE Intellij Idea files
+/.idea
