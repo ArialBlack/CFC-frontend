@@ -60,156 +60,139 @@
     <!---->
     <!--  </header>-->
 
-    <div id="main" class="main-content">
-      <section class="top-story-section">
+    <div id="main" class="main-content main">
+        <section class="top-story-section">
 
-          <div class="logo">
-
-
-              <div class="line first"></div>
-              <div class="line second"></div>
-              <div class="line third"></div>
-              <div class="line fourth"></div>
-              <div class="line fifth"></div>
-              <div class="line sixth"></div>
-              <div class="line seventh"></div>
-              <div class="line eighth"></div>
-
-          </div>
+            <div class="logo">
 
 
-          <ul class="services">
-              <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>
-              <li><a href="#">Investor Relations <br> & Financial Communications</a></li>
-              <li><a href="#">Media Relations <br> & Public Affairs</a></li>
-              <li><a href="#">Special Issues <br> & Crises Management</a></li>
-              <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>
-              <li><a href="#">Promotion <br> & Event management</a></li>
-          </ul>
-          <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
-      </section>
-      <section class="team-section">
-          <div class="member uppercase"><a class="member-info" href="#">
-                  <h2 class="title">Тактика</h2>
-                  <span class="line"></span>
+                <div class="line first"></div>
+                <div class="line second"></div>
+                <div class="line third"></div>
+                <div class="line fourth"></div>
+                <div class="line fifth"></div>
+                <div class="line sixth"></div>
+                <div class="line seventh"></div>
+                <div class="line eighth"></div>
 
-                  <h1 class="member-name">Gennadiy</h1>
-
-                  <h1 class="member-name">Kurochka</h1>
-
-                  <h2 class="role">Managing Partner</h2>
-                  <span class="line"></span>
-
-                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
-                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+            </div>
 
 
-              </a></div>
+            <ul class="services">
+                <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>
+                <li><a href="#">Investor Relations <br> & Financial Communications</a></li>
+                <li><a href="#">Media Relations <br> & Public Affairs</a></li>
+                <li><a href="#">Special Issues <br> & Crises Management</a></li>
+                <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>
+                <li><a href="#">Promotion <br> & Event management</a></li>
+            </ul>
+            <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
+        </section>
+        <section class="team-section">
+            <div class="member uppercase"><a class="member-info" href="#">
+                    <h2 class="title">Tactics</h2>
+                    <span class="line"></span>
 
-          <div class="member uppercase"><a class="member-info" href="#">
-                  <h2 class="title">Тактика</h2>
-                  <span class="line"></span>
+                    <h1 class="member-name">Gennadiy</h1>
 
-                  <h1 class="member-name">Gennadiy</h1>
+                    <h1 class="member-name">Kurochka</h1>
 
-                  <h1 class="member-name">Kurochka</h1>
+                    <h2 class="role">Managing Partner</h2>
+                    <span class="line"></span>
 
-                  <h2 class="role">Managing Partner</h2>
-                  <span class="line"></span>
-
-                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
-                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
-
-
-              </a></div>
-
-          <div class="member uppercase"><a class="member-info" href="#">
-                  <h2 class="title">Тактика</h2>
-                  <span class="line"></span>
-
-                  <h1 class="member-name">Gennadiy</h1>
-
-                  <h1 class="member-name">Kurochka</h1>
-
-                  <h2 class="role">Managing Partner</h2>
-                  <span class="line"></span>
-
-                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
-                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                    <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
 
 
-              </a></div>
+                </a></div>
 
-          <div class="member uppercase"><a class="member-info" href="#">
-                  <h2 class="title">Тактика</h2>
-                  <span class="line"></span>
+            <div class="member uppercase"><a class="member-info" href="#">
+                    <h2 class="title">Tactics</h2>
+                    <span class="line"></span>
 
-                  <h1 class="member-name">Gennadiy</h1>
+                    <h1 class="member-name">Gennadiy</h1>
 
-                  <h1 class="member-name">Kurochka</h1>
+                    <h1 class="member-name">Kurochka</h1>
 
-                  <h2 class="role">Managing Partner</h2>
-                  <span class="line"></span>
+                    <h2 class="role">Managing Partner</h2>
+                    <span class="line"></span>
 
-                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
-                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
-
-
-              </a></div>
-
-          <div class="member uppercase"><a class="member-info" href="#">
-                  <h2 class="title">Тактика</h2>
-                  <span class="line"></span>
-
-                  <h1 class="member-name">Gennadiy</h1>
-
-                  <h1 class="member-name">Kurochka</h1>
-
-                  <h2 class="role">Managing Partner</h2>
-                  <span class="line"></span>
-
-                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
-                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                    <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
 
 
-              </a></div>
+                </a></div>
 
-          <div class="member uppercase"><a class="member-info" href="#">
-                  <h2 class="title">Тактика</h2>
-                  <span class="line"></span>
+            <div class="member uppercase"><a class="member-info" href="#">
+                    <h2 class="title">Tactics</h2>
+                    <span class="line"></span>
 
-                  <h1 class="member-name">Gennadiy</h1>
+                    <h1 class="member-name">Gennadiy</h1>
 
-                  <h1 class="member-name">Kurochka</h1>
+                    <h1 class="member-name">Kurochka</h1>
 
-                  <h2 class="role">Managing Partner</h2>
-                  <span class="line"></span>
+                    <h2 class="role">Managing Partner</h2>
+                    <span class="line"></span>
 
-                  <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
-                  <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
-
-
-              </a></div>
+                    <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                    <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
 
 
-      </section>
+                </a></div>
+
+            <div class="member uppercase"><a class="member-info" href="#">
+                    <h2 class="title">Tactics</h2>
+                    <span class="line"></span>
+
+                    <h1 class="member-name">Gennadiy</h1>
+
+                    <h1 class="member-name">Kurochka</h1>
+
+                    <h2 class="role">Managing Partner</h2>
+                    <span class="line"></span>
+
+                    <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                    <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+                </a></div>
+
+            <div class="member uppercase"><a class="member-info" href="#">
+                    <h2 class="title">Tactics</h2>
+                    <span class="line"></span>
+
+                    <h1 class="member-name">Gennadiy</h1>
+
+                    <h1 class="member-name">Kurochka</h1>
+
+                    <h2 class="role">Managing Partner</h2>
+                    <span class="line"></span>
+
+                    <a href="#" class="link mail"><i class="fa fa-envelope-o "></i></a>
+                    <a href="#" class="link linkedin"><i class="fa fa-linkedin-square"></i></a>
+
+
+                </a></div>
+
+
+        </section>
 
         <section class="services-section">
 
             <ul class="services">
                 <li><a href="#philantropy" data-toggle="modal"> Philantropy & Corporate <br> Social Responsibility
                         <span class="line"></span></a></li>
-                <li><a href="#goverment" data-toggle="modal">Goverment Relations <br> & Public Affairs
+                <li><a href="#philantropy" data-toggle="modal">Goverment Relations <br> & Public Affairs
                         <span class="line"></span></a></li>
-                <li><a href="#investor" data-toggle="modal">Investor Relations <br> & Financial Communications
+                <li><a href="#philantropy" data-toggle="modal">Investor Relations <br> & Financial Communications
                         <span class="line"></span></a></li>
-                <li><a href="#media" data-toggle="modal">Media Relations <br> & Public Affairs
+                <li><a href="#philantropy" data-toggle="modal">Media Relations <br> & Public Affairs
                         <span class="line"></span>
                     </a></li>
-                <li><a href="#special" data-toggle="modal">Special Issues <br> & Crises Management
+                <li><a href="#philantropy" data-toggle="modal">Special Issues <br> & Crises Management
                         <span class="line"></span></a></li>
 
-                <li><a href="#promotion" data-toggle="modal">Promotion <br> & Event management
+                <li><a href="#philantropy" data-toggle="modal">Promotion <br> & Event management
                         <span class="line"></span></a></li>
             </ul>
 
@@ -231,15 +214,15 @@
                                 <span class="line"></span>
 
                                 <p class="modal-body-text">
-                                    Ми надаємо різноманітні послуги у сфері комунікацій та зв’язків із <br>
-                                    громадськістю органами державної влади. Компанія CFC Consulting має <br>
-                                    великий досвід роботи з національними міжнародними установами.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam<br>
+                                    dignissim erat sodales, vitae fermentum augue faucibus. <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
+                                    dignissim erat sodales, vitae fermentum augue faucibus.
                                 </p>
 
                                 <p class="modal-body-text">
-                                    Компанія надає свої послуги з налагодження та підтримання діалогу з <br>
-                                    уоядовими організаціями як в Україні так і за кордоном <br>
-
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam<br>
+                                    dignissim erat sodales, vitae fermentum augue faucibus. <br>
                                 </p>
                             </div>
 
@@ -259,24 +242,26 @@
         <section class="news-section">
             <div class="news-item">
                 <a class="news-info" href="#">
-                    <h2 class="category">Категорія, Дата</h2>
+                    <h2 class="category">Category, Date</h2>
 
-                    <h1 class="news-title">НОВИНА 1</h1>
+                    <h1 class="news-title">News 1</h1>
 
-                    <p class="preview-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
-                        dignissim erat sodales, vitae fermentum augue faucibus.. </p>
+                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
+                        dignissim erat sodales, vitae fermentum augue faucibus. </p>
 
                 </a>
             </div>
 
             <div class="news-item">
                 <a class="news-info" href="#">
-                    <h2 class="category">Категорія, Дата</h2>
+                    <h2 class="category">Category, Date</h2>
 
-                    <h1 class="news-title">НОВИНА 2</h1>
+                    <h1 class="news-title">News 2</h1>
 
-                    <p class="preview-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
-                        dignissim erat sodales, vitae fermentum augue faucibus.. </p>
+
+                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
+                        dignissim erat sodales, vitae fermentum augue faucibus. </p>
+
 
                 </a>
             </div>
@@ -284,24 +269,24 @@
 
             <div class="news-item">
                 <a class="news-info" href="#">
-                    <h2 class="category">Категорія, Дата</h2>
+                    <h2 class="category">Category, Date</h2>
 
-                    <h1 class="news-title">НОВИНА 3</h1>
+                    <h1 class="news-title">News 3</h1>
 
-                    <p class="preview-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
-                        dignissim erat sodales, vitae fermentum augue faucibus.. </p>
+
+                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
+                        dignissim erat sodales, vitae fermentum augue faucibus. </p>
+
 
                 </a>
             </div>
-            <a href="#" class="all-news-btn uppercase">Усі новини</a>
-      </section>
+            <a href="#" class="all-news-btn uppercase">All news</a>
+        </section>
 
         <section class="career-section">
-            <div class="image-wrapper">
-            </div>
 
             <div class="text-wrapper">
-                <h1 class="title-text uppercase">Ідеологія <br> компанії</h1>
+                <h1 class="title-text uppercase">ideology of <br> company</h1>
                 <span class="line"></span>
 
                 <p class="about-us-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
@@ -314,8 +299,8 @@
 
 
                 <form class="cv-form" action="#">
-                    <input type="text" class='form-input uppercase' placeholder="iм'я">
-                    <input type="text" class='form-input uppercase' placeholder="електронна пошта">
+                    <input type="text" class='form-input uppercase' placeholder="name">
+                    <input type="text" class='form-input uppercase' placeholder="email">
                     <input type="file" id="cv" class='load-file'>
                     <label for="cv" class="label uppercase"><span class="icon"></span> <span
                             class="text">Upload CV</span></label>
@@ -328,6 +313,57 @@
             <div class="map" id="map"></div>
 
             <div class="contacts-tab">
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#main-office">Main Office</a>
+                        <span class="line"></span>
+                    </li>
+                    <li><a data-toggle="pill" href="#dubai-office">Dubai-office</a>
+                        <span class="line"></span></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="main-office" class="tab-pane fade in active">
+                        <ul class="contact-address">
+                            <ul class="contact-address">
+                                <li><span class="icon pointer-icon"></span> <span class="address-text">
+                                8 Kostolna str.<br>
+                                5th floor<br>
+                                Kyiv, 01001, Ukraine
+                            </span></li>
+                                <li><span class="icon phone-icon"></span> <span class="address-text">
+                                Tel.: +380 (04) 492-75-99 <br>
+                                Fax: +380 (44) 278-39-07
+                                </span>
+                                </li>
+                                <li><span class="icon email-address-icon"></span> <span class="address-text">
+                                gk@cfcentertainment.com
+                                </span>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div id="dubai-office" class="tab-pane fade">
+                        <ul class="contact-address">
+                            <li><span class="icon pointer-icon"></span> <span class="address-text">
+                            Dubai Silicon Oasis <br>
+                            Headquarters Building, <br>
+                            4th floor, C&D Wing <br>
+                            P.O. Box 341041, <br>
+                            Dubai, UAE
+                            </span></li>
+                            <li><span class="icon phone-icon"></span> <span class="address-text">
+                                Tel.: +971 (04) 3724637 <br>
+                                Fax: +971 (04) 5015777
+                                </span>
+                            </li>
+                            <li><span class="icon email-address-icon"></span> <span class="address-text">
+                                gk@cfcentertainment.com
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </section>
 
