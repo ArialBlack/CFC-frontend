@@ -16,133 +16,107 @@
 
 <div id="page">
 
-    <!--  <header class="header" id="header" role="banner">-->
+    <!--      <header class="header" id="header" role="banner">-->
     <!---->
-    <!--    --><?php //if ($logo): ?>
-    <!--      <a href="--><?php //print $front_page; ?><!--" title="-->
-    <?php //print t('Home'); ?><!--" rel="home" class="header__logo" id="logo"><img src="-->
-    <?php //print $logo; ?><!--" alt="--><?php //print t('Home'); ?><!--" class="header__logo-image" /></a>-->
-    <!--    --><?php //endif; ?>
-    <!---->
-    <!--    --><?php //if ($site_name || $site_slogan): ?>
-    <!--      <div class="header__name-and-slogan" id="name-and-slogan">-->
-    <!--        --><?php //if ($site_name): ?>
-    <!--          <h1 class="header__site-name" id="site-name">-->
-    <!--            <a href="--><?php //print $front_page; ?><!--" title="-->
-    <?php //print t('Home'); ?><!--" class="header__site-link" rel="home"><span>-->
-    <?php //print $site_name; ?><!--</span></a>-->
-    <!--          </h1>-->
+    <!--        --><?php //if ($logo): ?>
+    <!--          <a href="--><?php //print $front_page; ?><!--" title="-->
+    <!--    --><?php //print t('Home'); ?><!--" rel="home" class="header__logo" id="logo"><img src="-->
+    <!--    --><?php //print $logo; ?><!--" alt="-->
+    <?php //print t('Home'); ?><!--" class="header__logo-image" /></a>-->
     <!--        --><?php //endif; ?>
     <!---->
-    <!--        --><?php //if ($site_slogan): ?>
-    <!--          <div class="header__site-slogan" id="site-slogan">--><?php //print $site_slogan; ?><!--</div>-->
+    <!--        --><?php //if ($site_name || $site_slogan): ?>
+    <!--          <div class="header__name-and-slogan" id="name-and-slogan">-->
+    <!--            --><?php //if ($site_name): ?>
+    <!--              <h1 class="header__site-name" id="site-name">-->
+    <!--                <a href="--><?php //print $front_page; ?><!--" title="-->
+    <!--    --><?php //print t('Home'); ?><!--" class="header__site-link" rel="home"><span>-->
+    <!--    --><?php //print $site_name; ?><!--</span></a>-->
+    <!--              </h1>-->
+    <!--            --><?php //endif; ?>
+    <!---->
+    <!--            --><?php //if ($site_slogan): ?>
+    <!--              <div class="header__site-slogan" id="site-slogan">--><?php //print $site_slogan; ?><!--</div>-->
+    <!--            --><?php //endif; ?>
+    <!--          </div>-->
     <!--        --><?php //endif; ?>
-    <!--      </div>-->
-    <!--    --><?php //endif; ?>
     <!---->
-    <!--    --><?php //if ($secondary_menu): ?>
-    <!--      <nav class="header__secondary-menu" id="secondary-menu" role="navigation">-->
-    <!--        --><?php //print theme('links__system_secondary_menu', array(
-    //          'links' => $secondary_menu,
-    //          'attributes' => array(
-    //            'class' => array('links', 'inline', 'clearfix'),
-    //          ),
-    //          'heading' => array(
-    //            'text' => $secondary_menu_heading,
-    //            'level' => 'h2',
-    //            'class' => array('element-invisible'),
-    //          ),
-    //        )); ?>
-    <!--      </nav>-->
-    <!--    --><?php //endif; ?>
+    <!--        --><?php //if ($secondary_menu): ?>
+    <!--          <nav class="header__secondary-menu" id="secondary-menu" role="navigation">-->
+    <!--            --><?php //print theme('links__system_secondary_menu', array(
+    //              'links' => $secondary_menu,
+    //              'attributes' => array(
+    //                'class' => array('links', 'inline', 'clearfix'),
+    //              ),
+    //              'heading' => array(
+    //                'text' => $secondary_menu_heading,
+    //                'level' => 'h2',
+    //                'class' => array('element-invisible'),
+    //              ),
+    //            )); ?>
+    <!--          </nav>-->
+    <!--        --><?php //endif; ?>
     <!---->
-    <!--    --><?php //print render($page['header']); ?>
+    <!--        --><?php //print render($page['header']); ?>
     <!---->
-    <!--  </header>-->
+    <!--      </header>-->
 
-    <div id="main" class="main-content main">
-        <section class="top-story-section">
-
-            <div class="logo">
+    <!--    <div id="main" class="main-content main">-->
+    <div id="main">
 
 
-                <div class="line first"></div>
-                <div class="line second"></div>
-                <div class="line third"></div>
-                <div class="line fourth"></div>
-                <div class="line fifth"></div>
-                <div class="line sixth"></div>
-                <div class="line seventh"></div>
-                <div class="line eighth"></div>
-
-            </div>
-
-
-            <ul class="services">
-                <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>
-                <li><a href="#">Investor Relations <br> & Financial Communications</a></li>
-                <li><a href="#">Media Relations <br> & Public Affairs</a></li>
-                <li><a href="#">Special Issues <br> & Crises Management</a></li>
-                <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>
-                <li><a href="#">Promotion <br> & Event management</a></li>
-            </ul>
-            <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
-        </section>
-
-
+        <!--          <div id="content" class="column" role="main">-->
+        <!--            --><?php //print render($page['highlighted']); ?>
+        <!--            --><?php //print $breadcrumb; ?>
+        <!--            <a id="main-content"></a>-->
+        <!--            --><?php //print render($title_prefix); ?>
+        <!--            --><?php //if ($title): ?>
+        <!--              <h1 class="page__title title" id="page-title">--><?php //print $title; ?><!--</h1>-->
+        <!--            --><?php //endif; ?>
+        <!--            --><?php //print render($title_suffix); ?>
+        <!--            --><?php //print $messages; ?>
+        <!--            --><?php //print render($tabs); ?>
+        <!--            --><?php //print render($page['help']); ?>
+        <!--            --><?php //if ($action_links): ?>
+        <!--              <ul class="action-links">--><?php //print render($action_links); ?><!--</ul>-->
+        <!--            --><?php //endif; ?>
         <!---->
-      <!--    <div id="content" class="column" role="main">-->
-      <!--      --><?php //print render($page['highlighted']); ?>
-      <!--      --><?php //print $breadcrumb; ?>
-      <!--      <a id="main-content"></a>-->
-      <!--      --><?php //print render($title_prefix); ?>
-      <!--      --><?php //if ($title): ?>
-      <!--        <h1 class="page__title title" id="page-title">--><?php //print $title; ?><!--</h1>-->
-      <!--      --><?php //endif; ?>
-      <!--      --><?php //print render($title_suffix); ?>
-      <!--      --><?php //print $messages; ?>
-      <!--      --><?php //print render($tabs); ?>
-      <!--      --><?php //print render($page['help']); ?>
-      <!--      --><?php //if ($action_links): ?>
-      <!--        <ul class="action-links">--><?php //print render($action_links); ?><!--</ul>-->
-      <!--      --><?php //endif; ?>
-      <!--      -->
-      <!--      -->
-      <!--      --><?php //print render($page['content']); ?>
-      <!--      -->
-      <!--      <section id="section1">-->
-      <!--      Ukrainian test-->
-      <!--      -->
-      <!--      1111111<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
-      <!--      1-->
-      <!--      </section>-->
-      <!--      -->
-      <!--      <section id="section2">-->
-      <!--        <h2>Команда</h2>-->
-      <!--        --><?php //
-      //            $block = module_invoke('views', 'block_view', 'team-block');
-      //            print render($block['content']);
-      //        ?>
-      <!--      </section>-->
-      <!--      -->
-      <!--      <section id="section3">-->
-      <!--        <h2>Новини</h2>-->
-      <!--        --><?php //
-      //            $block = module_invoke('views', 'block_view', 'news-block_1');
-      //            print render($block['content']);
-      //        ?>
-      <!--      </section>-->
-      <!--      -->
-      <!--      <section id="section4">        -->
-      <!--        --><?php //
-      //            $block = module_invoke('views', 'block_view', 'news-block_2');
-      //            print render($block['content']);
-      //        ?>
-      <!--      </section>-->
-
-      <!--      -->
-      <!--      --><?php //print $feed_icons; ?>
-    </div>
+        <!---->
+        <!--            --><?php //print render($page['content']); ?>
+        <!---->
+        <!--            <section id="section1">-->
+        <!--            Ukrainian test-->
+        <!---->
+        <!--            1111111<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+        <!--            1-->
+        <!--            </section>-->
+        <!---->
+        <!--            <section id="section2">-->
+        <!--              <h2>Команда</h2>-->
+        <!--              --><?php
+        //                  $block = module_invoke('views', 'block_view', 'team-block');
+        //                  print render($block['content']);
+        //              ?>
+        <!--            </section>-->
+        <!---->
+        <!--            <section id="section3">-->
+        <!--              <h2>Новини</h2>-->
+        <!--              --><?php
+        //                  $block = module_invoke('views', 'block_view', 'news-block_1');
+        //                  print render($block['content']);
+        //              ?>
+        <!--            </section>-->
+        <!---->
+        <!--            <section id="section4">-->
+        <!--              --><?php
+        //                  $block = module_invoke('views', 'block_view', 'news-block_2');
+        //                  print render($block['content']);
+        //              ?>
+        <!--            </section>-->
+        <!---->
+        <!---->
+        <!--<!--            -->--><?php ////print $feed_icons; ?>
+        <!--    </div>-->
 
     <div id="navigation">
 

@@ -46,15 +46,15 @@
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
-<div class="loader animated zoomIn">
-<div class="loader-text">
-<h1 class="animated slideInDown appearence first">Strategic Communications</h1>
-<h1 class="animated slideInDown appearence second" >For Trust,</h1>
-<h1 class="animated slideInDown appearence third">Prosperity</h1>
-<h1 class="animated slideInDown appearence fourth">and Growth</h1>
-</div>
-
-</div>
+<!--<div class="loader animated zoomIn">-->
+<!--<div class="loader-text">-->
+<!--<h1 class="animated slideInDown appearence first">Strategic Communications</h1>-->
+<!--<h1 class="animated slideInDown appearence second" >For Trust,</h1>-->
+<!--<h1 class="animated slideInDown appearence third">Prosperity</h1>-->
+<!--<h1 class="animated slideInDown appearence fourth">and Growth</h1>-->
+<!--</div>-->
+<!---->
+<!--</div>-->
 
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
