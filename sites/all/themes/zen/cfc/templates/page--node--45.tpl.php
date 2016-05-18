@@ -63,7 +63,7 @@
 
     <!--    <div id="main" class="main-content main">-->
     <div id="main" class="main">
-        <section class="top-story-section">
+        <section class="top-story-section" id="top_story" data-scroll-index="0">
             <div class="logo">
             </div>
 
@@ -79,14 +79,14 @@
             <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
         </section>
 
-        <section class="team-section">
+        <section class="team-section" id="team" data-scroll-index="1">
             <?php
             $block = module_invoke('views', 'block_view', 'team-block');
             print render($block['content']);
             ?>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="services" data-scroll-index="2">
 
             <?php
             $block = module_invoke('views', 'block_view', 'news-block_2');
@@ -152,7 +152,7 @@
 
         </section>
 
-        <section class="news-section">
+        <section class="news-section" id="news" data-scroll-index="3">
             <?php
             $block = module_invoke('views', 'block_view', 'news-block_1');
             print render($block['content']);
@@ -200,7 +200,7 @@
             <!--            <a href="#" class="all-news-btn uppercase">All news</a>-->
         </section>
 
-        <section class="career-section">
+        <section class="career-section" id="careers" data-scroll-index="4">
 
             <div class="text-wrapper">
                 <h1 class="title-text uppercase">ideology of <br> company</h1>
@@ -225,7 +225,7 @@
                 </form>
             </div>
         </section>
-        <section class="contacts-section">
+        <section class="contacts-section" id="contacts" data-scroll-index="5">
             <div class="map" id="map"></div>
 
             <div class="contacts-tab">
@@ -333,77 +333,77 @@
         <!--            --><?php //print $feed_icons; ?>
         <!--          </div>-->
 
-    <div id="navigation">
+        <div id="navigation">
 
-      <?php if ($main_menu): ?>
-          <nav class="navigation">
+            <?php if ($main_menu): ?>
+                <nav class="navigation">
 
-              <div class="left-side-nav">
-                  <!-- Language Panel -->
-                  <?php print render($page['header']); ?>
+                    <div class="left-side-nav">
+                        <!-- Language Panel -->
+                        <?php print render($page['header']); ?>
 
 
-                  <!-- Navigation Menu -->
-                  <div class="nav-menu">
-                      <div class="menu-icon">
-                          <span class="line first"></span>
-                          <span class="line second"></span>
-                          <span class="line third"></span>
-                      </div>
+                        <!-- Navigation Menu -->
+                        <div class="nav-menu">
+                            <div class="menu-icon">
+                                <span class="line first"></span>
+                                <span class="line second"></span>
+                                <span class="line third"></span>
+                            </div>
 
-                      <a href="#" class="dropdown uppercase" id="menu_dropdown">Main</a>
+                            <a href="#" class="dropdown uppercase" id="menu_dropdown">Main</a>
 
-                      <?php
-                      // This code snippet is hard to modify. We recommend turning off the
-                      // "Main menu" on your sub-theme's settings form, deleting this PHP
-                      // code block, and, instead, using the "Menu block" module.
-                      // @see https://drupal.org/project/menu_block
-                      print theme('links__system_main_menu', array(
-                          'links' => $main_menu,
-                          'attributes' => array(
-                              'class' => array('dropdown-content', 'uppercase'),
-                              'id' => 'menu_dropdown_content'
-                          ),
-                          'heading' => array(
-                              'text' => t('Main menu'),
-                              'level' => 'h2',
-                              'class' => array('element-invisible'),
-                          ),
-                      )); ?>
+                            <?php
+                            // This code snippet is hard to modify. We recommend turning off the
+                            // "Main menu" on your sub-theme's settings form, deleting this PHP
+                            // code block, and, instead, using the "Menu block" module.
+                            // @see https://drupal.org/project/menu_block
+                            print theme('links__system_main_menu', array(
+                                'links' => $main_menu,
+                                'attributes' => array(
+                                    'class' => array('dropdown-content', 'uppercase'),
+                                    'id' => 'menu_dropdown_content'
+                                ),
+                                'heading' => array(
+                                    'text' => t('Main menu'),
+                                    'level' => 'h2',
+                                    'class' => array('element-invisible'),
+                                ),
+                            )); ?>
 
-                      <!-- Navigation Menu -->
-                  </div>
-              </div>
+                            <!-- Navigation Menu -->
+                        </div>
+                    </div>
 
-              <div class="right-side-nav">
-                  <!-- Icon Bar -->
-                  <ul class="icon-bar">
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <nav class="right-side-nav" id="current_position">
+                        <!-- Icon Bar -->
+                        <ul class="icon-bar">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
-                  </ul>
-                  <!-- Icon Bar -->
+                        </ul>
+                        <!-- Icon Bar -->
 
-                  <!-- Current Position -->
-                  <ul class="current-position">
-                      <li class="section-spy "><a href="#">top story</a></li>
-                      <li class="section-spy "><a href="#">our team</a></li>
-                      <li class="section-spy "><a href="#">services</a></li>
-                      <li class="section-spy "><a href="#">news</a></li>
-                      <li class="section-spy "><a href="#">careers</a></li>
-                      <li class="section-spy "><a href="#">contacts</a>
+                        <!-- Current Position -->
+                        <ul class="current-position nav">
+                            <li><a href="#top_story" data-scroll-goto="0">top story</a></li>
+                            <li><a href="#team" data-scroll-goto="1">our team</a></li>
+                            <li><a href="#services" data-scroll-goto="2">services</a></li>
+                            <li><a href="#news" data-scroll-goto="3">news</a></li>
+                            <li><a href="#careers" data-scroll-goto="4">careers</a></li>
+                            <li><a href="#contacts" data-scroll-goto="5">contacts</a>
 
-                  </ul>
-                  <!-- Current Position -->
-              </div>
-        </nav>
-      <?php endif; ?>
+                        </ul>
+                        <!-- Current Position -->
+                    </nav>
+                </nav>
+            <?php endif; ?>
 
-      <?php print render($page['navigation']); ?>
+            <?php print render($page['navigation']); ?>
 
-    </div>
+        </div>
 
         <!--          --><?php
         //            // Render the sidebars to see if there's anything in them.
