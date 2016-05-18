@@ -63,21 +63,21 @@
 
     <!--    <div id="main" class="main-content main">-->
     <div id="main" class="main">
-        <!--            <section class="top-story-section">-->
-        <!--                <div class="logo">-->
-        <!--                </div>-->
-        <!---->
-        <!---->
-        <!--                <ul class="services">-->
-        <!--                    <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>-->
-        <!--                    <li><a href="#">Investor Relations <br> & Financial Communications</a></li>-->
-        <!--                    <li><a href="#">Media Relations <br> & Public Affairs</a></li>-->
-        <!--                    <li><a href="#">Special Issues <br> & Crises Management</a></li>-->
-        <!--                    <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>-->
-        <!--                    <li><a href="#">Promotion <br> & Event management</a></li>-->
-        <!--                </ul>-->
-        <!--                <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>-->
-        <!--            </section>-->
+        <section class="top-story-section">
+            <div class="logo">
+            </div>
+
+
+            <ul class="services">
+                <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>
+                <li><a href="#">Investor Relations <br> & Financial Communications</a></li>
+                <li><a href="#">Media Relations <br> & Public Affairs</a></li>
+                <li><a href="#">Special Issues <br> & Crises Management</a></li>
+                <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>
+                <li><a href="#">Promotion <br> & Event management</a></li>
+            </ul>
+            <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
+        </section>
 
         <section class="team-section">
             <?php
@@ -150,6 +150,54 @@
                 </div>
             </div>
 
+        </section>
+
+        <section class="news-section">
+            <?php
+            $block = module_invoke('views', 'block_view', 'news-block_1');
+            print render($block['content']);
+            ?>
+            <!--            <div class="news-item">-->
+            <!--                <a class="news-info" href="#">-->
+            <!--                    <h2 class="category">Category, Date</h2>-->
+            <!---->
+            <!--                    <h1 class="news-title">News 1</h1>-->
+            <!---->
+            <!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam-->
+            <!--                        dignissim erat sodales, vitae fermentum augue faucibus. </p>-->
+            <!---->
+            <!--                </a>-->
+            <!--            </div>-->
+            <!---->
+            <!--            <div class="news-item">-->
+            <!--                <a class="news-info" href="#">-->
+            <!--                    <h2 class="category">Category, Date</h2>-->
+            <!---->
+            <!--                    <h1 class="news-title">News 2</h1>-->
+            <!---->
+            <!---->
+            <!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam-->
+            <!--                        dignissim erat sodales, vitae fermentum augue faucibus. </p>-->
+            <!---->
+            <!---->
+            <!--                </a>-->
+            <!--            </div>-->
+            <!---->
+            <!---->
+            <!--            <div class="news-item">-->
+            <!--                <a class="news-info" href="#">-->
+            <!--                    <h2 class="category">Category, Date</h2>-->
+            <!---->
+            <!--                    <h1 class="news-title">News 3</h1>-->
+            <!---->
+            <!---->
+            <!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam-->
+            <!--                        dignissim erat sodales, vitae fermentum augue faucibus. </p>-->
+            <!---->
+            <!---->
+            <!--                </a>-->
+            <!--            </div>-->
+            <!--            <a href="#" class="all-news-btn uppercase">All news</a>-->
         </section>
 
         <section class="career-section">
@@ -268,10 +316,10 @@
         <!---->
         <!--            <section id="section3">-->
         <!--              <h2>News</h2>-->
-        <!--                      --><?php
-        //                          $block = module_invoke('views', 'block_view', 'news-block_1');
-        //                          print render($block['content']);
-        //                      ?>
+        <!--                              --><?php
+        //                                  $block = module_invoke('views', 'block_view', 'news-block_1');
+        //                                  print render($block['content']);
+        //                              ?>
         <!--            </section>-->
         <!---->
         <!--            <section id="section4">-->
