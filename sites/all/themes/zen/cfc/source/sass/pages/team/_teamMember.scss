@@ -1,0 +1,101 @@
+.view-id-team {
+  height: 100vh;
+  max-height: 100vh;
+
+  .text-wrapper {
+    display: inline-block;
+    width: 38%;
+    color: $main-text-color;
+    padding: 115px 90px 0px 90px;
+
+    .category {
+      color: #a6a69d;
+      font-size: 16px;
+      font-family: 'probaPro';
+      font-weight: 200;
+    }
+
+    .title {
+      font-family: 'probaPro';
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin: 20px 0px 10px 0px;
+    }
+
+    .role {
+      color: $main-text-color;
+      font-size: 16px;
+      font-family: 'probaPro';
+      font-weight: 200;
+    }
+    .line {
+      display: block;
+      border-bottom: 4px solid $main-text-color;
+      width: 8%;
+      margin-top: 10px;
+    }
+
+    .regular-text {
+      margin-top: 20px;
+    }
+
+    .links {
+      list-style: none;
+      text-align: center;
+      margin-top: 80px;
+
+      li {
+        display: inline-block;
+
+        &:first-child {
+          float: left;
+          text-align: left;
+        }
+
+        &:last-child {
+          float: right;
+          text-align: right;
+        }
+
+        a {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          color: $main-text-color;
+          transition: color 0.3s;
+
+          &.next {
+            color: $main-text-color;
+            background: url('../images/icons/next.png') no-repeat scroll center center;
+          }
+
+          &.previous {
+            color: $main-text-color;
+            background: url('../images/icons/previous.png') no-repeat scroll center center;
+          }
+
+          &.close {
+            color: $main-text-color;
+            background: url('../images/icons/close.png') no-repeat scroll center center;
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .img-wrapper {
+    width: 60%;
+    height: 100%;
+    min-height: 100vh;
+    display: inline-block;
+
+    background: url('../images/teamMembers/member.jpg') no-repeat scroll center center;
+  }
+
+  .pager {
+    float: right;
+    margin-right: 200px;
+  }
+}

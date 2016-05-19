@@ -1,0 +1,165 @@
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -80%, 0);
+    transform: translate3d(0, -80%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 80%, 0);
+    transform: translate3d(0, 80%, 0);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logoAppearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes google {
+  0% {
+    left: 10%;
+    top: 40%;
+  }
+  25% {
+    left: 60%;
+    top: 15%;
+  }
+  50% {
+    left: 65%;
+    top: 35%;
+  }
+  75% {
+    left: 15%;
+    top: 35%;
+  }
+  100% {
+    left: 10%;
+    top: 40%;
+  }
+}
+
+@keyframes telenor {
+  0% {
+    left: 10%;
+    top: 40%;
+  }
+  25% {
+    left: 60%;
+    top: 15%;
+  }
+  50% {
+    left: 65%;
+    top: 35%;
+  }
+  75% {
+    left: 15%;
+    top: 35%;
+  }
+  100% {
+    left: 10%;
+    top: 40%;
+  }
+}
+
+@keyframes uber {
+  0% {
+    left: 70%;
+    top: 60%;
+  }
+  25% {
+    left: 60%;
+    top: 45%;
+  }
+  50% {
+    left: 90%;
+    top: 90%;
+  }
+  75% {
+    left: 15%;
+    top: 35%;
+  }
+  100% {
+    left: 70%;
+    top: 60%;
+  }
+}
+
+@keyframes sap {
+  0% {
+    left: 10%;
+    top: 40%;
+  }
+  25% {
+    left: 60%;
+    top: 15%;
+  }
+  50% {
+    left: 65%;
+    top: 35%;
+  }
+  75% {
+    left: 15%;
+    top: 35%;
+  }
+  100% {
+    left: 10%;
+    top: 40%;
+  }
+}
+
+@keyframes eyronext {
+  0% {
+    left: 10%;
+    top: 40%;
+  }
+  25% {
+    left: 60%;
+    top: 15%;
+  }
+  50% {
+    left: 65%;
+    top: 35%;
+  }
+  75% {
+    left: 15%;
+    top: 35%;
+  }
+  100% {
+    left: 10%;
+    top: 40%;
+  }
+}

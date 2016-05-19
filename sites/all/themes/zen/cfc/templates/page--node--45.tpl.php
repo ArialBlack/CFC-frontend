@@ -6,62 +6,16 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
-    global $language ;
-    $lang = $language->language;
-    
-    if ($lang == 'uk') {
-        $lang = 'ua';
-    }
+global $language;
+$lang = $language->language;
+
+if ($lang == 'uk') {
+    $lang = 'ua';
+}
 ?>
 
 <div id="page">
 
-    <!--      <header class="header" id="header" role="banner">-->
-
-    <!--        --><?php //if ($logo): ?>
-    <!--          <a href="--><?php //print $front_page; ?><!--" title="-->
-    <!--    --><?php //print t('Home'); ?><!--" rel="home" class="header__logo" id="logo"><img src="-->
-    <!--    --><?php //print $logo; ?><!--" alt="-->
-    <?php //print t('Home'); ?><!--" class="header__logo-image" /></a>-->
-    <!--        --><?php //endif; ?>
-    <!---->
-    <!--        --><?php //if ($site_name || $site_slogan): ?>
-    <!--          <div class="header__name-and-slogan" id="name-and-slogan">-->
-    <!--            --><?php //if ($site_name): ?>
-    <!--              <h1 class="header__site-name" id="site-name">-->
-    <!--                <a href="--><?php //print $front_page; ?><!--" title="-->
-    <!--    --><?php //print t('Home'); ?><!--" class="header__site-link" rel="home"><span>-->
-    <!--    --><?php //print $site_name; ?><!--</span></a>-->
-    <!--              </h1>-->
-    <!--            --><?php //endif; ?>
-    <!---->
-    <!--            --><?php //if ($site_slogan): ?>
-    <!--              <div class="header__site-slogan" id="site-slogan">--><?php //print $site_slogan; ?><!--</div>-->
-    <!--            --><?php //endif; ?>
-    <!--          </div>-->
-    <!--        --><?php //endif; ?>
-    <!---->
-    <!--        --><?php //if ($secondary_menu): ?>
-    <!--          <nav class="header__secondary-menu" id="secondary-menu" role="navigation">-->
-    <!--            --><?php //print theme('links__system_secondary_menu', array(
-    //              'links' => $secondary_menu,
-    //              'attributes' => array(
-    //                'class' => array('links', 'inline', 'clearfix'),
-    //              ),
-    //              'heading' => array(
-    //                'text' => $secondary_menu_heading,
-    //                'level' => 'h2',
-    //                'class' => array('element-invisible'),
-    //              ),
-    //            )); ?>
-    <!--          </nav>-->
-    <!--        --><?php //endif; ?>
-    <!---->
-    <!--        --><?php //print render($page['header']); ?>
-    <!---->
-    <!--      </header>-->
-
-    <!--    <div id="main" class="main-content main">-->
     <div id="main" class="main">
         <section class="top-story-section" id="top_story" data-scroll-index="0">
             <div class="logo">
@@ -93,24 +47,7 @@
             print render($block['content']);
             ?>
 
-            <!--            <ul class="services">-->
-            <!--                <li><a href="#philantropy" data-toggle="modal"> Philantropy & Corporate <br> Social Responsibility-->
-            <!--                        <span class="line"></span></a></li>-->
-            <!--                <li><a href="#philantropy" data-toggle="modal">Goverment Relations <br> & Public Affairs-->
-            <!--                        <span class="line"></span></a></li>-->
-            <!--                <li><a href="#philantropy" data-toggle="modal">Investor Relations <br> & Financial Communications-->
-            <!--                        <span class="line"></span></a></li>-->
-            <!--                <li><a href="#philantropy" data-toggle="modal">Media Relations <br> & Public Affairs-->
-            <!--                        <span class="line"></span>-->
-            <!--                    </a></li>-->
-            <!--                <li><a href="#philantropy" data-toggle="modal">Special Issues <br> & Crises Management-->
-            <!--                        <span class="line"></span></a></li>-->
-            <!---->
-            <!--                <li><a href="#philantropy" data-toggle="modal">Promotion <br> & Event management-->
-            <!--                        <span class="line"></span></a></li>-->
-            <!--            </ul>-->
-            <!---->
-            <!---->
+
             <div class="modal fade" role="dialog" id="philantropy">
                 <div class="modal-dialog">
 
@@ -157,47 +94,7 @@
             $block = module_invoke('views', 'block_view', 'news-block_1');
             print render($block['content']);
             ?>
-            <!--            <div class="news-item">-->
-            <!--                <a class="news-info" href="#">-->
-            <!--                    <h2 class="category">Category, Date</h2>-->
-            <!---->
-            <!--                    <h1 class="news-title">News 1</h1>-->
-            <!---->
-            <!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam-->
-            <!--                        dignissim erat sodales, vitae fermentum augue faucibus. </p>-->
-            <!---->
-            <!--                </a>-->
-            <!--            </div>-->
-            <!---->
-            <!--            <div class="news-item">-->
-            <!--                <a class="news-info" href="#">-->
-            <!--                    <h2 class="category">Category, Date</h2>-->
-            <!---->
-            <!--                    <h1 class="news-title">News 2</h1>-->
-            <!---->
-            <!---->
-            <!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam-->
-            <!--                        dignissim erat sodales, vitae fermentum augue faucibus. </p>-->
-            <!---->
-            <!---->
-            <!--                </a>-->
-            <!--            </div>-->
-            <!---->
-            <!---->
-            <!--            <div class="news-item">-->
-            <!--                <a class="news-info" href="#">-->
-            <!--                    <h2 class="category">Category, Date</h2>-->
-            <!---->
-            <!--                    <h1 class="news-title">News 3</h1>-->
-            <!---->
-            <!---->
-            <!--                    <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam-->
-            <!--                        dignissim erat sodales, vitae fermentum augue faucibus. </p>-->
-            <!---->
-            <!---->
-            <!--                </a>-->
-            <!--            </div>-->
-            <!--            <a href="#" class="all-news-btn uppercase">All news</a>-->
+
         </section>
 
         <section class="career-section" id="careers" data-scroll-index="4">
@@ -283,56 +180,6 @@
             </div>
         </section>
 
-        <!--            <div id="content" class="column" role="main">-->
-        <!--            --><?php //print render($page['highlighted']); ?>
-        <!--            --><?php //print $breadcrumb; ?>
-        <!--            <a id="main-content"></a>-->
-        <!--            --><?php //print render($title_prefix); ?>
-        <!--            --><?php //if ($title): ?>
-        <!--              <h1 class="page__title title" id="page-title">--><?php //print $title; ?><!--</h1>-->
-        <!--            --><?php //endif; ?>
-        <!--            --><?php //print render($title_suffix); ?>
-        <!--            --><?php //print $messages; ?>
-        <!--            --><?php //print render($tabs); ?>
-        <!--            --><?php //print render($page['help']); ?>
-        <!--            --><?php //if ($action_links): ?>
-        <!--              <ul class="action-links">--><?php //print render($action_links); ?><!--</ul>-->
-        <!--            --><?php //endif; ?>
-        <!---->
-        <!--            --><?php //print render($page['content']); ?>
-        <!---->
-        <!--            <section id="section1">-->
-        <!--            English test-->
-        <!---->
-        <!--            </section>-->
-        <!---->
-        <!--            <section id="section2">-->
-        <!--              <h2>Team</h2>-->
-        <!--              --><?php
-        //                  $block = module_invoke('views', 'block_view', 'team-block');
-        //                  print render($block['content']);
-        //              ?>
-        <!--            </section>-->
-        <!---->
-        <!--            <section id="section3">-->
-        <!--              <h2>News</h2>-->
-        <!--                              --><?php
-        //                                  $block = module_invoke('views', 'block_view', 'news-block_1');
-        //                                  print render($block['content']);
-        //                              ?>
-        <!--            </section>-->
-        <!---->
-        <!--            <section id="section4">-->
-        <!--                      --><?php
-        //                          $block = module_invoke('views', 'block_view', 'news-block_2');
-        //                          print render($block['content']);
-        //                      ?>
-        <!--            </section>-->
-        <!---->
-        <!---->
-        <!--            --><?php //print $feed_icons; ?>
-        <!--          </div>-->
-
         <div id="navigation">
 
             <?php if ($main_menu): ?>
@@ -402,26 +249,6 @@
             <?php endif; ?>
 
             <?php print render($page['navigation']); ?>
-
         </div>
-
-        <!--          --><?php
-        //            // Render the sidebars to see if there's anything in them.
-        //            $sidebar_first  = render($page['sidebar_first']);
-        //            $sidebar_second = render($page['sidebar_second']);
-        //          ?>
-        <!---->
-        <!--          --><?php //if ($sidebar_first || $sidebar_second): ?>
-        <!--            <aside class="sidebars">-->
-        <!--              --><?php //print $sidebar_first; ?>
-        <!--              --><?php //print $sidebar_second; ?>
-        <!--            </aside>-->
-        <!--          --><?php //endif; ?>
-
-  </div>
-
-    <!--      --><?php //print render($page['footer']); ?>
-
+    </div>
 </div>
-
-<?php //print render($page['bottom']); ?>

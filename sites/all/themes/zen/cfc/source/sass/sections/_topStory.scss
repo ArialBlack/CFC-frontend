@@ -1,0 +1,155 @@
+.top-story-section {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0;
+  position: inherit;
+
+  //.line {
+  //  opacity: 1;
+  //  width: 90%;
+  //  margin-left: 10%;
+  //  height: 100vh;
+  //  display: block;
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  animation-name: appearance;
+  //  animation-iteration-count: 2;
+  //
+  //}
+
+  //.first {
+  //
+  //  animation-duration: 2.8s;
+  //  background: transparent url('../images/topStory/first.png') no-repeat scroll -13.0% 125%;
+  //  z-index: 10;
+  //}
+  //
+  //.second {
+  //  animation-duration: 2.3s;
+  //  background: transparent url('../images/topStory/second.png') no-repeat scroll 97% 90%;
+  //  z-index: 20;
+  //}
+  //
+  //.third {
+  //  animation-duration: 2.5s;
+  //  background: transparent url('../images/topStory/third.png') no-repeat scroll 95% 0%;
+  //  z-index: 30;
+  //}
+  //
+  //.fourth {
+  //  animation-duration: 2.6s;
+  //  background: transparent url('../images/topStory/fourth.png') no-repeat scroll 139% 0%;
+  //  z-index: 40;
+  //}
+  //
+  //.fifth {
+  //  animation-duration: 2.7s;
+  //  background: transparent url('../images/topStory/fifth.png') no-repeat scroll 123% 0%;
+  //  z-index: 50;
+  //}
+  //
+  //.sixth {
+  //  animation-duration: 2.8s;
+  //  background: transparent url('../images/topStory/sixth.png') no-repeat scroll 95% 100%;
+  //  z-index: 60;
+  //}
+  //
+  //.seventh {
+  //  animation-duration: 2.9s;
+  //  background: transparent url('../images/topStory/seventh.png') no-repeat scroll 142% 100%;
+  //  z-index: 70;
+  //}
+  //
+  //.eighth {
+  //  animation-duration: 2s;
+  //  background: transparent url('../images/topStory/eighth.png') no-repeat scroll 126% 100%;
+  //  z-index: 80;
+  //}
+
+  .logo {
+    //animation-name: logoAppearance;
+    animation-duration: 8s;
+
+    background: transparent url('../images/topStory/logo.png') no-repeat scroll center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+  }
+
+  .services {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    li {
+      margin-top: 55%;
+      display: inline-block;
+      width: 13.6%;
+      height: 50px;
+      background-color: transparent;
+      text-align: center;
+      padding: 5px 5px 5px 7px;
+
+      &:first-child {
+        margin-left: 119px;
+      }
+
+      &:last-child {
+        margin-right: 90px;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: $main-text-color;
+        font-size: 10px;
+        font-family: 'probaPro';
+        text-transform: uppercase;
+        border-bottom: 0px none transparent;
+        transition: border-bottom 0.3s;
+        &:hover {
+          border-bottom: 3px solid $main-text-color;
+        }
+      }
+
+    }
+
+  }
+
+  .phone {
+    display: block;
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    background: transparent url('../images/topStory/phone_icon.png') no-repeat scroll top left;
+    width: 20px;
+    height: 20px;
+    z-index: 110;
+    text-align: left;
+    color: $main-text-color;
+
+    text-decoration: none;
+    overflow: hidden;
+    transition: width 1s;
+
+    .phone-number {
+      padding: 25px;
+      text-decoration: none;
+    }
+    &:hover {
+      width: 250px;
+
+      .phone-number {
+
+      }
+
+    }
+  }
+}
+
