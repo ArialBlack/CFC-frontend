@@ -88,7 +88,10 @@ if ($lang == 'uk') {
 
         <section class="career-section" id="careers" data-scroll-index="4">
 
-        =-CAREER!=-
+        <?php
+            $nid = 43;
+            print drupal_render(node_view(node_load($nid)));
+        ?>
         
         </section>
         <section class="contacts-section" id="contacts" data-scroll-index="5">
