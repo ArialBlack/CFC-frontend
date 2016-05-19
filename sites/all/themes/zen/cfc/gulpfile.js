@@ -18,9 +18,9 @@ var gulp = require('gulp'),
             'vendorJs': './source/js/vendor/',
             'vendorCss': './source/css/vendor/',
             'js': [
-                './source/js/vendor/jquery.onepage-scroll.js',
-                './source/js/vendor/scrollIt.min.js',
-                './source/js/vendor/bootstrap.js',
+                './source/bower_components/jquery.onepage-scroll/lib/jquery.onepage-scroll.js',
+                './source/bower_components/ScrollIt/scrollIt.min.js',
+                './source/bower_components/bootstrap/dist/bootstrap.min.js',
                 './source/js/index.js',
                 './source/js/map.js'
             ],

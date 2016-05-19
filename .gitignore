@@ -43,3 +43,4 @@ node_modules
 /.idea
 
 /sites/all/themes/zen/cfc/node_modules
+/sites/all/themes/zen/cfc/source/bower_components/
