@@ -38,5 +38,8 @@ xmlrpc.php
 .ftpauth
 node_modules
 
+
 # Ignore IDE Intellij Idea files
 /.idea
+
+/sites/all/themes/zen/cfc/node_modules

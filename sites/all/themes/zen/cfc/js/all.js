@@ -60,7 +60,7 @@
 
           if (deltaX >= 50) {
             $this.trigger("swipeLeft");
-            }
+          }
           if (deltaX <= -50) {
             $this.trigger("swipeRight");
           }
@@ -74,7 +74,7 @@
             $this.unbind('touchmove', touchmove);
           }
         }
-      }
+            }
 
     });
     };
@@ -120,7 +120,7 @@
       $(this).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) {
         if (typeof settings.afterMove == 'function') settings.afterMove(index);
       });
-    }
+        }
 
     $.fn.moveDown = function () {
       var el = $(this)
@@ -154,7 +154,7 @@
         history.pushState({}, document.title, href);
       }
       el.transformPage(settings, pos, next.data("index"));
-    }
+        }
 
     $.fn.moveUp = function () {
       var el = $(this)
@@ -188,7 +188,7 @@
         history.pushState({}, document.title, href);
       }
       el.transformPage(settings, pos, next.data("index"));
-    }
+        }
 
     $.fn.moveTo = function (page_index) {
       current = $(settings.sectionContainer + ".active")
@@ -210,7 +210,7 @@
         }
         el.transformPage(settings, pos, page_index);
       }
-    }
+        }
 
     function responsive() {
       //start modification
@@ -258,7 +258,7 @@
           init_scroll(event, delta);
         });
       }
-    }
+        }
 
 
     function init_scroll(event, delta) {
@@ -268,13 +268,13 @@
       if (timeNow - lastAnimation < quietPeriod + settings.animationTime) {
         event.preventDefault();
         return;
-        }
+      }
 
       if (deltaOfInterest < 0) {
         el.moveDown()
       } else {
         el.moveUp()
-        }
+      }
       lastAnimation = timeNow;
     }
 
@@ -329,7 +329,7 @@
         el.find(".onepage-pagination").css("margin-top", posTop);
       }
       $('ul.onepage-pagination').html(paginationList);
-    }
+        }
 
     if (window.location.hash != "" && window.location.hash != "#1") {
       init_index = window.location.hash.replace("#", "")
@@ -384,7 +384,7 @@
       });
 
       responsive();
-    }
+        }
 
     if (settings.keyboard == true) {
       $(document).keydown(function (e) {
@@ -421,7 +421,7 @@
       });
     }
     return false;
-  }
+    }
 
 
 }(window.jQuery);
@@ -437,7 +437,7 @@
     activeClass: "active",
     onPageChange: null,
     topOffset: 0
-  };
+    };
   e.scrollIt = function (t) {
     var n = e.extend(r, t), i = 0, s = e("[data-scroll-index]:last").attr("data-scroll-index");
     var o = function (t) {
@@ -508,7 +508,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
       var s = t(this), n = s.data("bs.carousel"), o = t.extend({}, i.DEFAULTS, s.data(), "object" == typeof e && e), a = "string" == typeof e ? e : o.slide;
       n || s.data("bs.carousel", n = new i(this, o)), "number" == typeof e ? n.to(e) : a ? n[a]() : o.interval && n.pause().cycle()
     })
-  }
+    }
 
   var i = function (e, i) {
     this.$element = t(e), this.$indicators = this.$element.find(".carousel-indicators"), this.options = i, this.paused = null, this.sliding = null, this.interval = null, this.$active = null, this.$items = null, this.options.keyboard && this.$element.on("keydown.bs.carousel", t.proxy(this.keydown, this)), "hover" == this.options.pause && !("ontouchstart"in document.documentElement) && this.$element.on("mouseenter.bs.carousel", t.proxy(this.pause, this)).on("mouseleave.bs.carousel", t.proxy(this.cycle, this))
@@ -586,7 +586,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
       var i = t(this);
       e.call(i, i.data())
     })
-  })
+    })
 }(jQuery), +function (t) {
   "use strict";
   function e(e, s) {
@@ -693,15 +693,15 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
         s.is(":visible") && s.trigger("focus")
       })
     }), e.call(o, a, this)
-  })
+    })
 }(jQuery), +function (t) {
   "use strict";
   function e(e) {
     return this.each(function () {
       var s = t(this), n = s.data("bs.tab");
       n || s.data("bs.tab", n = new i(this)), "string" == typeof e && n[e]()
-    })
-  }
+        })
+    }
 
   var i = function (e) {
     this.element = t(e)
@@ -773,7 +773,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
           this.$element.one("bsTransitionEnd", t.proxy(r, this)).emulateTransitionEnd(s.TRANSITION_DURATION)[a](this.$element[0][l])
         }
       }
-    }
+        }
   }, s.prototype.hide = function () {
     if (!this.transitioning && this.$element.hasClass("in")) {
       var e = t.Event("hide.bs.collapse");
@@ -810,14 +810,14 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
   "use strict";
   function e(i, s) {
     this.$body = t(document.body), this.$scrollElement = t(t(i).is(document.body) ? window : i), this.options = t.extend({}, e.DEFAULTS, s), this.selector = (this.options.target || "") + " .nav li > a", this.offsets = [], this.targets = [], this.activeTarget = null, this.scrollHeight = 0, this.$scrollElement.on("scroll.bs.scrollspy", t.proxy(this.process, this)), this.refresh(), this.process()
-  }
+    }
 
   function i(i) {
     return this.each(function () {
       var s = t(this), n = s.data("bs.scrollspy"), o = "object" == typeof i && i;
       n || s.data("bs.scrollspy", n = new e(this, o)), "string" == typeof i && n[i]()
     })
-  }
+    }
 
   e.VERSION = "3.3.6", e.DEFAULTS = {offset: 10}, e.prototype.getScrollHeight = function () {
     return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
@@ -851,7 +851,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
       var e = t(this);
       i.call(e, e.data())
     })
-  })
+    })
 }(jQuery), +function (t) {
   "use strict";
   function e() {
@@ -882,7 +882,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap's JavaScript require
         return t(e.target).is(this) ? e.handleObj.handler.apply(this, arguments) : void 0
       }
     })
-  })
+    })
 }(jQuery);
 /**
  * Created by v.ratyshniy on 05.05.2016.
