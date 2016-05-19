@@ -49,11 +49,11 @@
 
 <div class="loader animated zoomIn">
   <div class="loader-text">
-    <h1 class="animated slideInDown appearence first">CFC</h1>
+    <h1 class="animated slideInDown appearence first"><?php print t("CFC"); ?></h1>
 
-    <h1 class="animated slideInDown appearence second">Consulting</h1>
+    <h1 class="animated slideInDown appearence second"><?php print t("Consulting"); ?></h1>
 
-    <h1 class="animated slideInDown appearence third"> Ideas in charge of solutions</h1>
+    <h1 class="animated slideInDown appearence third"><?php print t("Ideas in charge of solutions"); ?></h1>
 
     <h1 class="animated slideInDown appearence fourth"></h1>
   </div>

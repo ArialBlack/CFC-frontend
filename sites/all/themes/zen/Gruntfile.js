@@ -16,7 +16,13 @@ module.exports = function(grunt) {
                   expand: true,
                         cwd: 'cfc',
                         src: [
-                        "**"
+                        "*.*",
+                        "css/**",
+                        "fonts/**",
+                        "images-source/**",
+                        "js/**",
+                        "source/**",
+                        "templates/**",
                         ],
                         dest: 'sites/all/themes/zen/cfc'
                     }

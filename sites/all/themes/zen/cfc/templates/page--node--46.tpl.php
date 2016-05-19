@@ -5,6 +5,9 @@
  *
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
+ 
+ UKRAINE
+ 
  */
     global $language ;
     $lang = $language->language;
@@ -22,14 +25,10 @@
             </div>
 
 
-            <ul class="services">
-                <li><a href="#">Goverment Relations <br> & Public Affairs</a></li>
-                <li><a href="#">Investor Relations <br> & Financial Communications</a></li>
-                <li><a href="#">Media Relations <br> & Public Affairs</a></li>
-                <li><a href="#">Special Issues <br> & Crises Management</a></li>
-                <li><a href="#"> Philantropy & Corporate <br> Social Responsibility</a></li>
-                <li><a href="#">Promotion <br> & Event management</a></li>
-            </ul>
+            <?php
+            $block = module_invoke('views', 'block_view', 'news-block_2');
+            print render($block['content']);
+            ?>
             <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
         </section>
 
@@ -55,31 +54,16 @@
 
                         <div class="modal-body">
                             <div class="close">
-
                                 <a href="#" data-dismiss="modal" class="close-button"></a>
                             </div>
                             <div class="modal-content-wrapper">
-                                <h1 class="modal-head-text">
-                                    Philantropy & Corporate <br> Social Responsibility
-                                </h1>
+                                <h1 class="modal-head-text"></h1>
                                 <span class="line"></span>
-
-                                <p class="modal-body-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam<br>
-                                    dignissim erat sodales, vitae fermentum augue faucibus. <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam
-                                    dignissim erat sodales, vitae fermentum augue faucibus.
-                                </p>
-
-                                <p class="modal-body-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis quam<br>
-                                    dignissim erat sodales, vitae fermentum augue faucibus. <br>
-                                </p>
+                                <p class="modal-body-text"></p>
                             </div>
 
                             <div class="modal-animation-wrapper">
                                 <div class="animation">
-
                                 </div>
                             </div>
                         </div>
@@ -99,28 +83,8 @@
 
         <section class="career-section" id="careers" data-scroll-index="4">
 
-            <div class="text-wrapper">
-                <h1 class="title-text uppercase">ideology of <br> company</h1>
-                <span class="line"></span>
-
-                <p class="about-us-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-
-                <p class="about-us-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-
-
-                <form class="cv-form" action="#">
-                    <input type="text" class='form-input uppercase' placeholder="name">
-                    <input type="text" class='form-input uppercase' placeholder="email">
-                    <input type="file" id="cv" class='load-file'>
-                    <label for="cv" class="label uppercase"><span class="icon"></span> <span
-                            class="text">Upload CV</span></label>
-                    <button type="submit" class="submit-btn uppercase">Send cv</button>
-                </form>
-            </div>
+        =-CAREER!=-
+        
         </section>
         <section class="contacts-section" id="contacts" data-scroll-index="5">
             <div class="map" id="map"></div>
@@ -234,15 +198,10 @@
                         <!-- Icon Bar -->
 
                         <!-- Current Position -->
-                        <ul class="current-position nav">
-                            <li><a href="#top_story" data-scroll-goto="0">top story</a></li>
-                            <li><a href="#team" data-scroll-goto="1">our team</a></li>
-                            <li><a href="#services" data-scroll-goto="2">services</a></li>
-                            <li><a href="#news" data-scroll-goto="3">news</a></li>
-                            <li><a href="#careers" data-scroll-goto="4">careers</a></li>
-                            <li><a href="#contacts" data-scroll-goto="5">contacts</a>
-
-                        </ul>
+                        <?php
+                            $block = module_invoke('block', 'block_view', '2');
+                            print render($block['content']);
+                        ?>
                         <!-- Current Position -->
                     </nav>
                 </nav>
