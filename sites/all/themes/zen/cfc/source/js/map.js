@@ -6,9 +6,15 @@
 (function ($) {
     $(function () {
         try {
+            function initialize() {
             var mapCanvas = document.getElementById("map");
+                coordinates = {
+                    lat: 50.452908,
+                    lng: 30.524814
+                };
             var mapOptions = {
-                center: new google.maps.LatLng(50.452908, 30.524814), zoom: 12,
+                center: coordinates,
+                zoom: 10,
                 styles: [
                     {
                         "featureType": "landscape",
@@ -86,6 +92,15 @@
                 ]
             };
             var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: coordinates,
+                    map: map,
+                    title: 'CFC Consulting'
+
+                });
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
         } catch (err) {
             console.log(err);
         }

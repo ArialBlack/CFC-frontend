@@ -36,7 +36,7 @@ var gulp = require('gulp'),
         'build': {
             'css': './css/',
             'js': './js/',
-            'fonts': './build/fonts/',
+            'fonts': './fonts/',
             //'build': './build',
             'img': './images/'
         }
