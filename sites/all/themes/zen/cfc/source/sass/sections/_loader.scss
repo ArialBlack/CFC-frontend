@@ -1,0 +1,63 @@
+.navigation, .main-content, #main {
+  display: none;
+}
+
+.main {
+  height: 100vh;
+}
+
+div, span {
+  vertical-align: top;
+}
+
+.loader {
+  background: url('../images/loader/dotted_worldmap.png') no-repeat scroll center center;
+  background-color: $white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  color: $main-text-color;
+  //animation-duration: 0.5s;
+
+  .loader-text {
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .appearence {
+    animation-duration: 1.5s;
+    margin-top: 30px;
+  }
+
+  .first {
+    animation-delay: 0.4s;
+  }
+
+  .second {
+    animation-delay: 1.3s;
+  }
+
+  .third {
+    display: inline-block;
+    animation-delay: 2.3s;
+
+  }
+
+  .fourth {
+    display: inline-block;
+    animation-delay: 2.3s;
+    animation-name: slideInUp;
+  }
+}

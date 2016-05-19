@@ -1,0 +1,81 @@
+$icons: (0:0)
+$icons: map-merge($icons, (close: (X: -28px, Y:0px, W: 20px, H: 20px, TW: 69px, TH: 48px, IMG: '../img/icons.png')))
+$icons: map-merge($icons, (facebook: (X: -52px, Y:-17px, W: 9px, H: 17px, TW: 69px, TH: 48px, IMG: '../img/icons.png')))
+$icons: map-merge($icons, (google-plus: (X: 0px, Y:0px, W: 24px, H: 24px, TW: 69px, TH: 48px, IMG: '../img/icons.png')))
+$icons: map-merge($icons, (next: (X: 0px, Y:-28px, W: 20px, H: 20px, TW: 69px, TH: 48px, IMG: '../img/icons.png')))
+$icons: map-merge($icons, (previous: (X: -24px, Y:-28px, W: 20px, H: 20px, TW: 69px, TH: 48px, IMG: '../img/icons.png')))
+$icons: map-merge($icons, (twitter: (X: -52px, Y:0px, W: 17px, H: 13px, TW: 69px, TH: 48px, IMG: '../img/icons.png')))
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2
+
+@mixin s($i)
+  +sprite($i)
+
+@mixin sp($i)
+  +sprite-position($i)
+
+@mixin sr($i)
+  +sprite-retina($i)
+
+//
+//.icon-close
+//	width: 20px
+//	height: 20px
+//	background-image: url('../img/icons.png')
+//	background-position: -28px 0px
+//
+//.icon-facebook
+//	width: 9px
+//	height: 17px
+//	background-image: url('../img/icons.png')
+//	background-position: -52px -17px
+//
+//.icon-google-plus
+//	width: 24px
+//	height: 24px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px 0px
+//
+//.icon-next
+//	width: 20px
+//	height: 20px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -28px
+//
+//.icon-previous
+//	width: 20px
+//	height: 20px
+//	background-image: url('../img/icons.png')
+//	background-position: -24px -28px
+//
+//.icon-twitter
+//	width: 17px
+//	height: 13px
+//	background-image: url('../img/icons.png')
+//	background-position: -52px 0px
+//

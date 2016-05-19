@@ -5,6 +5,9 @@
  *
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
+ 
+ UKRAINE
+ 
  */
     global $language ;
     $lang = $language->language;
@@ -16,145 +19,196 @@
 
 <div id="page">
 
-  <header class="header" id="header" role="banner">
+    <div id="main" class="main">
+        <section class="top-story-section" id="top_story" data-scroll-index="0">
+            <div class="logo">
+            </div>
 
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
-    <?php endif; ?>
 
-    <?php if ($site_name || $site_slogan): ?>
-      <div class="header__name-and-slogan" id="name-and-slogan">
-        <?php if ($site_name): ?>
-          <h1 class="header__site-name" id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
-        <?php endif; ?>
+            <?php
+            $block = module_invoke('views', 'block_view', 'news-block_2');
+            print render($block['content']);
+            ?>
+            <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
+        </section>
 
-        <?php if ($site_slogan): ?>
-          <div class="header__site-slogan" id="site-slogan"><?php print $site_slogan; ?></div>
-        <?php endif; ?>
-      </div>
-    <?php endif; ?>
+        <section class="team-section" id="team" data-scroll-index="1">
+            <?php
+            $block = module_invoke('views', 'block_view', 'team-block');
+            print render($block['content']);
+            ?>
+        </section>
 
-    <?php if ($secondary_menu): ?>
-      <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => $secondary_menu_heading,
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
+        <section class="services-section" id="services" data-scroll-index="2">
 
-    <?php print render($page['header']); ?>
+            <?php
+            $block = module_invoke('views', 'block_view', 'news-block_2');
+            print render($block['content']);
+            ?>
 
-  </header>
 
-  <div id="main">
+            <div class="modal fade" role="dialog" id="philantropy">
+                <div class="modal-dialog">
 
-    <div id="content" class="column" role="main">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      
-      
-      <?php print render($page['content']); ?>
-      
-      <section id="section1">
-      Ukrainian test
-      
-      1111111<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      1
-      </section>
-      
-      <section id="section2">
-        <h2>Команда</h2>
-        <?php 
-            $block = module_invoke('views', 'block_view', 'team-block'); 
-            print render($block['content']); 
-        ?>
-      </section>
-      
-      <section id="section3">
-        <h2>Новини</h2>
-        <?php 
-            $block = module_invoke('views', 'block_view', 'news-block_1'); 
-            print render($block['content']); 
-        ?>
-      </section>
-      
-      <section id="section4">        
-        <?php 
-            $block = module_invoke('views', 'block_view', 'news-block_2'); 
-            print render($block['content']); 
-        ?>
-      </section>
-      
-      
-      <?php print $feed_icons; ?>
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <div class="close">
+                                <a href="#" data-dismiss="modal" class="close-button"></a>
+                            </div>
+                            <div class="modal-content-wrapper">
+                                <h1 class="modal-head-text"></h1>
+                                <span class="line"></span>
+                                <p class="modal-body-text"></p>
+                            </div>
+
+                            <div class="modal-animation-wrapper">
+                                <div class="animation">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="news-section" id="news" data-scroll-index="3">
+            <?php
+            $block = module_invoke('views', 'block_view', 'news-block_1');
+            print render($block['content']);
+            ?>
+
+        </section>
+
+        <section class="career-section" id="careers" data-scroll-index="4">
+
+        =-CAREER!=-
+        
+        </section>
+        <section class="contacts-section" id="contacts" data-scroll-index="5">
+            <div class="map" id="map"></div>
+
+            <div class="contacts-tab">
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#main-office">Main Office</a>
+                        <span class="line"></span>
+                    </li>
+                    <li><a data-toggle="pill" href="#dubai-office">Dubai-office</a>
+                        <span class="line"></span></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="main-office" class="tab-pane fade in active">
+                        <ul class="contact-address">
+                            <ul class="contact-address">
+                                <li><span class="icon pointer-icon"></span> <span class="address-text">
+                                8 Kostolna str.<br>
+                                5th floor<br>
+                                Kyiv, 01001, Ukraine
+                            </span></li>
+                                <li><span class="icon phone-icon"></span> <span class="address-text">
+                                Tel.: +380 (04) 492-75-99 <br>
+                                Fax: +380 (44) 278-39-07
+                                </span>
+                                </li>
+                                <li><span class="icon email-address-icon"></span> <span class="address-text">
+                                gk@cfcentertainment.com
+                                </span>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div id="dubai-office" class="tab-pane fade">
+                        <ul class="contact-address">
+                            <li><span class="icon pointer-icon"></span> <span class="address-text">
+                            Dubai Silicon Oasis <br>
+                            Headquarters Building, <br>
+                            4th floor, C&D Wing <br>
+                            P.O. Box 341041, <br>
+                            Dubai, UAE
+                            </span></li>
+                            <li><span class="icon phone-icon"></span> <span class="address-text">
+                                Tel.: +971 (04) 3724637 <br>
+                                Fax: +971 (04) 5015777
+                                </span>
+                            </li>
+                            <li><span class="icon email-address-icon"></span> <span class="address-text">
+                                gk@cfcentertainment.com
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="navigation">
+
+            <?php if ($main_menu): ?>
+                <nav class="navigation">
+
+                    <div class="left-side-nav">
+                        <!-- Language Panel -->
+                        <?php print render($page['header']); ?>
+
+
+                        <!-- Navigation Menu -->
+                        <div class="nav-menu">
+                            <div class="menu-icon">
+                                <span class="line first"></span>
+                                <span class="line second"></span>
+                                <span class="line third"></span>
+                            </div>
+
+                            <a href="#" class="dropdown uppercase" id="menu_dropdown">Main</a>
+
+                            <?php
+                            // This code snippet is hard to modify. We recommend turning off the
+                            // "Main menu" on your sub-theme's settings form, deleting this PHP
+                            // code block, and, instead, using the "Menu block" module.
+                            // @see https://drupal.org/project/menu_block
+                            print theme('links__system_main_menu', array(
+                                'links' => $main_menu,
+                                'attributes' => array(
+                                    'class' => array('dropdown-content', 'uppercase'),
+                                    'id' => 'menu_dropdown_content'
+                                ),
+                                'heading' => array(
+                                    'text' => t('Main menu'),
+                                    'level' => 'h2',
+                                    'class' => array('element-invisible'),
+                                ),
+                            )); ?>
+
+                            <!-- Navigation Menu -->
+                        </div>
+                    </div>
+
+                    <nav class="right-side-nav" id="current_position">
+                        <!-- Icon Bar -->
+                        <ul class="icon-bar">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                        </ul>
+                        <!-- Icon Bar -->
+
+                        <!-- Current Position -->
+                        <?php
+                            $block = module_invoke('block', 'block_view', '2');
+                            print render($block['content']);
+                        ?>
+                        <!-- Current Position -->
+                    </nav>
+                </nav>
+            <?php endif; ?>
+
+            <?php print render($page['navigation']); ?>
+        </div>
     </div>
-
-    <div id="navigation">
-
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation" tabindex="-1">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see https://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
-
-    </div>
-
-    <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
-    ?>
-
-    <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars">
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
-      </aside>
-    <?php endif; ?>
-
-  </div>
-
-  <?php print render($page['footer']); ?>
 
 </div>
-
-<?php print render($page['bottom']); ?>

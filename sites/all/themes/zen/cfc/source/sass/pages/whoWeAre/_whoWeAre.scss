@@ -1,0 +1,31 @@
+.who-we-are-section {
+  height: auto;
+  min-height: 100vh;
+
+  background: url('../images/whoWeAre/team.jpg') no-repeat scroll 85% 100%;
+  background-size: cover;
+
+  .text-wrapper {
+    width: 40%;
+    color: $main-text-color;
+    padding: 220px 90px 0px 150px;
+
+    .title {
+      font-family: 'probaPro';
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin: 20px 0px 10px 0px;
+    }
+
+    .line {
+      display: block;
+      border-bottom: 4px solid $main-text-color;
+      width: 8%;
+      margin-top: 5px;
+    }
+
+    .regular-text {
+      margin-top: 20px;
+    }
+  }
+}
