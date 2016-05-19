@@ -10,7 +10,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     gulpif = require('gulp-if'),
-    spritesmith = require('gulp.spritesmith'),
     mqpacker = require("css-mqpacker"),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
@@ -27,7 +26,6 @@ var gulp = require('gulp'),
             ],
             'fonts': './source/fonts/**/*',
             'html': './source/views/*.html',
-            'jade_watch': './source/views/**/*.*',
             'sass': ['./source/sass/**/*.scss', './source/sass/**/*.sass'],
 
             'sassFolder': './source/sass/',
@@ -36,18 +34,12 @@ var gulp = require('gulp'),
             'cssTemplate': 'source/helpers/sprite.template.mustache'
         },
         'build': {
-            'css': './build/css/',
-            'js': './build/js/',
+            'css': './css/',
+            'js': './js/',
             'fonts': './build/fonts/',
-            'build': './build',
-            'img': './build/images/'
-        },
-
-        'repo': {
-            'css': './repo/sites/all/themes/zen/cfc/css/',
-            'js': './repo/sites/all/themes/zen/cfc/js/'
+            //'build': './build',
+            'img': './images/'
         }
-
     };
 
 //fonts
@@ -55,25 +47,6 @@ gulp.task('fonts', function () {
     gulp.src(dirs.source.fonts)
         .pipe(gulp.dest(dirs.build.fonts));
 });
-
-
-gulp.task('connect', function () {
-    connect.server({
-        root: dirs.build.build,
-        livereload: true,
-        port: 8888
-    });
-});
-
-//jade
-gulp.task('templates', function () {
-
-    gulp.src(dirs.source.html)
-        .pipe(plumber())
-        .pipe(gulp.dest(dirs.build.build))
-        .pipe(connect.reload());
-});
-
 
 //sass
 gulp.task('sass', function () {
@@ -97,62 +70,7 @@ gulp.task('sass', function () {
         }).on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(dirs.build.css))
-        .pipe(connect.reload());
-});
-
-
-//sass
-gulp.task('cssToRepo', function () {
-
-    var processors = [
-        autoprefixer({browsers: ['last 2 version', 'IE 10', 'IE 11'], cascade: false}),
-        mqpacker({
-            sort: function (a, b) {
-                a = a.replace(/\D/g, '');
-                b = b.replace(/\D/g, '');
-                return b - a;
-            }
-        })
-    ];
-
-    return gulp.src(dirs.source.sass)
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'compact'
-        }).on('error', sass.logError))
-        .pipe(postcss(processors))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(dirs.repo.css))
-});
-
-gulp.task('jsToRepo', function () {
-    return gulp.src(dirs.source.js)
-        .pipe(plumber())
-        //.pipe(uglify())
-        .pipe(concat("all.js"))
-        .pipe(gulp.dest(dirs.repo.js))
-        .pipe(connect.reload());
-
-});
-
-// sprite
-gulp.task('sprite', function () {
-    var spriteData = gulp.src(dirs.source.icons)
-        .pipe(plumber())
-        .pipe(spritesmith({
-            imgName: 'icons.png',
-            cssName: '_sprite.sass',
-            imgPath: '../img/icons.png',
-            cssFormat: 'sass',
-            padding: 4,
-            cssTemplate: dirs.source.cssTemplate
-        }));
-    spriteData.img
-        .pipe(gulp.dest(dirs.build.img));
-    spriteData.css
-        .pipe(gulp.dest(dirs.source.sassFolder));
+        .pipe(gulp.dest(dirs.build.css));
 });
 
 //js
@@ -161,8 +79,7 @@ gulp.task('js', function () {
         .pipe(plumber())
         //.pipe(uglify())
         .pipe(concat("all.js"))
-        .pipe(gulp.dest(dirs.build.js))
-        .pipe(connect.reload());
+        .pipe(gulp.dest(dirs.build.js));
 });
 
 //img
@@ -180,12 +97,9 @@ gulp.task('images', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(dirs.source.jade_watch, ['templates']);
-    gulp.watch(dirs.source.sass, ['sass', 'cssToRepo']);
-    gulp.watch(dirs.source.js, ['js', 'jsToRepo']);
+    gulp.watch(dirs.source.sass, ['sass']);
+    gulp.watch(dirs.source.js, ['js']);
     gulp.watch(dirs.source.img, ['images']);
-    gulp.watch(dirs.source.icons, ['sprite']);
 });
 
-
-gulp.task('default', ['fonts', 'js', 'templates', 'sass', 'images', 'connect', 'watch', 'jsToRepo', 'cssToRepo']);
+gulp.task('default', ['fonts', 'js', 'sass', 'images', 'watch']);
