@@ -18,16 +18,15 @@ var gulp = require('gulp'),
             'vendorJs': './source/js/vendor/',
             'vendorCss': './source/css/vendor/',
             'js': [
-                './source/bower_components/jquery.onepage-scroll/lib/jquery.onepage-scroll.js',
+                './source/bower_components/jquery.onepage-scroll/dist/jquery.onepage-scroll.js',
                 './source/bower_components/ScrollIt/scrollIt.min.js',
-                './source/bower_components/bootstrap/dist/bootstrap.min.js',
-                './source/js/index.js',
-                './source/js/map.js'
+                './source/bower_components/bootstrap/dist/js/bootstrap.min.js',
+                './source/js/map.js',
+                './source/js/index.js'
             ],
             'fonts': './source/fonts/**/*',
             'html': './source/views/*.html',
             'sass': ['./source/sass/**/*.scss', './source/sass/**/*.sass'],
-
             'sassFolder': './source/sass/',
             'img': './source/images/*/*.*',
             'icons': './source/images/icons/*.png',

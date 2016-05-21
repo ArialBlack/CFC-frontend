@@ -21,8 +21,8 @@ module.exports = function(grunt) {
                         "fonts/**",
                         "images-source/**",
                         "js/**",
-                        "source/**",
-                        "templates/**",
+                            //"source/**",
+                            "templates/**"
                         ],
                         dest: 'sites/all/themes/zen/cfc'
                     }

@@ -95,7 +95,10 @@ if ($lang == 'uk') {
         
         </section>
         <section class="contacts-section" id="contacts" data-scroll-index="5">
-            <div class="map" id="map"></div>
+            <div class="map-wrapper">
+                <div class="map" id="map"></div>
+
+            </div>
 
             <div class="contacts-tab">
                 <ul class="nav nav-pills">
