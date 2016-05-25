@@ -8,20 +8,16 @@
   .logo-container {
     width: 100%;
     margin: 0 auto;
-    height: 0;
-    background-image: url('../images/topStory/lines.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
 
     .line {
       fill: #c2c9d5;
-      stroke: "#c2c9d5";
-      stroke-width: 3;
-      stroke-linecap: round;
+
 
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      //  animation: dash 5s linear alternate infinite;
+      animation: dash 4s linear alternate infinite;
 
     }
 
@@ -95,19 +91,6 @@
   //  background: transparent url('../images/topStory/eighth.png') no-repeat scroll 126% 100%;
   //  z-index: 80;
   //}
-
-  .logo {
-    //animation-name: logoAppearance;
-    animation-duration: 8s;
-
-    background: transparent url('../images/topStory/logo.png') no-repeat scroll center center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 90;
-  }
 
   .services {
     z-index: 100;

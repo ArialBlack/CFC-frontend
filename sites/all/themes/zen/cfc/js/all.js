@@ -501,6 +501,8 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
 
 (function ($) {
     $(function () {
+
+
         var CFC = {};
         CFC.showMenuDropdown = function () {
             $("#menu_dropdown_content").toggleClass("show");

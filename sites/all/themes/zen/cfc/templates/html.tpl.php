@@ -48,19 +48,6 @@
 <body data-offset="10" data-target="#current_position" data-spy="scroll"
       class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
-<div class="loader animated zoomIn">
-  <div class="loader-text">
-    <h1 class="animated slideInDown appearence first"><?php print t("CFC"); ?></h1>
-
-    <h1 class="animated slideInDown appearence second"><?php print t("Consulting"); ?></h1>
-
-    <h1 class="animated slideInDown appearence third"><?php print t("Ideas"); ?></h1>
-
-    <h1 class="animated slideInDown appearence fourth"><?php print t("in charge of solutions"); ?></h1>
-  </div>
-
-</div>
-
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
       <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>

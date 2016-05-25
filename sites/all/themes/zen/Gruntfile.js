@@ -19,6 +19,7 @@ module.exports = function(grunt) {
                         "*.*",
                         "css/**",
                         "fonts/**",
+                            // "images/**",
                         "images-source/**",
                         "js/**",
                             //"source/**",

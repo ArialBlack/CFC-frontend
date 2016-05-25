@@ -4,6 +4,8 @@
 
 (function ($) {
     $(function () {
+
+
         var CFC = {};
         CFC.showMenuDropdown = function () {
             $("#menu_dropdown_content").toggleClass("show");
