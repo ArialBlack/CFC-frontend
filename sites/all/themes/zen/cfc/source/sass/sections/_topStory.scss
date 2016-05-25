@@ -14,10 +14,9 @@
     .line {
       fill: #c2c9d5;
 
-
-      stroke-dasharray: 1000;
+      stroke-dasharray: 500;
       stroke-dashoffset: 1000;
-      animation: dash 4s linear alternate infinite;
+      animation: dash 8s linear alternate infinite;
 
     }
 
