@@ -2,12 +2,12 @@
  * Created by v.ratyshniy on 06.05.2016.
  */
 
-
 (function ($) {
     $(function () {
         try {
-            var map = null;
+            map = null;
             function initialize() {
+
 
                 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
                     directionsService.route({
@@ -26,17 +26,15 @@
                     }, function (response, status) {
                         if (status == google.maps.DirectionsStatus.OK) {
                             directionsDisplay.setDirections(response);
-                            var map = directionsDisplay.getMap();
-                            google.maps.event.trigger(map, "resize");
 
                         } else {
-                            window.alert('Directions request failed due to ' + status);
+                            alert('Directions request failed due to ' + status);
                         }
                     });
                 }
 
 
-                var mapCanvas = document.getElementById("map");
+                var mapId = document.getElementById("map");
 
                 var directionsDisplay = new google.maps.DirectionsRenderer({
                     preserveViewport: true
@@ -47,6 +45,7 @@
                     center: new google.maps.LatLng(50.452606, 30.524959),
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
                     scrollwheel: false,
+                    zoom: 15,
                     styles: [
                         {
                             "featureType": "landscape",
@@ -123,27 +122,30 @@
                         }
                     ]
                 };
-                map = new google.maps.Map(mapCanvas, mapOptions);
+                map = new google.maps.Map(mapId, mapOptions);
                 map.setZoom(15);
-
+                google.maps.event.trigger(map, "resize");
                 directionsDisplay.setMap(map);
-
-
                 calculateAndDisplayRoute(directionsService, directionsDisplay);
 
-
                 google.maps.event.addDomListener(window, "resize", function () {
+
                     var center = map.getCenter();
                     google.maps.event.trigger(map, "resize");
                     map.setCenter(center);
+
                 });
 
             }
 
-            $(document).ready(function () {
+            google.maps.event.addDomListener(window, "load", function () {
                 initialize();
-                google.maps.event.trigger(map, 'resize');
             });
+            setTimeout(function () {
+                var center = map.getCenter();
+                google.maps.event.trigger(map, "resize");
+                map.setCenter(center);
+            }, 4000);
 
         } catch (err) {
             console.log(err);

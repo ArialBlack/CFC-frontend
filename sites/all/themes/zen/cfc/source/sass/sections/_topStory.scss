@@ -5,6 +5,32 @@
   margin: 0;
   position: inherit;
 
+  .logo-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 0;
+    background-image: url('../images/topStory/lines.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .line {
+      fill: #c2c9d5;
+      stroke: "#c2c9d5";
+      stroke-width: 3;
+      stroke-linecap: round;
+
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      //  animation: dash 5s linear alternate infinite;
+
+    }
+
+    .logo {
+      fill: $main-text-color;
+    }
+
+  }
+
   //.line {
   //  opacity: 1;
   //  width: 90%;

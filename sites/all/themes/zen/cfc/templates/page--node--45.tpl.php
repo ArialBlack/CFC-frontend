@@ -21,9 +21,10 @@ if ($lang == 'uk') {
 
     <div id="main" class="main">
         <section class="top-story-section" id="top_story" data-scroll-index="0">
-            <div class="logo">
-            </div>
 
+            <div class="logo-container">
+
+            </div>
 
            <?php
             $block = module_invoke('views', 'block_view', 'news-block_2');
@@ -95,10 +96,9 @@ if ($lang == 'uk') {
         
         </section>
         <section class="contacts-section" id="contacts" data-scroll-index="5">
-            <div class="map-wrapper">
-                <div class="map" id="map"></div>
 
-            </div>
+            <button class="trigger-btn" id="map_trigger_btn"></button>
+            <div class="map" id="map"></div>
 
             <div class="contacts-tab">
                 <ul class="nav nav-pills">

@@ -49,117 +49,14 @@
   }
 }
 
-@keyframes google {
-  0% {
-    left: 10%;
-    top: 40%;
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
   }
-  25% {
-    left: 60%;
-    top: 15%;
-  }
-  50% {
-    left: 65%;
-    top: 35%;
-  }
-  75% {
-    left: 15%;
-    top: 35%;
-  }
-  100% {
-    left: 10%;
-    top: 40%;
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-@keyframes telenor {
-  0% {
-    left: 10%;
-    top: 40%;
-  }
-  25% {
-    left: 60%;
-    top: 15%;
-  }
-  50% {
-    left: 65%;
-    top: 35%;
-  }
-  75% {
-    left: 15%;
-    top: 35%;
-  }
-  100% {
-    left: 10%;
-    top: 40%;
-  }
-}
 
-@keyframes uber {
-  0% {
-    left: 70%;
-    top: 60%;
-  }
-  25% {
-    left: 60%;
-    top: 45%;
-  }
-  50% {
-    left: 90%;
-    top: 90%;
-  }
-  75% {
-    left: 15%;
-    top: 35%;
-  }
-  100% {
-    left: 70%;
-    top: 60%;
-  }
-}
 
-@keyframes sap {
-  0% {
-    left: 10%;
-    top: 40%;
-  }
-  25% {
-    left: 60%;
-    top: 15%;
-  }
-  50% {
-    left: 65%;
-    top: 35%;
-  }
-  75% {
-    left: 15%;
-    top: 35%;
-  }
-  100% {
-    left: 10%;
-    top: 40%;
-  }
-}
-
-@keyframes eyronext {
-  0% {
-    left: 10%;
-    top: 40%;
-  }
-  25% {
-    left: 60%;
-    top: 15%;
-  }
-  50% {
-    left: 65%;
-    top: 35%;
-  }
-  75% {
-    left: 15%;
-    top: 35%;
-  }
-  100% {
-    left: 10%;
-    top: 40%;
-  }
-}
