@@ -91,12 +91,13 @@
   //  z-index: 80;
   //}
 
-  .services {
+  .competences {
     z-index: 100;
     position: absolute;
     width: 100%;
     background-color: transparent;
     li {
+      vertical-align: top;
       margin-top: 55%;
       display: inline-block;
       width: 13.6%;
@@ -116,7 +117,7 @@
         display: inline-block;
         text-decoration: none;
         color: $main-text-color;
-        font-size: 10px;
+        font-size: 14px;
         font-family: 'probaPro';
         text-transform: uppercase;
         border-bottom: 0px none transparent;

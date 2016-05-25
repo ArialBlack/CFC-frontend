@@ -165,7 +165,7 @@ if ($lang == 'uk') {
             </div>
 
            <?php
-            $block = module_invoke('views', 'block_view', 'news-block_2');
+           $block = module_invoke('views', 'block_view', 'news-block_3');
             print render($block['content']);
             ?>
             
@@ -185,38 +185,6 @@ if ($lang == 'uk') {
             $block = module_invoke('views', 'block_view', 'news-block_2');
             print render($block['content']);
             ?>
-
-
-            <div class="modal fade" role="dialog" id="philantropy">
-                <div class="modal-dialog">
-
-                    <div class="modal-content">
-
-                        <div class="modal-body">
-                            <div class="close">
-
-                                <a href="#" data-dismiss="modal" class="close-button">
-                                    <span class="left"></span>
-                                    <span class="left"></span>
-                                </a>
-                            </div>
-                            <div class="modal-content-wrapper">
-                                <h1 class="modal-head-text"></h1>
-                                <span class="line"></span>
-
-                                <p class="modal-body-text"></p>
-
-                            </div>
-
-                            <div class="modal-animation-wrapper">
-                                <div class="animation">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </section>
 

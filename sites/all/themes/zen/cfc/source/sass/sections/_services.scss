@@ -39,7 +39,7 @@
     animation-name: servicesWordMotion;
     z-index: -1;
   }
-  .services {
+  .competences {
     margin-top: 340px;
     li {
       vertical-align: top;
@@ -151,84 +151,34 @@
             }
           }
         }
-
-        //.close-button {
-        //  background-color: lighten(#364b6b, 10%);
-        //  float: right;
-        //  $size: 40px;
-        //  height: $size;
-        //  width: $size;
-        //  position: relative;
-        //  box-sizing: border-box;
-        //  line-height: $size;
-        //  display: inline-block;
-        //
-        //  &:before, &:after {
-        //    $width: 40px;
-        //    $height: 5px;
-        //    transform: rotate(-45deg);
-        //    content: '';
-        //    position: absolute;
-        //    top: 50%;
-        //    left: 50%;
-        //    margin-top: -$height/2;
-        //    margin-left: -$width/2;
-        //    display: block;
-        //    height: $height;
-        //    width: $width;
-        //    background-color: #fff;
-        //    transition: all 0.25s ease-out;
-        //  }
-        //
-        //  &:after {
-        //    transform: rotate(-135deg);
-        //  }
-        //
-        //  &:hover {
-        //    background-color: lighten(#364b6b, 40%);
-        //    &:before, &:after {
-        //      transform: rotate(0deg);
-        //    }
-        //  }
-        //}
       }
-    }
-    .modal-body {
-      padding: 0px 0px 100px 120px;
-
-      .modal-content-wrapper {
-        display: inline-block;
-        width: 55%;
-
-        .modal-head-text {
-          font-size: $fs-md;
-          margin-bottom: 15px;
-          font-weight: 300;
-        }
-
-        .line {
+      .modal-body {
+        height: auto;
+        .modal-content-wrapper {
           display: inline-block;
-          width: 10%;
-          border-bottom: 1px solid #ffffff;
-        }
-        .modal-body-text {
-          font-size: $fs-sm;
-          margin: 25px 0px 0px 0px;
-          font-weight: 200;
-        }
-
-      }
-
-      .modal-animation-wrapper {
-        display: inline-block;
-        width: 30%;
-        height: 300px;
-        color: white;
-        backround-color: white;
-        .animation {
-          background: transparent url('../images/services/philantropy.gif') no-repeat scroll center center;
           width: 100%;
-          height: 100%;
+          padding: 0px 50px 100px 50px;
+
+          h2 {
+            text-transform: uppercase;
+            font-family: 'probaPro';
+          }
+
+          .line {
+            display: inline-block;
+            width: 5%;
+            border-bottom: 2px solid #ffffff;
+          }
+
+          p {
+            font-size: $fs-sm;
+            font-family: 'probaPro';
+          }
+
+          & > ul > li {
+            color: white;
+
+          }
         }
       }
     }
