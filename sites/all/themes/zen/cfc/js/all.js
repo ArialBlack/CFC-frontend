@@ -520,7 +520,9 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
         };
 
         $(document).ready(function () {
-
+            if (!$('.loader').css('display')) {
+                $('.navigation, #main').show();
+            }
 
             setTimeout(function () {
                 $('.loader').fadeOut(500);

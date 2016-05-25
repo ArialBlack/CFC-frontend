@@ -82,104 +82,153 @@
       }
     }
   }
-  .modal {
+}
 
-    .modal-dialog {
-      width: 900px;
+.modal {
+  .modal-dialog {
+    width: 900px;
 
-      .modal-content {
-        height: 600px;
-        border: 0px none;
-        background-color: $modal-bg;
-        margin-top: 150px;
-        border-radius: 0px;
-        color: $white;
-        font-family: 'probaPro';
-        vertical-align: bottom;
+    .modal-content {
+      height: 600px;
+      border: 0px none;
+      background-color: $modal-bg;
+      margin-top: 150px;
+      border-radius: 0px;
+      color: $white;
+      font-family: 'probaPro';
+      vertical-align: bottom;
 
-        .close {
-          display: block;
-          width: 100%;
-          height: 40px;
+      .close {
+        display: block;
+        width: 100%;
+        height: 30px;
 
-          .close-button {
-            background-color: lighten(#364b6b, 10%);
-            float: right;
-            $size: 40px;
-            height: $size;
-            width: $size;
-            position: relative;
-            box-sizing: border-box;
-            line-height: $size;
-            display: inline-block;
+        .close-button {
+          text-decoration: none;
+          float: right;
+          $size: 50px;
+          height: $size;
+          width: $size;
+          position: relative;
+          box-sizing: border-box;
+          line-height: $size;
+          display: inline-block;
 
-            &:before, &:after {
-              $width: 40px;
-              $height: 5px;
-              transform: rotate(-45deg);
-              content: '';
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              margin-top: -$height/2;
-              margin-left: -$width/2;
-              display: block;
-              height: $height;
-              width: $width;
-              background-color: #fff;
-              transition: all 0.25s ease-out;
+          &:before, &:after {
+            $width: 30px;
+            $height: 3px;
+            transform: rotate(-45deg);
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -$height/2;
+            margin-left: -$width/2;
+            display: block;
+            height: $height;
+            width: $width;
+            background-color: #fff;
+            transition: all 0.25s ease-out;
+          }
+
+          &:after {
+            transform: rotate(-135deg);
+            margin-left: -25px;
+          }
+
+          &:before {
+
+            margin-left: -5px;
+          }
+
+          &:hover {
+            &:before {
+              margin-left: -15px;
             }
 
             &:after {
-              transform: rotate(-135deg);
-            }
-
-            &:hover {
-              background-color: lighten(#364b6b, 40%);
-              &:before, &:after {
-                transform: rotate(0deg);
-              }
+              margin-left: -15px;
             }
           }
         }
+
+        //.close-button {
+        //  background-color: lighten(#364b6b, 10%);
+        //  float: right;
+        //  $size: 40px;
+        //  height: $size;
+        //  width: $size;
+        //  position: relative;
+        //  box-sizing: border-box;
+        //  line-height: $size;
+        //  display: inline-block;
+        //
+        //  &:before, &:after {
+        //    $width: 40px;
+        //    $height: 5px;
+        //    transform: rotate(-45deg);
+        //    content: '';
+        //    position: absolute;
+        //    top: 50%;
+        //    left: 50%;
+        //    margin-top: -$height/2;
+        //    margin-left: -$width/2;
+        //    display: block;
+        //    height: $height;
+        //    width: $width;
+        //    background-color: #fff;
+        //    transition: all 0.25s ease-out;
+        //  }
+        //
+        //  &:after {
+        //    transform: rotate(-135deg);
+        //  }
+        //
+        //  &:hover {
+        //    background-color: lighten(#364b6b, 40%);
+        //    &:before, &:after {
+        //      transform: rotate(0deg);
+        //    }
+        //  }
+        //}
       }
-      .modal-body {
-        padding: 0px 0px 100px 120px;
+    }
+    .modal-body {
+      padding: 0px 0px 100px 120px;
 
-        .modal-content-wrapper {
-          display: inline-block;
-          width: 55%;
+      .modal-content-wrapper {
+        display: inline-block;
+        width: 55%;
 
-          .modal-head-text {
-            font-size: $fs-md;
-            margin-bottom: 15px;
-            font-weight: 300;
-          }
-
-          .line {
-            display: inline-block;
-            width: 10%;
-            border-bottom: 1px solid #ffffff;
-          }
-          .modal-body-text {
-            font-size: $fs-sm;
-            margin: 25px 0px 0px 0px;
-            font-weight: 200;
-          }
-
+        .modal-head-text {
+          font-size: $fs-md;
+          margin-bottom: 15px;
+          font-weight: 300;
         }
 
-        .modal-animation-wrapper {
+        .line {
           display: inline-block;
-          width: 30%;
-          height: 300px;
-          color: white;
-          backround-color: white;
-          .animation {
-            background: transparent url('../images/services/philantropy.gif') no-repeat scroll center center;
-            width: 100%;
-            height: 100%;
-          }
+          width: 10%;
+          border-bottom: 1px solid #ffffff;
+        }
+        .modal-body-text {
+          font-size: $fs-sm;
+          margin: 25px 0px 0px 0px;
+          font-weight: 200;
+        }
+
+      }
+
+      .modal-animation-wrapper {
+        display: inline-block;
+        width: 30%;
+        height: 300px;
+        color: white;
+        backround-color: white;
+        .animation {
+          background: transparent url('../images/services/philantropy.gif') no-repeat scroll center center;
+          width: 100%;
+          height: 100%;
         }
       }
     }
@@ -187,5 +236,6 @@
 }
 
 .modal-backdrop.in {
-  opacity: 0.5;
+  opacity: 0;
+  position: relative;
 }

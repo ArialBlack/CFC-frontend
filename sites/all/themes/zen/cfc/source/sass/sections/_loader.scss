@@ -2,6 +2,9 @@
   transition: all, 0.3s;
 }
 
+.navigation, #main {
+  display: none;
+}
 .main {
   height: 100vh;
 }

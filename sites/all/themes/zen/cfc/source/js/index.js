@@ -23,7 +23,9 @@
         };
 
         $(document).ready(function () {
-
+            if (!$('.loader').css('display')) {
+                $('.navigation, #main').show();
+            }
 
             setTimeout(function () {
                 $('.loader').fadeOut(500);

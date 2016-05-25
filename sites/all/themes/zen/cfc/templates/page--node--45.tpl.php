@@ -195,7 +195,10 @@ if ($lang == 'uk') {
                         <div class="modal-body">
                             <div class="close">
 
-                                <a href="#" data-dismiss="modal" class="close-button"></a>
+                                <a href="#" data-dismiss="modal" class="close-button">
+                                    <span class="left"></span>
+                                    <span class="left"></span>
+                                </a>
                             </div>
                             <div class="modal-content-wrapper">
                                 <h1 class="modal-head-text"></h1>
