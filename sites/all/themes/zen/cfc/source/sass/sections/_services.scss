@@ -89,9 +89,10 @@
     width: 900px;
 
     .modal-content {
-      height: 600px;
+      height: auto;
+      min-height: 600px;
       border: 0px none;
-      background-color: $modal-bg;
+      background: $modal-bg;
       margin-top: 150px;
       border-radius: 0px;
       color: $white;
@@ -154,32 +155,41 @@
         }
       }
       .modal-body {
+        background: transparent url('../images/services/dotted_worldmap.png') no-repeat scroll top center;
         height: auto;
         .modal-content-wrapper {
           display: inline-block;
           width: 100%;
-          padding: 0px 50px 100px 50px;
+          padding: 50px 50px 100px 50px;
 
           h2 {
             text-transform: uppercase;
             font-family: 'probaPro';
+            text-align: center;
           }
 
           .line {
-            display: inline-block;
+            display: block;
             width: 5%;
             border-bottom: 2px solid #ffffff;
+            text-align: center;
+            margin-left: 47.5%;
           }
 
           p {
+            margin: 10px 0px 0px 0px;
             font-size: $fs-sm;
             font-family: 'probaPro';
           }
 
           & > ul {
-            list-style-type: circle;
+            margin-top: 10px;
             li {
-
+              margin-left: 10px;
+              font-size: $fs-sm;
+              list-style-type: disc;
+              display: list-item;
+              width: 95%;
             }
           }
 
