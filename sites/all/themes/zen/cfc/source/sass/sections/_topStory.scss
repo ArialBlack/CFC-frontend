@@ -132,6 +132,7 @@
   }
 
   .phone {
+    margin-top: 5px;
     display: block;
     position: fixed;
     top: 95%;
@@ -143,14 +144,14 @@
     text-align: left;
     color: $main-text-color;
 
-    text-decoration: none;
+      text-decoration: none;
     overflow: hidden;
     transition: width 1s;
 
-    .phone-number {
-      padding: 25px;
-      text-decoration: none;
-    }
+      .phone-number {
+        padding: 25px;
+        text-decoration: none;
+      }
     &:hover {
       width: 250px;
 
@@ -159,6 +160,6 @@
       }
 
     }
-  }
+    }
 }
 

@@ -168,8 +168,8 @@ if ($lang == 'uk') {
            $block = module_invoke('views', 'block_view', 'news-block_3');
             print render($block['content']);
             ?>
-            
             <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
+
         </section>
 
         <section class="team-section" id="team" data-scroll-index="1">
@@ -211,10 +211,10 @@ if ($lang == 'uk') {
 
             <div class="contacts-tab">
                 <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="pill" href="#main-office">Main Office</a>
+                    <li class="active"><a data-toggle="pill" href="#main-office">Kyiv Office</a>
                         <span class="line"></span>
                     </li>
-                    <li><a data-toggle="pill" href="#dubai-office">Dubai-office</a>
+                    <li><a data-toggle="pill" href="#dubai-office">Dubai Office</a>
                         <span class="line"></span></li>
                 </ul>
 
