@@ -4,58 +4,66 @@
 
   padding-left: 90px;
   padding-right: 90px;
+  text-overflow: clip;
+  overflow: hidden;
   .background-text-wrapper {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 90%;
     z-index: -1;
+    padding-top: 125px;
 
     .background-text {
+      display: inline-block;
+      width: 51%;
       color: #f3f3f3;
       background: transparent;
       font-size: 90px;
       font-weight: 900;
       position: relative;
       animation-iteration-count: infinite;
-      animation-duration: 10s;
+      animation-duration: 15s;
       overflow: hidden;
       text-overflow: clip;
+      transition: all 7.4s;
     }
 
     .telenor {
+      margin-left: 5%;
       animation-name: telenor;
       //  z-index: -1;
     }
 
     .google {
+      float: right;
       animation-name: google;
-
-      //  z-index: -1;
     }
 
     .sap {
-
+      margin-left: 10%;
       animation-name: sap;
-      // z-index: -3;
+      animation-duration: 18s;
     }
 
     .eyronext {
-      display: block;
-      width: 40%;
-      font-size: 60px;
+      width: 65%;
+      float: right;
+      font-size: 90px;
       animation-name: eyronext;
-      //  z-index: -1;
+      animation-duration: 12s;
     }
 
     .uber {
+      animation-duration: 16s;
+      float: right;
       animation-name: uber;
-      //   z-index: -2;
+
     }
 
   }
 
   .competences {
-    margin-top: 340px;
+    margin-top: 200px;
     li {
       vertical-align: top;
       display: inline-block;
