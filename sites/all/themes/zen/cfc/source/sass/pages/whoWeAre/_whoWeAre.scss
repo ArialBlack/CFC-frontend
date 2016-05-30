@@ -8,7 +8,7 @@
   .text-wrapper {
     width: 40%;
     color: $main-text-color;
-    padding: 220px 90px 0px 150px;
+    padding: 140px 90px 0px 150px;
 
     .title {
       font-family: 'probaPro';
@@ -26,6 +26,44 @@
 
     .regular-text {
       margin-top: 20px;
+    }
+  }
+
+  .teammate {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    z-index: 100;
+    width: 200px;
+    height: 450px;
+    background: gray;
+    .trigger-zone {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 40;
+      display: inline-block;
+      width: 100px;
+      height: 250px;
+      background: blue;
+      cursor: pointer;
+
+      &:hover {
+        .popup-info {
+          display: block;
+        }
+      }
+    }
+
+    .popup-info {
+      cursor: pointer;
+      position: fixed;
+      z-index: 50;
+      float: right;
+      display: inline-block;
+      width: 150px;
+      height: 200px;
+      background: red;
     }
   }
 }
