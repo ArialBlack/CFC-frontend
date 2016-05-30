@@ -26,71 +26,6 @@
 
   }
 
-  //.line {
-  //  opacity: 1;
-  //  width: 90%;
-  //  margin-left: 10%;
-  //  height: 100vh;
-  //  display: block;
-  //  position: absolute;
-  //  top: 0;
-  //  right: 0;
-  //  bottom: 0;
-  //  left: 0;
-  //  animation-name: appearance;
-  //  animation-iteration-count: 2;
-  //
-  //}
-
-  //.first {
-  //
-  //  animation-duration: 2.8s;
-  //  background: transparent url('../images/topStory/first.png') no-repeat scroll -13.0% 125%;
-  //  z-index: 10;
-  //}
-  //
-  //.second {
-  //  animation-duration: 2.3s;
-  //  background: transparent url('../images/topStory/second.png') no-repeat scroll 97% 90%;
-  //  z-index: 20;
-  //}
-  //
-  //.third {
-  //  animation-duration: 2.5s;
-  //  background: transparent url('../images/topStory/third.png') no-repeat scroll 95% 0%;
-  //  z-index: 30;
-  //}
-  //
-  //.fourth {
-  //  animation-duration: 2.6s;
-  //  background: transparent url('../images/topStory/fourth.png') no-repeat scroll 139% 0%;
-  //  z-index: 40;
-  //}
-  //
-  //.fifth {
-  //  animation-duration: 2.7s;
-  //  background: transparent url('../images/topStory/fifth.png') no-repeat scroll 123% 0%;
-  //  z-index: 50;
-  //}
-  //
-  //.sixth {
-  //  animation-duration: 2.8s;
-  //  background: transparent url('../images/topStory/sixth.png') no-repeat scroll 95% 100%;
-  //  z-index: 60;
-  //}
-  //
-  //.seventh {
-  //  animation-duration: 2.9s;
-  //  background: transparent url('../images/topStory/seventh.png') no-repeat scroll 142% 100%;
-  //  z-index: 70;
-  //}
-  //
-  //.eighth {
-  //  animation-duration: 2s;
-  //  background: transparent url('../images/topStory/eighth.png') no-repeat scroll 126% 100%;
-  //  z-index: 80;
-  //}
-
   .competences {
     z-index: 100;
     position: absolute;
@@ -144,22 +79,17 @@
     text-align: left;
     color: $main-text-color;
 
-      text-decoration: none;
+    text-decoration: none;
     overflow: hidden;
     transition: width 1s;
 
-      .phone-number {
-        padding: 25px;
-        text-decoration: none;
-      }
+    .phone-number {
+      padding: 25px;
+      text-decoration: none;
+    }
     &:hover {
       width: 250px;
-
-      .phone-number {
-
-      }
-
     }
-    }
+  }
 }
 

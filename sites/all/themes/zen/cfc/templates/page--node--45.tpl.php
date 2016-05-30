@@ -180,7 +180,13 @@ if ($lang == 'uk') {
         </section>
 
         <section class="services-section" id="services" data-scroll-index="2">
-
+            <div class="background-text-wrapper">
+                <span class="background-text telenor">telenor</span>
+                <span class="background-text google">google</span>
+                <span class="background-text sap">sap</span>
+                <span class="background-text eyronext">nyse eyronext</span>
+                <span class="background-text uber">uber</span>
+            </div>
             <?php
             $block = module_invoke('views', 'block_view', 'news-block_2');
             print render($block['content']);

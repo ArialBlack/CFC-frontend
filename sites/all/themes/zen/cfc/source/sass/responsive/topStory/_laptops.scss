@@ -1,123 +1,13 @@
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1280px) and (max-device-width: 1365px) and (-webkit-min-device-pixel-ratio: 1) {
-  .top-story-section {
-    .first {
 
-      animation-duration: 2.8s;
-      background: transparent url('../images/topStory/first.png') no-repeat scroll -25.5% 100%;
-      z-index: 10;
-    }
-
-    .second {
-      animation-duration: 2.3s;
-      background: transparent url('../images/topStory/second.png') no-repeat scroll 108.5% 100%;
-      z-index: 20;
-    }
-
-    .third {
-      animation-duration: 2.5s;
-      background: transparent url('../images/topStory/third.png') no-repeat scroll -150% -10%;
-      z-index: 30;
-    }
-
-    //.fourth {
-    //  animation-duration: 2.6s;
-    //  background: transparent url('../images/topStory/fourth.png') no-repeat scroll 259% 0%;
-    //  z-index: 40;
-    //}
-    //
-    //.fifth {
-    //  animation-duration: 2.7s;
-    //  background: transparent url('../images/topStory/fifth.png') no-repeat scroll 160% 0%;
-    //  z-index: 50;
-    //}
-    //
-    //.sixth {
-    //  animation-duration: 2.8s;
-    //  background: transparent url('../images/topStory/sixth.png') no-repeat scroll -150% 100%;
-    //  z-index: 60;
-    //}
-    //
-    //.seventh {
-    //  animation-duration: 2.9s;
-    //  background: transparent url('../images/topStory/seventh.png') no-repeat scroll 237% 100%;
-    //  z-index: 70;
-    //}
-    //
-    //.eighth {
-    //  animation-duration: 2s;
-    //  background: transparent url('../images/topStory/eighth.png') no-repeat scroll 160% 100%;
-    //  z-index: 80;
-    //}
-
-    .services {
-      li {
-        margin-top: 60%;
-      }
-    }
-  }
 
 }
 
 @media screen and (min-device-width: 1366px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .top-story-section {
-    .first {
 
-      animation-duration: 2.8s;
-      background: transparent url('../images/topStory/first.png') no-repeat scroll -16.5% 45%;
-      z-index: 10;
-    }
-
-    .second {
-      animation-duration: 2.3s;
-      background: transparent url('../images/topStory/second.png') no-repeat scroll 100% 45%;
-      z-index: 20;
-    }
-
-    .third {
-      animation-duration: 2.5s;
-      background: transparent url('../images/topStory/third.png') no-repeat scroll 90% -700%;
-      z-index: 30;
-    }
-
-    .fourth {
-      animation-duration: 2.6s;
-      background: transparent url('../images/topStory/fourth.png') no-repeat scroll 150% -225%;
-      z-index: 40;
-    }
-
-    .fifth {
-      animation-duration: 2.7s;
-      background: transparent url('../images/topStory/fifth.png') no-repeat scroll 122% -255%;
-      z-index: 50;
-    }
-
-    .sixth {
-      animation-duration: 2.8s;
-      background: transparent url('../images/topStory/sixth.png') no-repeat scroll 390% -200%;
-      z-index: 60;
-    }
-
-    .seventh {
-      animation-duration: 2.9s;
-      background: transparent url('../images/topStory/seventh.png') no-repeat scroll 143% -750%;
-      z-index: 70;
-    }
-
-    .eighth {
-      animation-duration: 2s;
-      background: transparent url('../images/topStory/eighth.png') no-repeat scroll 120% -500%;
-      z-index: 80;
-    }
-
-    .services {
-      li {
-        margin-top: 45%;
-      }
-    }
-  }
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 }

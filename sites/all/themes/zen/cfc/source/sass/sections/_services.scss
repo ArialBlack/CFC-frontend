@@ -4,41 +4,56 @@
 
   padding-left: 90px;
   padding-right: 90px;
-  .background-text {
-    color: #f3f3f3;
-    background: transparent;
-    font-size: 108px;
-    font-weight: 900;
-    position: relative;
+  .background-text-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: -1;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    overflow: hidden;
+
+    .background-text {
+      color: #f3f3f3;
+      background: transparent;
+      font-size: 90px;
+      font-weight: 900;
+      position: relative;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+      overflow: hidden;
+      text-overflow: clip;
+    }
+
+    .telenor {
+      animation-name: telenor;
+      //  z-index: -1;
+    }
+
+    .google {
+      animation-name: google;
+
+      //  z-index: -1;
+    }
+
+    .sap {
+
+      animation-name: sap;
+      // z-index: -3;
+    }
+
+    .eyronext {
+      display: block;
+      width: 40%;
+      font-size: 60px;
+      animation-name: eyronext;
+      //  z-index: -1;
+    }
+
+    .uber {
+      animation-name: uber;
+      //   z-index: -2;
+    }
+
   }
 
-  .google {
-    animation-name: google;
-    z-index: -1;
-  }
-
-  .uber {
-    animation-name: uber;
-    z-index: -2;
-  }
-  .sap {
-    animation-name: servicesWordMotion;
-    z-index: -1;
-  }
-
-  .eyronext {
-    animation-name: servicesWordMotion;
-    z-index: -1;
-  }
-
-  .telenor {
-    animation-name: servicesWordMotion;
-    z-index: -1;
-  }
   .competences {
     margin-top: 340px;
     li {
