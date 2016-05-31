@@ -5,90 +5,34 @@
   margin: 0;
   position: inherit;
 
-  //.line {
-  //  opacity: 1;
-  //  width: 90%;
-  //  margin-left: 10%;
-  //  height: 100vh;
-  //  display: block;
-  //  position: absolute;
-  //  top: 0;
-  //  right: 0;
-  //  bottom: 0;
-  //  left: 0;
-  //  animation-name: appearance;
-  //  animation-iteration-count: 2;
-  //
-  //}
-
-  //.first {
-  //
-  //  animation-duration: 2.8s;
-  //  background: transparent url('../images/topStory/first.png') no-repeat scroll -13.0% 125%;
-  //  z-index: 10;
-  //}
-  //
-  //.second {
-  //  animation-duration: 2.3s;
-  //  background: transparent url('../images/topStory/second.png') no-repeat scroll 97% 90%;
-  //  z-index: 20;
-  //}
-  //
-  //.third {
-  //  animation-duration: 2.5s;
-  //  background: transparent url('../images/topStory/third.png') no-repeat scroll 95% 0%;
-  //  z-index: 30;
-  //}
-  //
-  //.fourth {
-  //  animation-duration: 2.6s;
-  //  background: transparent url('../images/topStory/fourth.png') no-repeat scroll 139% 0%;
-  //  z-index: 40;
-  //}
-  //
-  //.fifth {
-  //  animation-duration: 2.7s;
-  //  background: transparent url('../images/topStory/fifth.png') no-repeat scroll 123% 0%;
-  //  z-index: 50;
-  //}
-  //
-  //.sixth {
-  //  animation-duration: 2.8s;
-  //  background: transparent url('../images/topStory/sixth.png') no-repeat scroll 95% 100%;
-  //  z-index: 60;
-  //}
-  //
-  //.seventh {
-  //  animation-duration: 2.9s;
-  //  background: transparent url('../images/topStory/seventh.png') no-repeat scroll 142% 100%;
-  //  z-index: 70;
-  //}
-  //
-  //.eighth {
-  //  animation-duration: 2s;
-  //  background: transparent url('../images/topStory/eighth.png') no-repeat scroll 126% 100%;
-  //  z-index: 80;
-  //}
-
-  .logo {
-    //animation-name: logoAppearance;
-    animation-duration: 8s;
-
-    background: transparent url('../images/topStory/logo.png') no-repeat scroll center center;
+  .logo-container {
+    width: 100%;
+    margin: 0 auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 90;
+    z-index: -1;
+
+    .line {
+      fill: #c2c9d5;
+
+      stroke-dasharray: 500;
+      stroke-dashoffset: 1000;
+      animation: dash 8s linear alternate infinite;
+
+    }
+
+    .logo {
+      fill: $main-text-color;
+    }
+
   }
 
-  .services {
+  .competences {
     z-index: 100;
     position: absolute;
     width: 100%;
     background-color: transparent;
     li {
+      vertical-align: top;
       margin-top: 55%;
       display: inline-block;
       width: 13.6%;
@@ -108,7 +52,7 @@
         display: inline-block;
         text-decoration: none;
         color: $main-text-color;
-        font-size: 10px;
+        font-size: 14px;
         font-family: 'probaPro';
         text-transform: uppercase;
         border-bottom: 0px none transparent;
@@ -123,6 +67,7 @@
   }
 
   .phone {
+    margin-top: 5px;
     display: block;
     position: fixed;
     top: 95%;
@@ -144,11 +89,6 @@
     }
     &:hover {
       width: 250px;
-
-      .phone-number {
-
-      }
-
     }
   }
 }

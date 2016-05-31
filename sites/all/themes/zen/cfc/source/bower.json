@@ -1,0 +1,22 @@
+{
+  "name": "cfc",
+  "description": "landing for cfc consulting",
+  "main": "index.js",
+  "authors": [],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "ScrollIt": "*",
+    "jquery.onepage-scroll": "^1.1.10"
+  }
+}

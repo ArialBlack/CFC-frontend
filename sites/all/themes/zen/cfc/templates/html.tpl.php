@@ -41,24 +41,12 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
     <![endif]-->
   <?php endif; ?>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxc5g10jp8zZSf-gaNvlu8vMR5JRiUsOw">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxc5g10jp8zZSf-gaNvlu8vMR5JRiUsOw&v=3.exp">
   </script>
+
 </head>
-<body data-offset="50" data-target="#current_position" data-spy="scroll"
+<body data-offset="10" data-target="#current_position" data-spy="scroll"
       class="<?php print $classes; ?>" <?php print $attributes; ?>>
-
-<div class="loader animated zoomIn">
-  <div class="loader-text">
-    <h1 class="animated slideInDown appearence first"><?php print t("CFC"); ?></h1>
-
-    <h1 class="animated slideInDown appearence second"><?php print t("Consulting"); ?></h1>
-
-    <h1 class="animated slideInDown appearence third"><?php print t("Ideas in charge of solutions"); ?></h1>
-
-    <h1 class="animated slideInDown appearence fourth"></h1>
-  </div>
-
-</div>
 
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
