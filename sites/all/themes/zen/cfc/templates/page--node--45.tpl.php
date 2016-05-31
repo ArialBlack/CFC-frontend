@@ -165,7 +165,7 @@ if ($lang == 'uk') {
             </div>
 
            <?php
-           $block = module_invoke('views', 'block_view', 'news-block_3');
+           $block = module_invoke('views', 'block_view', 'frontteasers-block_3');
             print render($block['content']);
             ?>
             <a href="#" class="phone"><span class="phone-number">+380 (44) 492-75-99</span></a>
@@ -188,7 +188,7 @@ if ($lang == 'uk') {
                 <span class="background-text uber">uber</span>
             </div>
             <?php
-            $block = module_invoke('views', 'block_view', 'news-block_2');
+            $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
             print render($block['content']);
             ?>
 
