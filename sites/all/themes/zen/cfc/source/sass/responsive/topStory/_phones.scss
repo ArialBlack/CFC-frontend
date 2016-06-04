@@ -2,6 +2,47 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-top-story-section {
+    height: 100vh;
+    padding-top: 20%;
+    .view-display-id-block_2 {
+      height: 100%;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.3%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 40% 0 0 0;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
+
+            &:hover {
+              background: #e9eaec;
+              a {
+                color: $main-text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 
 }
 

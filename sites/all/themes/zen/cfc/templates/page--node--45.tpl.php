@@ -65,7 +65,10 @@ if ($lang == 'uk') {
     </div>
 
     <div class="mobile-top-story-section">
-
+        <?php
+        $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
+        print render($block['content']);
+        ?>
     </div>
 
     <div class="mobile-news-section">
