@@ -77,7 +77,13 @@
                 $('#' + popUpId + "_popup").hide();
             });
 
+            $('#mobile_menu_icon, #mobile_menu').on('click', function () {
+                $('#side_nav_menu').addClass('active');
+            });
 
+            $("#close_mobile_menu").on('click', function () {
+                $('#side_nav_menu').removeClass('active');
+            });
 
             $.scrollIt({
                 upKey: 38,             // key code to navigate to the next section

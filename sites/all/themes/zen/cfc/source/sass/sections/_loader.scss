@@ -2,6 +2,12 @@
   transition: all, 0.3s;
 }
 
+a {
+  text-decoration: none;
+}
+
+@include mobileSections(none);
+
 .navigation, #main {
   display: none;
 }

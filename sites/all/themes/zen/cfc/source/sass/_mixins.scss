@@ -1,0 +1,89 @@
+@mixin hideDesktopSections() {
+  .loader {
+    display: none;
+  }
+
+  .team-section {
+    display: none;
+  }
+
+  .top-story-section {
+    display: none;
+  }
+
+  .services-section {
+    display: none;
+  }
+
+  .news-section {
+    display: none;
+  }
+
+  .career-section {
+    display: none;
+  }
+
+  nav.navigation {
+    display: none !important;
+  }
+}
+
+@mixin showMain() {
+  .main, #main {
+    display: block;
+  }
+}
+
+@mixin menuIcon($size) {
+  .menu-icon {
+    width: $size;
+    height: $size;
+    display: inline-block;
+
+    .line {
+      width: 100%;
+      border-bottom: $size/8 solid $main-text-color;
+      display: block;
+      transition-property: width;
+      transition-duration: 0.3s;
+
+      &.second {
+        margin: $size/3 0px $size/3 0px;
+        width: $size*0.7;
+      }
+
+    }
+
+    &.active {
+      .first {
+        width: 66%;
+      }
+
+      .second {
+        width: 100%;
+      }
+
+      .third {
+        width: 66%;
+      }
+    }
+  }
+}
+
+@mixin mobileSections($state) {
+  .mobile-navigation-section {
+    display: $state;
+  }
+
+  .mobile-topStory-section {
+    display: $state;
+  }
+
+  .mobile-news-section {
+    display: $state;
+  }
+
+  .mobile-career-section {
+    display: $state;
+  }
+}

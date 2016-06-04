@@ -42,39 +42,7 @@
       display: block;
       margin-top: 25px;
 
-      .menu-icon {
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-
-        .line {
-          width: 100%;
-          border-bottom: 3px solid $main-text-color;
-          display: block;
-          transition-property: width;
-          transition-duration: 0.3s;
-
-          &.second {
-            margin: 7.5px 0px 7.5px 0px;
-            width: 17.5px;
-          }
-
-        }
-
-        &.active {
-          .first {
-            width: 66%;
-          }
-
-          .second {
-            width: 100%;
-          }
-
-          .third {
-            width: 66%;
-          }
-        }
-      }
+      @include menuIcon(24px);
 
       .dropdown {
         display: inline-block;
