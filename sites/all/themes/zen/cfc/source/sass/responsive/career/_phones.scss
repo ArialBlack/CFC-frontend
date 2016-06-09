@@ -2,7 +2,46 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-career-section {
+    height: 100%;
+    position: relative;
+    padding-top: 10%;
 
+    .photo-wrapper {
+      height: 20%;
+      background: transparent url('../images/career/bg-mobile.jpg') no-repeat scroll top left;
+      background-size: cover;
+    }
+    .text-wrapper {
+
+    }
+
+    .button-wrapper {
+      text-align: center;
+
+      .send-cv {
+        display: block;
+        background: $main-text-color;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 15%;
+        height: 5%;
+        &:hover {
+
+        }
+
+        &:focus {
+
+        }
+
+        &:active {
+
+        }
+      }
+
+    }
+  }
 }
 
 /* Portrait */

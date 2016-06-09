@@ -18,68 +18,6 @@ if ($lang == 'uk') {
 ?>
 
 <div id="page">
-
-    <div class="mobile-navigation-section">
-        <nav class="mobile-navigation">
-            <div class="menu-icon" id="mobile_menu_icon">
-                <span class="line first"></span>
-                <span class="line second"></span>
-                <span class="line third"></span>
-            </div>
-
-            <a href="#" class="mobile-menu uppercase" id="mobile_menu">Main</a>
-
-            <div id="side_nav_menu" class="side-nav-menu">
-                <div class="top">
-                    <span class="title uppercase">Main</span>
-                    <span class="arrow-close" id="close_mobile_menu">
-                        <i class="fa fa-arrow-left"></i>
-                    </span>
-                </div>
-                <div class="content">
-                    <?php
-                    // This code snippet is hard to modify. We recommend turning off the
-                    // "Main menu" on your sub-theme's settings form, deleting this PHP
-                    // code block, and, instead, using the "Menu block" module.
-                    // @see https://drupal.org/project/menu_block
-                    print theme('links__system_main_menu', array(
-                        'links' => $main_menu,
-                        'attributes' => array(
-                            'class' => array('side-nav-menu-list', 'uppercase'),
-                        ),
-                        'heading' => array(
-                            'text' => t('Main menu'),
-                            'level' => 'h2',
-                            'class' => array('element-invisible'),
-                        ),
-                    )); ?>
-
-                    <?php print render($page['header']); ?>
-                </div>
-                <div class="footer">
-                    <div class="phone"></div>
-                </div>
-            </div>
-
-        </nav>
-    </div>
-
-    <div class="mobile-top-story-section">
-        <?php
-        $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
-        print render($block['content']);
-        ?>
-    </div>
-
-    <div class="mobile-news-section">
-
-    </div>
-
-    <div class="mobile-career-section">
-
-    </div>
-
-
     <div class="loader animated zoomIn">
         <div class="loader-text">
             <div class="animated slideInDown appearence first">
@@ -133,6 +71,80 @@ if ($lang == 'uk') {
     </div>
 
     <div id="main" class="main">
+        <div class="mobile-navigation-section">
+            <nav class="mobile-navigation">
+                <div class="menu-icon" id="mobile_menu_icon">
+                    <span class="line first"></span>
+                    <span class="line second"></span>
+                    <span class="line third"></span>
+                </div>
+
+                <a href="#" class="mobile-menu uppercase" id="mobile_menu">Main</a>
+
+                <div id="side_nav_menu" class="side-nav-menu">
+                    <div class="top">
+                        <span class="title uppercase">Main</span>
+                    <span class="arrow-close" id="close_mobile_menu">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                    </div>
+                    <div class="content">
+                        <?php
+                        // This code snippet is hard to modify. We recommend turning off the
+                        // "Main menu" on your sub-theme's settings form, deleting this PHP
+                        // code block, and, instead, using the "Menu block" module.
+                        // @see https://drupal.org/project/menu_block
+                        print theme('links__system_main_menu', array(
+                            'links' => $main_menu,
+                            'attributes' => array(
+                                'class' => array('side-nav-menu-list', 'uppercase'),
+                            ),
+                            'heading' => array(
+                                'text' => t('Main menu'),
+                                'level' => 'h2',
+                                'class' => array('element-invisible'),
+                            ),
+                        )); ?>
+
+                        <?php print render($page['header']); ?>
+                    </div>
+                    <div class="footer">
+                        <div class="phone"></div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="mobile-top-story-section">
+            <?php
+            $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
+            print render($block['content']);
+            ?>
+        </div>
+
+        <div class="mobile-news-section">
+
+        </div>
+
+        <div class="mobile-career-section">
+            <div class="photo-wrapper"></div>
+            <div class="text-wrapper">On the other hand, we denounce with righteous indignation and dislike men who are
+                so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail
+                in their duty through weakness of will, which is the same as saying through shrinking from toil and
+                pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
+                is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to
+                be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the
+                obligations of business it will frequently occur that pleasures have to be repudiated and annoyances
+                accepted. The wise man therefore always holds in these matters to this principle of selection: he
+                rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+            </div>
+            <div class="button-wrapper">
+                <a href="#" class="send-cv">Send CV</a>
+            </div>
+        </div>
+
         <section class="top-story-section" id="top_story" data-scroll-index="0">
 
             <div class="logo-container">
@@ -272,8 +284,6 @@ if ($lang == 'uk') {
         
         </section>
         <section class="contacts-section" id="contacts" data-scroll-index="5">
-
-            <button class="trigger-btn" id="map_trigger_btn"></button>
             <div class="map" id="map"></div>
 
             <div class="contacts-tab">

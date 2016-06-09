@@ -3,10 +3,12 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   @include mobileSections(block);
-
+  body {
+    overflow: auto;
+  }
   .mobile-navigation-section {
     box-sizing: border-box;
-    position: fixed;
+    //position: fixed;
     z-index: 50;
     height: auto;
     width: 100%;
@@ -39,7 +41,7 @@
       }
       .top {
         height: auto;
-        padding: 12.5% 7% 7% 7%;
+        padding: 12.5% 7% 2% 7%;
         border-bottom: 1px solid $main-text-color;
 
         .title {
@@ -62,8 +64,9 @@
       }
 
       .content {
-        height: 60%;
-        padding: 30% 7% 7% 32%;
+        height: auto;
+        min-height: 55%;
+        padding: 20% 7% 7% 32%;
         text-align: left;
         .side-nav-menu-list {
           li > a {
@@ -106,7 +109,8 @@
       }
 
       .footer {
-        height: 30%;
+        height: auto;
+        min-height: 10%;
         border-top: 1px solid $main-text-color;
         .phone {
           background: transparent url('../images/topStory/phone_icon.png') no-repeat scroll top left;
