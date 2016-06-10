@@ -69,15 +69,11 @@
             }
 
             setTimeout(function () {
-                $('.loader').fadeOut(500);
+                $('.loader').fadeOut(300);
 
                 $('.navigation, #main').show();
-            }, 3800);
+            }, 9700);
 
-            setTimeout(function () {
-
-                $('.line').css('opacity', '1');
-            }, 8000);
 
 
             $("#menu_dropdown, .menu-icon").on('click', function () {

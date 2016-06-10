@@ -145,7 +145,7 @@
                 var center = map.getCenter();
                 google.maps.event.trigger(map, "resize");
                 map.setCenter(center);
-            }, 4000);
+            }, 10000);
 
         } catch (err) {
             console.log(err);

@@ -488,7 +488,7 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
                 var center = map.getCenter();
                 google.maps.event.trigger(map, "resize");
                 map.setCenter(center);
-            }, 4000);
+            }, 10000);
 
         } catch (err) {
             console.log(err);
@@ -566,15 +566,11 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
             }
 
             setTimeout(function () {
-                $('.loader').fadeOut(500);
+                $('.loader').fadeOut(300);
 
                 $('.navigation, #main').show();
-            }, 3800);
+            }, 9700);
 
-            setTimeout(function () {
-
-                $('.line').css('opacity', '1');
-            }, 8000);
 
 
             $("#menu_dropdown, .menu-icon").on('click', function () {

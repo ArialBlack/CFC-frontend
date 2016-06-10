@@ -55,26 +55,24 @@
     stroke-dashoffset: 250;
     stroke-width: 1;
   }
-  12.5% {
+  10% {
     stroke-dasharray: 15 200;
     stroke-dashoffset: 50;
     stroke-width: 1;
   }
 
-  25% {
+  20% {
     stroke-dasharray: 15 200;
     stroke-dashoffset: 250;
     stroke-width: 1;
   }
 
-  33% {
-    stroke: #fff;
-    stroke-width: 0;
+  26% {
+    opacity: 0;
   }
 
   100% {
-    stroke: #fff;
-    stroke-width: 0;
+    opacity: 0;
   }
 }
 
