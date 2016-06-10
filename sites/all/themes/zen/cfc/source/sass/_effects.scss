@@ -98,25 +98,21 @@
 }
 
 @keyframes globeAnimation {
-  12.5% {
+  10% {
     stroke: $main-text-color;
     stroke-width: 0.75;
   }
 
-  25% {
+  22% {
     stroke: $line-stroke;
     stroke-width: 0.25;
   }
 
-  35% {
+  30% {
     opacity: 1;
   }
-  45% {
-    stroke: #c2c9d5;
-    stroke-width: 0.25;
-  }
 
-  47% {
+  40% {
     stroke: #c2c9d5;
     stroke-width: 0.25;
     opacity: 0;
@@ -144,7 +140,7 @@
   0% {
     opacity: 0;
   }
-  50% {
+  33% {
     opacity: 1;
   }
 

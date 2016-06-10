@@ -60,7 +60,7 @@
       stroke: #c2c9d5;
       stroke-width: 0.25;
       stroke-miterlimit: 10;
-      animation: globeAnimation 8s linear;
+      animation: globeAnimation 10s linear;
     }
 
     .meridian {
@@ -76,7 +76,7 @@
       opacity: 0.01;
       fill: $main-text-color;
       //animation: logoAppearance 4s linear 4s;
-      animation: logoAppearance 4s linear 4s;
+      animation: logoAppearance 6s linear 4s;
     }
 
   }
