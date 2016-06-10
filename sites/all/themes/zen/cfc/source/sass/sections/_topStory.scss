@@ -12,16 +12,37 @@
     z-index: -1;
 
     .line {
-      fill: #c2c9d5;
-
-      stroke-dasharray: 500;
-      stroke-dashoffset: 1000;
-      animation: dash 8s linear alternate infinite;
+      //   fill: #c2c9d5;
+      fill: none;
+      stroke: #c2c9d5;
+      stroke-width: 0.25;
+      stroke-dasharray: 0 500;
+      animation: lineAnimation 4s linear;
 
     }
 
+    .globe {
+      fill: none;
+      stroke: #c2c9d5;
+      stroke-width: 0.25;
+      stroke-miterlimit: 10;
+      animation: globeAnimation 8s linear;
+    }
+
+    .meridian {
+      fill: none;
+      stroke: $main-text-color;
+      stroke-width: 0.75;
+      stroke-dasharray: 0 200;
+      animation: dash 6.8s linear 1.2s;
+    }
+
+
     .logo {
+      opacity: 0.01;
       fill: $main-text-color;
+      //animation: logoAppearance 4s linear 4s;
+      animation: logoAppearance 4s linear;
     }
 
   }
@@ -63,7 +84,32 @@
       }
 
     }
+  }
 
+  .carousel {
+    z-index: 110;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    li {
+      display: none;
+      float: right;
+      margin-right: 90px;
+      margin-top: 17%;
+
+      .views-field-title {
+        a {
+          color: $main-text-color;
+        }
+      }
+
+      .views-field-created {
+        span {
+          color: #a6a69d;
+          font-size: 16px;
+        }
+      }
+    }
   }
 
   .phone {

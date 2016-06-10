@@ -50,18 +50,123 @@
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
+  0% {
+    stroke-dasharray: 0 200;
+    stroke-dashoffset: 250;
+    stroke-width: 1;
   }
-  to {
-    stroke-dashoffset: 0;
+  12.5% {
+    stroke-dasharray: 15 200;
+    stroke-dashoffset: 50;
+    stroke-width: 1;
+  }
+
+  25% {
+    stroke-dasharray: 15 200;
+    stroke-dashoffset: 250;
+    stroke-width: 1;
+  }
+
+  33% {
+    stroke: #fff;
+    stroke-width: 0;
+  }
+
+  100% {
+    stroke: #fff;
+    stroke-width: 0;
   }
 }
+
+@keyframes globeAnimation {
+  12.5% {
+    stroke: $main-text-color;
+    stroke-width: 0.75;
+  }
+
+  25% {
+    stroke: $line-stroke;
+    stroke-width: 0.25;
+  }
+
+  35% {
+    opacity: 1;
+  }
+  45% {
+    stroke: #c2c9d5;
+    stroke-width: 0.25;
+  }
+
+  47% {
+    stroke: #c2c9d5;
+    stroke-width: 0.25;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes meridianAnimation {
+  12.5% {
+    stroke-dasharray: 80;
+    stroke-width: 0.5;
+  }
+  25% {
+    stroke-dasharray: 0;
+    stroke-width: 0.25;
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    stroke: $main-text-color;
+    stroke-width: 0.75;
+    stroke-dasharray: 50 500;
+    stroke-dashoffset: 250;
+  }
+  12.5% {
+    stroke: $main-text-color;
+    stroke-dasharray: 50 500;
+    stroke-dashoffset: 50;
+    stroke-width: 0.75;
+  }
+
+  25% {
+    stroke: $line-stroke;
+    stroke-dasharray: 0 500;
+    stroke-width: 0.25;
+  }
+
+  33% {
+    stroke: $line-stroke;
+    stroke-width: 0.25;
+  }
+
+  100% {
+    stroke: $line-stroke;
+    stroke-width: 0.25;
+  }
+}
+
 
 @keyframes logoAppearance {
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
+
   100% {
     opacity: 1;
   }
