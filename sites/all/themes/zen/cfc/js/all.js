@@ -558,9 +558,9 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
         $(document).ready(function () {
 
             //LOADER SETTINGS
-            //setTimeout(function(){
-            //    $('.logo, .line').show();
-            //}, 4000);
+            setTimeout(function () {
+                $('.logo, .line, .line-animated').show();
+            }, 4000);
             if (!$('.loader').css('display')) {
                 $('.navigation, #main').show();
             }

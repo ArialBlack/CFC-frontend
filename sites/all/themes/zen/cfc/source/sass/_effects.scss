@@ -78,6 +78,25 @@
   }
 }
 
+@keyframes lineAnimation {
+  0% {
+    stroke-dasharray: 60 500;
+    stroke-dashoffset: 500;
+    stroke-width: 0.75;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 60 1000;
+    stroke-dashoffset: 300;
+    stroke-width: 0.75;
+    opacity: 1;
+  }
+
+  //100% {
+  //  opacity: 1;
+  //}
+}
+
 @keyframes globeAnimation {
   12.5% {
     stroke: $main-text-color;
@@ -108,56 +127,18 @@
   }
 }
 
-@keyframes meridianAnimation {
-  12.5% {
-    stroke-dasharray: 80;
-    stroke-width: 0.5;
-  }
-  25% {
-    stroke-dasharray: 0;
-    stroke-width: 0.25;
-    opacity: 1;
-  }
-  35% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes lineAnimation {
+@keyframes normalLineAnimation {
   0% {
-    stroke: $main-text-color;
-    stroke-width: 0.75;
-    stroke-dasharray: 50 500;
-    stroke-dashoffset: 250;
-  }
-  12.5% {
-    stroke: $main-text-color;
-    stroke-dasharray: 50 500;
-    stroke-dashoffset: 50;
-    stroke-width: 0.75;
-  }
-
-  25% {
-    stroke: $line-stroke;
-    stroke-dasharray: 0 500;
-    stroke-width: 0.25;
+    opacity: 0;
   }
 
   33% {
-    stroke: $line-stroke;
-    stroke-width: 0.25;
+    opacity: 1;
   }
-
   100% {
-    stroke: $line-stroke;
-    stroke-width: 0.25;
+    opacity: 1;
   }
 }
-
 
 @keyframes logoAppearance {
   0% {
