@@ -50,11 +50,87 @@
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
+  0% {
+    stroke-dasharray: 0 200;
+    stroke-dashoffset: 250;
+    stroke-width: 1;
   }
-  to {
-    stroke-dashoffset: 0;
+  10% {
+    stroke-dasharray: 15 200;
+    stroke-dashoffset: 50;
+    stroke-width: 1;
+  }
+
+  20% {
+    stroke-dasharray: 15 200;
+    stroke-dashoffset: 250;
+    stroke-width: 1;
+  }
+
+  26% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    stroke-dasharray: 60 500;
+    stroke-dashoffset: 500;
+    stroke-width: 0.75;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 60 1000;
+    stroke-dashoffset: 300;
+    stroke-width: 0.75;
+    opacity: 1;
+  }
+
+  //100% {
+  //  opacity: 1;
+  //}
+}
+
+@keyframes globeAnimation {
+  10% {
+    stroke: $main-text-color;
+    stroke-width: 0.75;
+  }
+
+  22% {
+    stroke: $line-stroke;
+    stroke-width: 0.25;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    stroke: #c2c9d5;
+    stroke-width: 0.25;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes normalLineAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -62,6 +138,10 @@
   0% {
     opacity: 0;
   }
+  33% {
+    opacity: 1;
+  }
+
   100% {
     opacity: 1;
   }

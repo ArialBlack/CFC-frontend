@@ -11,19 +11,9 @@
     position: absolute;
     z-index: -1;
 
-    .line {
-      fill: #c2c9d5;
-
-      stroke-dasharray: 500;
-      stroke-dashoffset: 1000;
-      animation: dash 8s linear alternate infinite;
-
-    }
-
     .logo {
       fill: $main-text-color;
-    }
-
+  }
   }
 
   .competences {
@@ -63,7 +53,32 @@
       }
 
     }
+  }
 
+  .carousel {
+    z-index: 110;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    li {
+      display: none;
+      float: right;
+      margin-right: 90px;
+      margin-top: 17%;
+
+      .views-field-title {
+        a {
+          color: $main-text-color;
+        }
+      }
+
+      .views-field-created {
+        span {
+          color: #a6a69d;
+          font-size: 16px;
+        }
+      }
+    }
   }
 
   .phone {
