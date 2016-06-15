@@ -3,20 +3,25 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .mobile-career-section {
-    height: 100%;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 100%;
     position: relative;
-    padding-top: 10%;
+    margin-top: 10%;
 
     .photo-wrapper {
       height: 20%;
+      min-height: 130px;
       background: transparent url('../images/career/bg-mobile.jpg') no-repeat scroll top left;
-      background-size: cover;
+      background-size: 100% 100%;
     }
     .text-wrapper {
-
+      height: 50%;
+      padding: 20px;
     }
 
     .button-wrapper {
+      height: 12%;
       text-align: center;
 
       .send-cv {
@@ -25,18 +30,19 @@
         color: white;
         text-transform: uppercase;
         text-decoration: none;
-        width: 15%;
-        height: 5%;
+        width: 50%;
+        height: 7%;
+        margin-left: 25%;
         &:hover {
-
+          background-color: lighten($main-text-color, 20);
         }
 
         &:focus {
-
+          background-color: lighten($main-text-color, 20);
         }
 
         &:active {
-
+          outline: none;
         }
       }
 

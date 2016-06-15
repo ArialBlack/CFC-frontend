@@ -1,5 +1,10 @@
 @mixin hideDesktopSections() {
   .loader {
+    display: none !important;
+  }
+
+
+  .top-story-section {
     display: none;
   }
 
@@ -7,15 +12,7 @@
     display: none;
   }
 
-  .top-story-section {
-    display: none;
-  }
-
   .services-section {
-    display: none;
-  }
-
-  .news-section {
     display: none;
   }
 
@@ -31,7 +28,9 @@
 @mixin showMain() {
   .main, #main {
     display: block;
-    height: 100vh;
+    overflow: scroll;
+    // height: 100vh;
+    //   min-height: 480px;
 
   }
 }

@@ -210,27 +210,6 @@ if ($lang == 'uk') {
             ?>
         </div>
 
-        <div class="mobile-news-section">
-
-        </div>
-
-        <div class="mobile-career-section">
-            <div class="photo-wrapper"></div>
-            <div class="text-wrapper">On the other hand, we denounce with righteous indignation and dislike men who are
-                so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail
-                in their duty through weakness of will, which is the same as saying through shrinking from toil and
-                pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
-                is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to
-                be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the
-                obligations of business it will frequently occur that pleasures have to be repudiated and annoyances
-                accepted. The wise man therefore always holds in these matters to this principle of selection: he
-                rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
-            </div>
-            <div class="button-wrapper">
-                <a href="#" class="send-cv">Send CV</a>
-            </div>
-        </div>
 
         <section class="top-story-section" id="top_story" data-scroll-index="0">
             <div class="logo-container">
@@ -316,6 +295,24 @@ if ($lang == 'uk') {
             ?>
 
         </section>
+
+        <div class="mobile-career-section">
+            <div class="photo-wrapper"></div>
+            <div class="text-wrapper">On the other hand, we denounce with righteous indignation and dislike men who are
+                so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail
+                in their duty through weakness of will, which is the same as saying through shrinking from toil and
+                pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
+                is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to
+                be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the
+                obligations of business it will frequently occur that pleasures have to be repudiated and annoyances
+                accepted. The wise man therefore always holds in these matters to this principle of selection: he
+                rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+            </div>
+            <div class="button-wrapper">
+                <a href="#" class="send-cv">Send CV</a>
+            </div>
+        </div>
 
         <section class="career-section" id="careers" data-scroll-index="4">
 

@@ -3,11 +3,102 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .contacts-section {
-    display: none;
-    padding-top: 10%;
+    box-sizing: border-box;
+    margin-top: 10%;
+    max-height: 730px;
+    padding-top: 0px;
+
+    .map {
+      height: 45%;
+      min-height: 220px;
+    }
     .contacts-tab {
-      height: 40%;
+      height: auto;
       padding: 0;
+
+      .nav-pills {
+        padding: 35px 5% 20px 11%;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+
+          &.active {
+            a {
+              color: white;
+              font-size: $fs-md;
+            }
+
+            .line {
+              display: block;
+            }
+          }
+
+          a {
+            display: inline-block;
+            text-decoration: none;
+            color: #536888;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+          }
+
+          .line {
+            display: none;
+            width: 20%;
+            margin-top: 10px;
+            border-bottom: 1px solid $white;
+          }
+        }
+      }
+
+      .tab-pane {
+        display: inline-block;
+        width: 100%;
+        margin-top: 0;
+
+        .contact-address {
+          width: 100%;
+          li {
+            display: block;
+            width: 100%;
+            margin-right: 15px;
+            padding: 15px 25% 0 25%;
+
+            .icon {
+              display: inline-block;
+              width: 20%;
+              height: 50px;
+              color: #ffffff;
+            }
+
+            .address-text {
+              display: inline-block;
+              width: 60%;
+            }
+
+            .pointer-icon {
+              background: url('../images/contacts/address-icon.png') no-repeat scroll left top;
+            }
+
+            .phone-icon {
+              background: url('../images/contacts/address-phone-icon.png') no-repeat scroll left top;
+            }
+
+            .email-address-icon {
+              background: url('../images/contacts/address-mail-icon.png') no-repeat scroll left top;
+            }
+          }
+        }
+      }
+
+      .fade {
+        display: none;
+      }
+
+      .in {
+        display: block;
+      }
+
     }
   }
 }

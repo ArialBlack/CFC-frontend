@@ -3,16 +3,14 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   @include mobileSections(block);
-  body {
-    overflow: auto;
-  }
+
   .mobile-navigation-section {
     box-sizing: border-box;
-    //position: fixed;
+    position: fixed;
     z-index: 50;
-    height: auto;
     width: 100%;
-    padding: 10% 10% 0 10%;
+    height: 10%;
+    padding: 8% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 0.6);
     .mobile-navigation {
@@ -36,7 +34,7 @@
       transition: 0.5s;
 
       &.active {
-        box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px -4px 20px -5px rgba(84, 84, 84, 1);
         width: 250px;
       }
       .top {
