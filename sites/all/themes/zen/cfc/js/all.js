@@ -566,10 +566,10 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
             }
 
             setTimeout(function () {
-                $('.loader').fadeOut(300);
+                $('.loader').fadeOut(1);
 
                 $('.navigation, #main').show();
-            }, 9700);
+            }, 9500);
 
 
 

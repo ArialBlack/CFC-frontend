@@ -1,5 +1,6 @@
 .contacts-section {
   width: 100%;
+  margin: 0 auto;
   height: 100%;
 
   padding-top: 220px;
@@ -12,7 +13,8 @@
 
 
   .contacts-tab {
-    height: 350px;
+    height: auto;
+    min-height: 350px;
     background-color: $contacts-bg;
     color: white;
     font-family: 'probaPro';

@@ -22,7 +22,7 @@ if ($lang == 'uk') {
         <div class="logo-container">
 
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="xMinYMin meet"
                  viewBox="0 0 427.7 270.5" style="enable-background:new 0 0 427.7 270.5;" xml:space="preserve">
 
                     <!--                    lines-->
@@ -217,6 +217,7 @@ if ($lang == 'uk') {
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 427.7 270.5" style="enable-background:new 0 0 427.7 270.5;" xml:space="preserve">
+
                     <!--                     logo-->
                     <g>
                         <path class="logo" d="M215.4,125.7h7.3l0.3-6.5h-8.1c-0.5-3-1.3-5.8-2.4-8.3h13c1.3-2.7,2.3-5,3.8-7h-30.1
@@ -250,6 +251,9 @@ if ($lang == 'uk') {
                             />
                     </g>
 
+
+
+
 </svg>
 
             </div>
@@ -267,10 +271,12 @@ if ($lang == 'uk') {
         </section>
 
         <section class="team-section" id="team" data-scroll-index="1">
-            <?php
-            $block = module_invoke('views', 'block_view', 'team-block');
-            print render($block['content']);
-            ?>
+            <div class="team-content-wrapper">
+                <?php
+                $block = module_invoke('views', 'block_view', 'team-block');
+                print render($block['content']);
+                ?>
+            </div>
         </section>
 
         <section class="services-section" id="services" data-scroll-index="2">

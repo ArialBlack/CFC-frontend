@@ -1,133 +1,144 @@
 
 .team-section {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
+  min-height: 700px;
   position: relative;
-  padding: 190px 90px 115px 90px;
+  .team-content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    padding: 180px 90px 115px 90px;
+    width: 100%;
+    max-width: 1280px;
 
-  .views-row {
-    width: 31.2%;
-    max-width: 360px;
-    height: 320px;
-    //background: grey;
-    display: inline-block;
-    margin: 10px 0px 10px 0px;
-
-    &:nth-child(3n+2) {
-      margin: 10px 30px 10px 30px;
-      // background: gray;
-    }
-    .views-field {
-      height: 100%;
-      min-width: 360px;
+    .views-row {
+      width: 31.2%;
       max-width: 360px;
+      height: 320px;
+      //background: grey;
+      display: inline-block;
+      margin: 10px 0px 10px 0px;
 
-      .field-content {
-        display: inline-block;
+      &:nth-child(3n+2) {
+        margin: 10px 30px 10px 30px;
+        // background: gray;
+      }
+      .views-field {
         height: 100%;
+        min-width: 360px;
+        max-width: 360px;
 
-        .member {
+        .field-content {
+          display: inline-block;
           height: 100%;
 
-          img {
-            max-width: inherit;
-            position: absolute;
-            z-index: -1;
-          }
-
-          .member-info-container {
-            position: relative;
-            padding-top: 50px;
-            display: block;
+          .member {
             height: 100%;
-            width: 100%;
-            min-width: 360px;
 
-            .member-info {
+            img {
+              max-width: inherit;
               position: absolute;
-              bottom: 0;
-              height: 20%;
-              background: $main-text-color;
-              color: transparent;
-              text-align: center;
-              text-decoration: none;
-              transition: all 0.6s;
+              z-index: -1;
+            }
 
-              .member-name {
-                a {
-                  letter-spacing: 2px;
-                  margin-bottom: 10px;
-                  color: white;
-                  text-decoration: none;
-                  transition: all 0.3s;
-                  font-size: 20px;
-                  font-weight: 200;
-                }
-              }
-              .role {
-                font-size: $fs-sm;
-                color: white;
-                font-weight: 200;
-              }
+            .member-info-container {
+              position: relative;
+              padding-top: 50px;
+              display: block;
+              height: 100%;
+              width: 100%;
+              min-width: 360px;
 
-              .title {
-                font-size: $fs-sm;
-                //color: white;
-              }
-
-              .member-quote {
-                font-size: 10px;
-                color: transparent;
-              }
-
-              .link {
+              .member-info {
                 position: absolute;
-                bottom: 5%;
-
-                display: inline-block;
-                width: 10%;
-                height: 5%;
-                text-decoration: none;
+                bottom: 0;
+                height: 20%;
+                background: $main-text-color;
                 color: transparent;
-                font-size: 20px;
-
-                a {
-                  display: none;
-                  width: 100%;
-                  height: 100%;
-                }
-                &.email {
-                  padding-left: 15px;
-                  left: 38%;
-                }
-
-                &.linkedin {
-                  padding-right: 15px;
-                  right: 38%;
-
-                }
-              }
-
-              &:hover {
-
-                height: 100%;
-                color: $white;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.6s;
 
                 .member-name {
-                  margin-top: 35px;
+                  a {
+                    letter-spacing: 2px;
+                    margin-bottom: 10px;
+                    color: white;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    font-size: 20px;
+                    font-weight: 200;
+                  }
+                }
+                .role {
+                  font-size: $fs-sm;
+                  color: white;
+                  font-weight: 200;
                 }
 
-                a {
-                  color: white;
+                .title {
+                  font-size: $fs-sm;
+                  //color: white;
                 }
 
                 .member-quote {
                   font-size: 10px;
-                  color: $main-bg-color;
-                  margin-top: 40px;
+                  color: transparent;
                 }
 
                 .link {
-                  color: white;
+                  position: absolute;
+                  bottom: 5%;
+
+                  display: inline-block;
+                  width: 10%;
+                  height: 5%;
+                  text-decoration: none;
+                  color: transparent;
+                  font-size: 20px;
+
+                  a {
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                  }
+                  &.email {
+                    padding-left: 15px;
+                    left: 38%;
+                  }
+
+                  &.linkedin {
+                    padding-right: 15px;
+                    right: 38%;
+
+                  }
+                }
+
+                &:hover {
+
+                  height: 100%;
+                  color: $white;
+
+                  .member-name {
+                    margin-top: 35px;
+                  }
+
+                  a {
+                    color: white;
+                  }
+
+                  .member-quote {
+                    font-size: 10px;
+                    color: $main-bg-color;
+                    margin-top: 40px;
+                  }
+
+                  .link {
+                    color: white;
+                  }
                 }
               }
             }

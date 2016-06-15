@@ -1,16 +1,17 @@
 .career-section {
-  height: auto;
+  height: 100vh;
+  width: 100%;
   min-height: 100vh;
 
-  background: url('../images/career/bg-1280.jpg') no-repeat scroll 28% 100%;
-  background-size: cover;
+  background: url('../images/career/background-full-hd.jpg') no-repeat scroll 28% 0%;
+  background-size: 100% 100%;
 
   article {
     width: 30%;
 
     float: right;
     color: $main-text-color;
-    padding: 155px 90px 0 0;
+    padding: 18vh 90px 0 0;
 
     h2 {
       a {
