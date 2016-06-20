@@ -1,20 +1,20 @@
 .contacts-section {
   width: 100%;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
 
-  padding-top: 220px;
-  #map {
+  padding-top: 30vh;
+  .map {
     width: 100%;
-    height: 350px;
+    height: 35vh;
+    max-height: 350px;
     margin: 0;
     padding: 0
   }
 
 
   .contacts-tab {
-    height: auto;
-    min-height: 350px;
+    height: 35vh;
     background-color: $contacts-bg;
     color: white;
     font-family: 'probaPro';
@@ -102,5 +102,4 @@
       display: block;
     }
   }
-
 }

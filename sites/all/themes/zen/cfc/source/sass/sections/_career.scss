@@ -8,7 +8,7 @@
 
   article {
     width: 30%;
-
+    height: auto;
     float: right;
     color: $main-text-color;
     padding: 18vh 90px 0 0;
@@ -101,5 +101,10 @@
     ul.links {
       display: none;
     }
+
+    &:after {
+      clear: both;
+    }
   }
+
 }

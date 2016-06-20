@@ -31,17 +31,15 @@
         };
 
         CFC.showModal = function (modalId) {
-            $('#' + modalId).modal('show');
+            $('#' + modalId).modal("show");
         };
 
         CFC.showItem = function (itemClass, currentItem, length) {
             if (currentItem === 1) {
                 $(itemClass + '-' + length).hide();
-                console.log('null');
             } else {
                 var previous = currentItem - 1;
                 $(itemClass + '-' + previous).hide();
-                console.log('not null');
             }
             $(itemClass + '-' + currentItem).fadeIn(600);
         };
@@ -59,7 +57,9 @@
         };
 
         $(document).ready(function () {
-
+            if ($(window).width() > 1000) {
+                $(".mobile-top-story-section").remove();
+            }
             //LOADER SETTINGS
             setTimeout(function () {
                 $('.logo, .line, .line-animated').show();
@@ -88,6 +88,7 @@
             });
 
             $('.services-link').on('click', function (e) {
+                e.preventDefault();
                 var modalId = $(this).attr('data-target');
                 setTimeout(function (e) {
                     CFC.showModal(modalId);
@@ -124,9 +125,6 @@
                 topOffset: 0           // offste (in px) for fixed top navigation
             });
 
-
         });
-
-
     });
 }(jQuery));
