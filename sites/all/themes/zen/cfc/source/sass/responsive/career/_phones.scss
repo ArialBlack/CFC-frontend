@@ -5,7 +5,7 @@
   .mobile-career-section {
     box-sizing: border-box;
     height: auto;
-    min-height: 100%;
+    min-height: 100vh;
     position: relative;
     margin-top: 10%;
 
@@ -27,6 +27,7 @@
       .send-cv {
         display: block;
         background: $main-text-color;
+        font-family: 'probaProSemibold';
         color: white;
         text-transform: uppercase;
         text-decoration: none;

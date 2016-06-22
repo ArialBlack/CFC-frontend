@@ -2,7 +2,171 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .team-section {
+    min-height: 100vh;
+    .team-content-wrapper {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 0%);
+      padding: 10vh 0px 0px 0px;
+      width: 100%;
+      max-width: 1280px;
 
+      .view-content {
+        height: 90vh;
+        .views-row {
+          width: 49.2%;
+          max-width: 360px;
+          height: 33vh;
+          //background: grey;
+          display: inline-block;
+          margin: 0px 0px 0px 0px;
+
+          &:nth-child(3n+2) {
+            margin: 0px 0px 0px 0px;
+            // background: gray;
+          }
+          .views-field {
+            height: 100%;
+            min-width: 0px;
+            max-width: 100%;
+
+            .field-content {
+              display: block;
+              height: 100%;
+
+              .member {
+                height: 100%;
+
+                img {
+                  max-width: inherit;
+                  position: absolute;
+                  z-index: -1;
+                  width: 49.2%;
+                  height: 25vh;
+                }
+
+                .member-info-container {
+                  position: relative;
+                  padding-top: 0%;
+                  display: block;
+                  height: 100%;
+                  width: 100%;
+                  min-width: 0px;
+
+                  .member-info {
+                    position: absolute;
+                    bottom: 0;
+                    height: 30%;
+                    width: 100%;
+                    background: $main-text-color;
+                    color: transparent;
+                    text-align: center;
+                    text-decoration: none;
+                    overflow: hidden;
+                    transition: height 0.6s;
+
+                    .member-name {
+                      height: 60%;
+                      margin-top: -8px;
+                      a {
+                        letter-spacing: 0.5px;
+                        margin-bottom: 2px;
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        font-size: 8px;
+                        font-weight: 200;
+                      }
+                    }
+                    .role {
+                      height: 35%;
+                      font-size: 8px;
+                      color: white;
+
+                      font-weight: 200;
+                      margin-top: 7px;
+                    }
+
+                    .title {
+                      font-size: 8px;
+                      //color: white;
+                    }
+
+                    .member-quote {
+                      font-size: 8px;
+                      color: transparent;
+                      transition: color 0.9s;
+                    }
+
+                    .link {
+                      position: absolute;
+                      bottom: 5%;
+
+                      display: inline-block;
+                      width: 10%;
+                      height: 5%;
+                      text-decoration: none;
+                      color: transparent;
+                      font-size: $fs-sm;
+                      transition: color 0.8s;
+
+                      a {
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      &.email {
+                        padding-left: 0px;
+                        left: 38%;
+                      }
+
+                      &.linkedin {
+                        padding-right: 0px;
+                        right: 38%;
+
+                      }
+                    }
+                  }
+
+                  &:hover {
+                    .member-info {
+                      height: 100%;
+                      color: $white;
+                      .member-name {
+                        height: 20%;
+                        margin-top: 20px;
+                      }
+
+                      a {
+                        color: white;
+                      }
+
+                      .role {
+                        height: 10%;
+                      }
+                      .member-quote {
+                        font-size: 7px;
+                        color: $main-bg-color;
+                        margin: 5px;
+                      }
+
+                      .link {
+                        color: white;
+                      }
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Portrait */
