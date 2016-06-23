@@ -13,9 +13,41 @@
     position: absolute;
     z-index: -1;
 
+    .top-story-line {
+      opacity: 1;
+      fill: none;
+      stroke: lighten($line-stroke, 10);
+      stroke-width: 0.25;
+      animation: linesOnLogo 1s infinite;
+    }
+
+    .line-animated {
+      opacity: 0.01;
+      fill: none;
+      stroke: lighten($main-text-color, 40%);
+      stroke-width: 0.75;
+      stroke-dasharray: 0 500;
+    }
+
+    .first {
+      animation: lineAnimation 3s infinite;
+    }
+
+    .second {
+      animation: lineAnimation 3s infinite 3.5s;
+    }
+
+    .third {
+      animation: lineAnimation 3s infinite 4s;
+    }
+
+    .fourth {
+      animation: lineAnimation 3s infinite 6s;
+    }
+
     .logo {
       fill: $main-text-color;
-  }
+    }
   }
 
   .competences {

@@ -80,19 +80,19 @@
   0% {
     stroke-dasharray: 10 500;
     stroke-dashoffset: 500;
-    stroke-width: 2.75;
+    stroke-width: 0.5;
     opacity: 0.5;
   }
 
   25% {
     stroke-dasharray: 10 625;
-    stroke-width: 2.5;
+    stroke-width: 0.5;
     opacity: 0.7;
   }
 
   50% {
     stroke-dasharray: 10 750;
-    stroke-width: 1.5;
+    stroke-width: 0.5;
     opacity: 0.7;
   }
 
@@ -140,6 +140,18 @@
   }
 }
 
+@keyframes linesOnLogo {
+  0% {
+    opacity: 0.9;
+  }
+
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes normalLineAnimation {
   0% {
     opacity: 0;
