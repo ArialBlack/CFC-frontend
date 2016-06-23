@@ -1,7 +1,7 @@
-/* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .contacts-section {
     position: relative;
     box-sizing: border-box;
@@ -106,61 +106,111 @@
   }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 491px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .contacts-section {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 10%;
+    padding-top: 0;
+    height: auto;
+    min-height: 100vh;
 
-}
+    .map {
+      height: 45vh;
+      min-height: 220px;
+    }
+    .contacts-tab {
+      height: auto;
+      min-height: 55vh;
+      padding: 0;
 
-/* ----------- iPhone 5 and 5S ----------- */
+      .nav-pills {
+        padding: 35px 5% 20px 33%;
+        li {
+          display: inline-block;
+          margin-right: 10px;
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+          &.active {
+            a {
+              color: white;
+              font-size: $fs-md;
+            }
 
-}
+            .line {
+              display: block !important;
+              width: 20%;
+              margin-top: 10px;
+              border-bottom: 1px solid $white;
+            }
+          }
 
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
+          a {
+            display: inline-block;
+            text-decoration: none;
+            color: #536888;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+          }
 
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          .line {
+            display: none;
+            width: 20%;
+            margin-top: 10px;
+            border-bottom: 1px solid $white;
+          }
+        }
+      }
 
-}
+      .tab-pane {
+        display: inline-block;
+        width: 100%;
+        margin-top: 0;
 
-/* ----------- iPhone 6 ----------- */
+        .contact-address {
+          width: 100%;
+          li {
+            display: block;
+            width: 100%;
+            margin-right: 15px;
+            padding: 15px 25% 0 33%;
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+            .icon {
+              display: inline-block;
+              width: 20%;
+              height: 50px;
+              color: #ffffff;
+            }
 
-}
+            .address-text {
+              display: inline-block;
+              width: 60%;
+            }
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+            .pointer-icon {
+              background: url('../images/contacts/address-icon.png') no-repeat scroll left top;
+            }
 
-}
+            .phone-icon {
+              background: url('../images/contacts/address-phone-icon.png') no-repeat scroll left top;
+            }
 
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            .email-address-icon {
+              background: url('../images/contacts/address-mail-icon.png') no-repeat scroll left top;
+            }
+          }
+        }
+      }
 
-}
+      .fade {
+        display: none;
+      }
 
-/* ----------- iPhone 6+ ----------- */
+      .in {
+        display: block;
+      }
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-
+    }
+  }
 }
