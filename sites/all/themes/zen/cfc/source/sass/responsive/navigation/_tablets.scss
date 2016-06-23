@@ -1,48 +1,299 @@
-/* ----------- iPad mini ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
+/* ----------- iPad  ----------- */
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  @include mobileSections(block);
 
-}
+  .mobile-navigation-section {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 7%;
+    padding: 3% 10% 0 10%;
+    color: $main-text-color;
+    background: rgba(255, 255, 255, 0.6);
+    .mobile-navigation {
+      @include menuIcon(16px);
 
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+      .mobile-menu {
+        color: $main-text-color;
+        text-decoration: none;
+      }
+    }
 
-}
+    .side-nav-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 60;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
 
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+      &.active {
+        box-shadow: 10px -4px 20px -5px rgba(84, 84, 84, 1);
+        width: 250px;
+      }
+      .top {
+        height: auto;
+        min-height: 10%;
+        padding: 12.5% 7% 2% 7%;
+        border-bottom: 1px solid $main-text-color;
 
-}
+        .title {
+          padding-left: 25%;
+          display: inline-block;
+          width: 84%;
+          font-size: 20px;
+          font-weight: 100;
+        }
 
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+        .arrow-close {
+          display: inline-block;
+          float: right;
+          width: 15%;
+          height: 20px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
 
-}
+      .content {
+        height: auto;
+        min-height: 20%;
+        padding: 20% 7% 7% 32%;
+        text-align: left;
+        .side-nav-menu-list {
+          li > a {
+            display: block;
+            text-decoration: none;
+            color: $main-text-color;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 20px 0 0 0;
 
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+          }
+        }
 
-}
+        .language-switcher-locale-url {
+          width: 100%;
+          margin-top: 20%;
+          li {
+            list-style: none;
+            display: inline-block;
+            color: $icon-color;
+            margin-right: 15px;
+            a {
+              text-decoration: none;
+              color: $icon-color;
+              transition: 0.3s;
+              font-family: 'probaPro';
+              font-weight: 600;
 
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+              &:hover {
+                color: $icon-hover-color;
+              }
 
-}
+              &.active {
+                color: $icon-hover-color;
+              }
+            }
 
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+          }
+        }
+      }
 
+      .social-icons {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 10vh;
+        padding: 0 30% 0 0;
+        margin-top: -7%;
+
+        .icon-bar > li {
+          margin-top: 10%;
+          display: inline-block;
+          list-style: none;
+          float: right;
+          margin-left: 12px;
+          a {
+            font-size: 16px;
+            color: $icon-color;
+            transition: 0.3s;
+
+            &:hover {
+              color: $icon-hover-color;
+            }
+          }
+        }
+      }
+
+      .footer {
+        height: auto;
+        min-height: 10%;
+        border-top: 1px solid $main-text-color;
+        .phone {
+          background: transparent url('../images/topStory/phone_icon.png') no-repeat scroll top left;
+          width: 20px;
+          height: 20px;
+          margin: 10% 0 0 45%;
+        }
+      }
+    }
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  @include mobileSections(block);
 
+  .mobile-navigation-section {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 10%;
+    padding: 3% 10% 0 10%;
+    color: $main-text-color;
+    background: rgba(255, 255, 255, 0.6);
+    .mobile-navigation {
+      @include menuIcon(16px);
+
+      .mobile-menu {
+        color: $main-text-color;
+        text-decoration: none;
+      }
+    }
+
+    .side-nav-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 60;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+
+      &.active {
+        box-shadow: 10px -4px 20px -5px rgba(84, 84, 84, 1);
+        width: 250px;
+      }
+      .top {
+        height: auto;
+        min-height: 10%;
+        padding: 12.5% 7% 2% 7%;
+        border-bottom: 1px solid $main-text-color;
+
+        .title {
+          padding-left: 25%;
+          display: inline-block;
+          width: 84%;
+          font-size: 20px;
+          font-weight: 100;
+        }
+
+        .arrow-close {
+          display: inline-block;
+          float: right;
+          width: 15%;
+          height: 20px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .content {
+        height: auto;
+        min-height: 20%;
+        padding: 20% 7% 7% 32%;
+        text-align: left;
+        .side-nav-menu-list {
+          li > a {
+            display: block;
+            text-decoration: none;
+            color: $main-text-color;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 20px 0 0 0;
+
+          }
+        }
+
+        .language-switcher-locale-url {
+          width: 100%;
+          margin-top: 20%;
+          li {
+            list-style: none;
+            display: inline-block;
+            color: $icon-color;
+            margin-right: 15px;
+            a {
+              text-decoration: none;
+              color: $icon-color;
+              transition: 0.3s;
+              font-family: 'probaPro';
+              font-weight: 600;
+
+              &:hover {
+                color: $icon-hover-color;
+              }
+
+              &.active {
+                color: $icon-hover-color;
+              }
+            }
+
+          }
+        }
+      }
+
+      .social-icons {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 10vh;
+        padding: 0 30% 0 0;
+        margin-top: -7%;
+
+        .icon-bar > li {
+          margin-top: 10%;
+          display: inline-block;
+          list-style: none;
+          float: right;
+          margin-left: 12px;
+          a {
+            font-size: 16px;
+            color: $icon-color;
+            transition: 0.3s;
+
+            &:hover {
+              color: $icon-hover-color;
+            }
+          }
+        }
+      }
+
+      .footer {
+        height: auto;
+        min-height: 10%;
+        border-top: 1px solid $main-text-color;
+        .phone {
+          background: transparent url('../images/topStory/phone_icon.png') no-repeat scroll top left;
+          width: 20px;
+          height: 20px;
+          margin: 10% 0 0 45%;
+        }
+      }
+    }
+  }
 }

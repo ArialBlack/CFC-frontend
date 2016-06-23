@@ -195,6 +195,17 @@ if ($lang == 'uk') {
 
                         <?php print render($page['header']); ?>
                     </div>
+                    <div class="social-icons">
+                        <!-- Icon Bar -->
+                        <ul class="icon-bar">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                        </ul>
+                        <!-- Icon Bar -->
+                    </div>
                     <div class="footer">
                         <div class="phone"></div>
                     </div>
@@ -203,12 +214,12 @@ if ($lang == 'uk') {
             </nav>
         </div>
 
-        <div class="mobile-top-story-section">
+        <section class="mobile-top-story-section">
             <?php
             $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
             print render($block['content']);
             ?>
-        </div>
+        </section>
 
 
         <section class="top-story-section" id="top_story" data-scroll-index="0">
@@ -302,7 +313,7 @@ if ($lang == 'uk') {
 
         </section>
 
-        <div class="mobile-career-section">
+        <section class="mobile-career-section">
             <div class="photo-wrapper"></div>
             <div class="text-wrapper">On the other hand, we denounce with righteous indignation and dislike men who are
                 so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
@@ -318,7 +329,7 @@ if ($lang == 'uk') {
             <div class="button-wrapper">
                 <a href="#" class="send-cv">Send CV</a>
             </div>
-        </div>
+        </section>
 
         <section class="career-section" id="careers" data-scroll-index="4">
 

@@ -1,48 +1,86 @@
-/* ----------- iPad mini ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
+/* ----------- iPad  ----------- */
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-top-story-section {
+    height: 100%;
+    padding-top: 20%;
+    .view-display-id-block_2 {
+      height: 100vh;
+      max-height: 730px;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.7%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 30% 0 0 5%;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
 
-}
+            &:hover {
+              background: #e9eaec;
+              a {
+                color: $main-text-color;
+              }
+            }
 
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-
+            @include tabletModal();
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-top-story-section {
+    height: 100%;
+    padding-top: 15%;
+    .view-display-id-block_2 {
+      height: 100vh;
+      max-height: 730px;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.7%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 20% 0 0 0;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
 
+            @include tabletModal();
+          }
+        }
+      }
+    }
+  }
 }

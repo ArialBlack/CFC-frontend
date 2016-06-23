@@ -30,7 +30,64 @@
       <?php print $feed_icons; ?>
     </div>
 
-    <div id="navigation">
+      <div class="mobile-navigation-section">
+          <nav class="mobile-navigation">
+              <div class="menu-icon" id="mobile_menu_icon">
+                  <span class="line first"></span>
+                  <span class="line second"></span>
+                  <span class="line third"></span>
+              </div>
+
+              <a href="#" class="mobile-menu uppercase" id="mobile_menu">Main</a>
+
+              <div id="side_nav_menu" class="side-nav-menu">
+                  <div class="top">
+                      <span class="title uppercase">Main</span>
+                    <span class="arrow-close" id="close_mobile_menu">
+                        <i class="fa fa-arrow-left"></i>
+                    </span>
+                  </div>
+                  <div class="content">
+                      <?php
+                      // This code snippet is hard to modify. We recommend turning off the
+                      // "Main menu" on your sub-theme's settings form, deleting this PHP
+                      // code block, and, instead, using the "Menu block" module.
+                      // @see https://drupal.org/project/menu_block
+                      print theme('links__system_main_menu', array(
+                          'links' => $main_menu,
+                          'attributes' => array(
+                              'class' => array('side-nav-menu-list', 'uppercase'),
+                          ),
+                          'heading' => array(
+                              'text' => t('Main menu'),
+                              'level' => 'h2',
+                              'class' => array('element-invisible'),
+                          ),
+                      )); ?>
+
+                      <?php print render($page['header']); ?>
+                  </div>
+                  <div class="social-icons">
+                      <!-- Icon Bar -->
+                      <ul class="icon-bar">
+                          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                      </ul>
+                      <!-- Icon Bar -->
+                  </div>
+                  <div class="footer">
+                      <div class="phone"></div>
+                  </div>
+              </div>
+
+          </nav>
+      </div>
+
+
+      <div id="navigation">
 
       <?php if ($main_menu): ?>
         <nav class="navigation">

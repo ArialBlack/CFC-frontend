@@ -1,8 +1,9 @@
 
 .team-section {
   height: 100vh;
+  min-height: 768px;
+  max-height: 1024px;
   width: 100%;
-  min-height: 700px;
   position: relative;
   .team-content-wrapper {
     position: absolute;
@@ -10,7 +11,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0%);
-    padding: 180px 90px 115px 90px;
+    padding: 12vh 90px 115px 90px;
     width: 100%;
     max-width: 1280px;
 

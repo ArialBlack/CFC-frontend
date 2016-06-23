@@ -57,7 +57,7 @@
         };
 
         $(document).ready(function () {
-            if ($(window).width() > 1000) {
+            if ($(window).width() > 1279) {
                 $(".mobile-top-story-section").remove();
             }
             //LOADER SETTINGS

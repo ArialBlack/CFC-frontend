@@ -1,65 +1,94 @@
-/* ----------- iPhone 4 and 4S ----------- */
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
+  @include showMain();
+  @include mobileSections(block);
+  .section-mission {
+    background: url('../images/whoWeAre/team.jpg') no-repeat fixed 110% -100%;
+    background-size: 146% 90%;
+    .news-feed {
+      height: auto;
+      min-height: 100vh;
+      background: rgba(192, 192, 192, 0.7);
+      padding: 10%;
 
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      p {
+        display: inline-block;
+        width: 100%;
+        color: $main-text-color;
+        text-shadow: black;
+        padding: 15% 45px 0 0;
 
-}
+        .title {
+          font-family: 'probaPro';
+          font-weight: 400;
+          letter-spacing: 2px;
+          margin: 20px 0px 10px 0px;
+        }
 
-/* ----------- iPhone 5 and 5S ----------- */
+        .line {
+          display: block;
+          border-bottom: 4px solid $main-text-color;
+          width: 8%;
+          margin-top: 5px;
+        }
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        .regular-text {
+          margin-top: 20px;
+        }
+      }
 
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      .links {
+        display: none;
+      }
+    }
+  }
 
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  @include showMain();
+  @include mobileSections(block);
+  .section-mission {
+    background: url('../images/whoWeAre/team.jpg') no-repeat fixed 110% -100%;
+    background-size: 146% 90%;
+    .news-feed {
+      height: auto;
+      min-height: 100vh;
+      background: rgba(192, 192, 192, 0.7);
+      padding: 10%;
 
+      p {
+        display: inline-block;
+        width: 100%;
+        color: $main-text-color;
+        text-shadow: black;
+        padding: 15% 45px 0 0;
+
+        .title {
+          font-family: 'probaPro';
+          font-weight: 400;
+          letter-spacing: 2px;
+          margin: 20px 0px 10px 0px;
+        }
+
+        .line {
+          display: block;
+          border-bottom: 4px solid $main-text-color;
+          width: 8%;
+          margin-top: 5px;
+        }
+
+        .regular-text {
+          margin-top: 20px;
+        }
+      }
+
+      .links {
+        display: none;
+      }
+    }
+  }
 }

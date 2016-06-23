@@ -1,48 +1,103 @@
-/* ----------- iPad mini ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
+/* ----------- iPad  ----------- */
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-career-section {
+    box-sizing: border-box;
+    height: auto;
+    min-height: 50vh;
+    position: relative;
+    margin-top: 10%;
 
-}
+    .photo-wrapper {
+      height: 20%;
+      min-height: 320px;
+      background: transparent url('../images/career/bg-tablet.jpg') no-repeat scroll top left;
+      background-size: 100% 100%;
+    }
+    .text-wrapper {
+      height: 50%;
+      padding: 5%;
+    }
 
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .button-wrapper {
+      height: 12%;
+      text-align: center;
 
-}
+      .send-cv {
+        display: block;
+        background: $main-text-color;
+        font-family: 'probaProSemibold';
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 50%;
+        height: 7%;
+        margin-left: 25%;
+        &:hover {
+          background-color: lighten($main-text-color, 20);
+        }
 
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        &:focus {
+          background-color: lighten($main-text-color, 20);
+        }
 
-}
+        &:active {
+          outline: none;
+        }
+      }
 
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-
+    }
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-career-section {
+    box-sizing: border-box;
+    height: auto;
+    min-height: 50vh;
+    position: relative;
+    margin-top: 10%;
 
+    .photo-wrapper {
+      height: 20%;
+      min-height: 400px;
+      background: transparent url('../images/career/bg-tablet.jpg') no-repeat scroll top left;
+      background-size: 100% 100%;
+    }
+    .text-wrapper {
+      height: 50%;
+      padding: 5%;
+    }
+
+    .button-wrapper {
+      height: 12%;
+      text-align: center;
+
+      .send-cv {
+        display: block;
+        background: $main-text-color;
+        font-family: 'probaProSemibold';
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 50%;
+        height: 7%;
+        margin-left: 25%;
+        &:hover {
+          background-color: lighten($main-text-color, 20);
+        }
+
+        &:focus {
+          background-color: lighten($main-text-color, 20);
+        }
+
+        &:active {
+          outline: none;
+        }
+      }
+
+    }
+  }
 }
