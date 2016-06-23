@@ -1,7 +1,7 @@
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .mobile-top-story-section {
     height: 100%;
     padding-top: 20%;
@@ -163,66 +163,153 @@
       }
     }
   }
-
-
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .mobile-top-story-section {
+    height: 100%;
+    padding-top: 15%;
+    .view-display-id-block_2 {
+      height: 100vh;
+      max-height: 730px;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.3%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 20% 0 0 0;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
+  .mobile-top-story-section {
+    height: 100%;
+    padding-top: 15%;
+    .view-display-id-block_2 {
+      height: 100vh;
+      max-height: 730px;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.3%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 15% 0 0 0;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-
+  .mobile-top-story-section {
+    height: 100%;
+    padding-top: 15%;
+    .view-display-id-block_2 {
+      height: 100vh;
+      max-height: 730px;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.3%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 15% 0 0 0;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-
-}
 
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-
+  .mobile-top-story-section {
+    height: 100%;
+    padding-top: 15%;
+    .view-display-id-block_2 {
+      height: 100vh;
+      max-height: 730px;
+      .view-content {
+        height: 100%;
+        .competences {
+          height: 100%;
+          li {
+            vertical-align: top;
+            display: inline-block;
+            width: 49.3%;
+            height: 32.5%;
+            cursor: pointer;
+            background: $main-text-color;
+            border: 1px solid #e9eaec;;
+            a {
+              display: block;
+              height: 100%;
+              padding: 20% 0 0 0;
+              color: white;
+              text-decoration: none;
+              text-align: center;
+              font-family: "probaPro";
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
 }
