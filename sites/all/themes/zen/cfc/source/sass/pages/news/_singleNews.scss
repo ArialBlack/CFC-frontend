@@ -7,56 +7,7 @@
   max-height: 100%;
   color: #a6a69d;
   font-family: 'probaPro';
-  //.text-wrapper {
-  //  display: inline-block;
-  //  width: 38%;
-  //  color: $main-text-color;
-  //  padding: 115px 90px 0px 90px;
-  //
-  //
-  //  .title {
-  //    font-family: 'probaPro';
-  //    font-weight: 400;
-  //    letter-spacing: 2px;
-  //    margin: 20px 0px 10px 0px;
-  //  }
-  //
-  //  .line {
-  //    display: block;
-  //    border-bottom: 4px solid $main-text-color;
-  //    width: 8%;
-  //    margin-top: 10px;
-  //  }
-  //
-  //  .regular-text {
-  //    margin-top: 20px;
-  //  }
-  //
-  //  .links {
-  //    list-style: none;
-  //    text-align: center;
-  //    margin-top: 80px;
-  //
-  //    li {
-  //      display: inline-block;
-  //
-  //      &:first-child {
-  //        float: left;
-  //        text-align: left;
-  //      }
-  //
-  //      &:last-child {
-  //        float: right;
-  //        text-align: right;
-  //      }
-  //
-  //      a {
-  //        display: inline-block;
-  //        width: 20px;
-  //        height: 20px;
-  //        color: $main-text-color;
-  //        transition: color 0.3s;
-  //
+
   &.next {
     color: $main-text-color;
     background: url('../images/icons/next.png') no-repeat scroll center center;
