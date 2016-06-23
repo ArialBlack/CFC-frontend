@@ -78,13 +78,32 @@
 
 @keyframes lineAnimation {
   0% {
-    stroke-dasharray: 60 500;
+    stroke-dasharray: 10 500;
     stroke-dashoffset: 500;
-    stroke-width: 0.75;
+    stroke-width: 2.75;
+    opacity: 0.5;
+  }
+
+  25% {
+    stroke-dasharray: 10 625;
+    stroke-width: 2.5;
+    opacity: 0.7;
+  }
+
+  50% {
+    stroke-dasharray: 10 750;
+    stroke-width: 1.5;
+    opacity: 0.7;
+  }
+
+  75% {
+    stroke-dasharray: 20 875;
+    stroke-width: 0.5;
     opacity: 1;
   }
+
   100% {
-    stroke-dasharray: 60 1000;
+    stroke-dasharray: 10 1000;
     stroke-dashoffset: 300;
     stroke-width: 0.75;
     opacity: 1;
