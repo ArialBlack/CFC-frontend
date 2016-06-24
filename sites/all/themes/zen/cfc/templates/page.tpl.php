@@ -104,7 +104,7 @@
                 <span class="line second"></span>
                 <span class="line third"></span>
               </div>
-                <a href="#" class="dropdown uppercase">Menu</a>
+                <a href="#" class="dropdown uppercase" id="menu_dropdown">Menu</a>
               <?php
               // This code snippet is hard to modify. We recommend turning off the
               // "Main menu" on your sub-theme's settings form, deleting this PHP

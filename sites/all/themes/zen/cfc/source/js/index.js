@@ -10,16 +10,19 @@
         CFC.showMenuDropdown = function () {
             $("#menu_dropdown_content").toggleClass("show");
             $(".menu-icon").toggleClass('active');
+            $('.navigation').toggleClass('overlay');
         };
 
         CFC.hideMenuDropdown = function () {
             $("#menu_dropdown_content").removeClass("show");
             $(".menu-icon").toggleClass('active');
+            $('.navigation').toggleClass('overlay');
         };
 
         CFC.showMenuDropdownEnterEvent = function () {
             $("#menu_dropdown_content").addClass("show");
             $(".menu-icon").toggleClass('active');
+            $('.navigation').toggleClass('overlay');
         };
 
         CFC.headerBg = function (pageIndex) {
