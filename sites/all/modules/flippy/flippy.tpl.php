@@ -41,6 +41,7 @@
         <?php print l($link['title'], $link['href'], array('html' => TRUE, 'attributes' => array('title' => $link['title']))); ?>
       <?php endif; ?>
     </li>
+    <li class="mainpage-link"><a href="/" title="Main Page"></a></li>
   <?php endforeach; ?>
 </ul>
 
