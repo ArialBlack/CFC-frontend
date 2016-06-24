@@ -51,13 +51,14 @@ Position	field_position
     hide($content['links']);
    ?> 
    
-  ---
     <div>
         <?php print render($content['field_image']);?>
     </div>
   
     <div>
-        <?php print $title; ?>
+        <h2><?php print $title; ?></h2>
+        
+        <?php print render($content['field_tags']);?>
   
         <?php print render($content['field_position']);?>
   
@@ -67,6 +68,8 @@ Position	field_position
   
         <?php print render($content['body']);?>
   </div>
+  
+  <?php print render($content);?>
 
   <?php print render($content['links']); ?>
 
