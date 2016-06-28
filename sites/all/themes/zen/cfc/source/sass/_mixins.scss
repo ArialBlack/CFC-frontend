@@ -5,15 +5,15 @@
 
 
   .top-story-section {
-    display: none;
+    display: none !important;
   }
 
   .services-section {
-    display: none;
+    display: none !important;
   }
 
   .career-section {
-    display: none;
+    display: none !important;
   }
 
   nav.navigation {
@@ -24,8 +24,9 @@
 @mixin showMain() {
   .main, #main {
     display: block;
+    visibility: visible;
     overflow: scroll;
-    // height: 100vh;
+    height: 100vh;
     //   min-height: 480px;
 
   }
@@ -329,5 +330,19 @@
   .modal-backdrop.in {
     opacity: 0;
     position: relative;
+  }
+}
+
+@mixin showHiddenSections() {
+  .team-section {
+    display: block !important;
+  }
+
+  .news-section {
+    display: block !important;
+  }
+
+  .contacts-section {
+    display: block !important;
   }
 }

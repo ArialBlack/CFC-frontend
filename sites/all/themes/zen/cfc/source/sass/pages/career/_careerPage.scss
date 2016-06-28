@@ -1,4 +1,7 @@
 .section-idea {
+  .navigation {
+    background: transparent;
+  }
   .news-feed {
     height: 100vh;
     width: 100%;
@@ -22,6 +25,10 @@
           text-decoration: none;
           display: block;
         }
+      }
+
+      .field-name-body {
+        font-family: 'probaProSemibold';
       }
       span.rdf-mta {
         display: block;

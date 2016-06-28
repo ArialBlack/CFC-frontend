@@ -9,12 +9,42 @@ a {
 
 @include mobileSections(none);
 
-.navigation, #main {
+.navigation {
   display: none;
 }
 
+#main {
+  visibility: hidden;
+
+  .top-story-section {
+    display: none;
+  }
+
+  .team-section {
+    display: none;
+  }
+
+  .services-section {
+    display: none;
+  }
+
+  .news-section {
+    display: none;
+  }
+  .career-section {
+    display: none;
+  }
+
+  .contacts-section {
+    display: none;
+  }
+
+}
+
 .main {
-  height: 100%;
+  height: 1px;
+
+  // min-height: 100vh;
 }
 
 div, span {
@@ -25,12 +55,21 @@ div, span {
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-  min-height: 700px;
-  position: absolute;
+  // min-height: 700px;
+  position: relative;
   z-index: 550;
+  margin: 0 auto;
+  background-color: transparent;
+
   .logo-container {
     height: 100%;
     width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
     .line {
       opacity: 0.01;

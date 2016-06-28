@@ -54,6 +54,7 @@
 
               .member-info {
                 position: absolute;
+                overflow: hidden;
                 bottom: 0;
                 height: 20%;
                 background: $main-text-color;
@@ -85,6 +86,7 @@
                 }
 
                 .member-quote {
+                  font-family: 'probaProItalic';
                   font-size: 10px;
                   color: transparent;
                 }
@@ -113,7 +115,6 @@
                   &.linkedin {
                     padding-right: 15px;
                     right: 38%;
-
                   }
                 }
 
@@ -123,7 +124,7 @@
                   color: $white;
 
                   .member-name {
-                    margin-top: 35px;
+                    margin-top: 10vh;
                   }
 
                   a {

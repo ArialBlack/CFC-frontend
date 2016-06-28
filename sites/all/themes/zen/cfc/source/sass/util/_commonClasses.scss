@@ -1,3 +1,23 @@
 .overlay {
   height: 100vh !important;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.softly-hidden {
+  // animation: softHideAnimation 1s linear;
+  .globe, .meridian, .line, .line-animated {
+    //opacity: 0.01;
+    //fill: none;
+    //stroke: #fff;
+    //stroke-width: 0;
+    // visibility: hidden;
+  }
+  // display: none;
+  z-index: -10;
+  //  position: absolute;
+  //height:0;
+}
+
+.softly-show {
+  //  animation: softShowAnimation 1s linear;
 }

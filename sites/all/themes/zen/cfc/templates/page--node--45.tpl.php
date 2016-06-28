@@ -408,7 +408,7 @@ if ($lang == 'uk') {
                                 Kyiv, 01001, Ukraine
                             </span></li>
                                 <li><span class="icon phone-icon"></span> <span class="address-text">
-                                Tel.: +380 (044) 492-75-99 <br>
+                                Tel.: +380 (44) 492-75-99 <br>
                                 Fax: +380 (44) 278-39-07
                                 </span>
                                 </li>

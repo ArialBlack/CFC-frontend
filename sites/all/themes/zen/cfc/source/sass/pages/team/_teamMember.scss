@@ -111,9 +111,32 @@
       }
 
       .flippy {
+        color: $main-text-color;
+        margin-top: 2vh;
         margin-left: 48%;
-      }
+        .prev {
+          a {
+            background: url('../images/icons/previous.png') no-repeat scroll center center;
+            color: transparent;
+          }
+        }
+        .mainpage-link {
+          background: url('../images/icons/close.png') no-repeat scroll center center;
+          color: transparent;
+          margin-right: 10px;
+        }
 
+        .mainpage-link:last-child {
+          display: none;
+        }
+
+        .next {
+          a {
+            background: url('../images/icons/next.png') no-repeat scroll center center;
+            color: transparent;
+          }
+        }
+      }
       .links {
         display: none;
       }

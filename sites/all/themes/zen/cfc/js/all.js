@@ -2848,7 +2848,7 @@ if (typeof jQuery === 'undefined') {
             }, 10000);
 
         } catch (err) {
-            console.log(err);
+            console.log('Map is not allowed on this page');
         }
     });
 }(jQuery));
@@ -2862,22 +2862,13 @@ if (typeof jQuery === 'undefined') {
 
         var CFC = {};
         CFC.showMenuDropdown = function () {
+
+            $('.navigation').toggleClass('overlay');
             $("#menu_dropdown_content").toggleClass("show");
             $(".menu-icon").toggleClass('active');
-          $('.navigation').toggleClass('overlay');
+
         };
 
-        CFC.hideMenuDropdown = function () {
-            $("#menu_dropdown_content").removeClass("show");
-            $(".menu-icon").toggleClass('active');
-          $('.navigation').toggleClass('overlay');
-        };
-
-        CFC.showMenuDropdownEnterEvent = function () {
-            $("#menu_dropdown_content").addClass("show");
-            $(".menu-icon").toggleClass('active');
-          $('.navigation').toggleClass('overlay');
-        };
 
         CFC.headerBg = function (pageIndex) {
             if (pageIndex == 4) {
@@ -2914,32 +2905,39 @@ if (typeof jQuery === 'undefined') {
         };
 
         $(document).ready(function () {
-          if ($(window).width() > 1279) {
+            if ($(window).width() > 1279) {
                 $(".mobile-top-story-section").remove();
             }
             //LOADER SETTINGS
             setTimeout(function () {
                 $('.logo, .line, .line-animated').show();
             }, 4000);
-            if (!$('.loader').css('display')) {
-                $('.navigation, #main').show();
+            if ($('.loader').css('display') == 'none') {
+                $('.navigation, .team-section, .services-section, .news-section, .career-section, .contacts-section').show();
+
+                $('#main').css('visibility', 'visible');
             }
 
             setTimeout(function () {
-                $('.loader').fadeOut(1);
+                $(".loader").addClass('softly-hidden');
+            }, 8600);
 
-                $('.navigation, #main').show();
-            }, 9500);
+            setTimeout(function () {
+                $('.navigation, .top-story-section, .team-section, .services-section, .news-section, .career-section, .contacts-section').css('display', 'block');
 
+                $('#main').css('visibility', 'visible');
 
+            }, 9400);
+
+            setTimeout(function () {
+                $(".loader").fadeOut(100);
+                //   $('.loader').css('transition','all, 0s').css('display', 'none');
+            }, 9400);
 
             $("#menu_dropdown, .menu-icon").on('click', function () {
                 CFC.showMenuDropdown()
             });
 
-            $("#menu_dropdown, .menu-icon").on('mouseenter', function () {
-                CFC.showMenuDropdownEnterEvent()
-            });
             $("#menu_dropdown_content").on('mouseleave', function () {
                 CFC.hideMenuDropdown()
             });

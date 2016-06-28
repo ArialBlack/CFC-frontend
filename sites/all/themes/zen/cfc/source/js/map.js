@@ -148,7 +148,7 @@
             }, 10000);
 
         } catch (err) {
-            console.log(err);
+            console.log('Map is not allowed on this page');
         }
     });
 }(jQuery));

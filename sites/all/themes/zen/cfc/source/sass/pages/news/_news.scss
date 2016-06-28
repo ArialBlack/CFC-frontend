@@ -87,11 +87,14 @@
           }
 
           p {
+            font-family: 'probaProSemibold';
             font-size: $fs-sm;
             line-height: 150%;
-            &:hover {
+          }
 
-              text-decoration: underline;
+          .content-wrapper {
+            a {
+              font-family: 'probaProSemibold';
             }
           }
 
