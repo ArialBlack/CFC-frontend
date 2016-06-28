@@ -21,6 +21,20 @@
         color: $main-text-color;
         text-decoration: none;
       }
+
+      .logo-container {
+        display: inline-block;
+        height: 50px;
+        width: 73%;
+        svg {
+          height: 115px;
+          width: 100%;
+          margin-top: -10%;
+          .logo {
+            fill: $main-text-color;
+          }
+        }
+      }
     }
 
     .side-nav-menu {
@@ -169,6 +183,20 @@
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+      }
+
+      .logo-container {
+        display: inline-block;
+        height: 50px;
+        width: 73%;
+        svg {
+          height: 140px;
+          width: 115%;
+          margin-top: -10%;
+          .logo {
+            fill: $main-text-color;
+          }
+        }
       }
     }
 

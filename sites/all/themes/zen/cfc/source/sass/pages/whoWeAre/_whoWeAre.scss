@@ -13,27 +13,44 @@
 
     }
     p {
-      display: inline-block;
+      font-family: 'probaProSemibold';
+      display: block;
       width: 35%;
       color: $main-text-color;
       padding: 0 45px 0 0px;
 
-      .title {
+      &:first-child {
         font-family: 'probaPro';
+        font-size: $fs-md;
         font-weight: 400;
         letter-spacing: 2px;
-        margin: 20px 0px 10px 0px;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+
+        &:after {
+          content: '';
+          display: block;
+          border-bottom: 4px solid $main-text-color;
+          width: 8%;
+          margin-top: 5px;
+        }
       }
 
-      .line {
-        display: block;
-        border-bottom: 4px solid $main-text-color;
-        width: 8%;
-        margin-top: 5px;
-      }
+      &:nth-child(3n) {
+        font-family: 'probaPro';
+        font-size: $fs-md;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
 
-      .regular-text {
-        margin-top: 20px;
+        &:after {
+          content: '';
+          display: block;
+          border-bottom: 4px solid $main-text-color;
+          width: 8%;
+          margin-top: 5px;
+        }
       }
     }
 

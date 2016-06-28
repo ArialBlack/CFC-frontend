@@ -1,0 +1,50 @@
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+  .mobile-intro-section {
+    position: relative;
+    //margin: 0 auto;
+    min-height: 100vh;
+    margin-top: 50%;
+    .logo-container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      svg {
+        fill: white;
+        opacity: 1;
+
+        .line {
+          opacity: 1;
+          fill: none;
+          stroke: $main-text-color;
+        }
+        .logo {
+          opacity: 1;
+          fill: $main-text-color;
+        }
+      }
+
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .mobile-intro-section {
+    height: 100vh;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 491px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .mobile-intro-section {
+    height: 100vh;
+  }
+}

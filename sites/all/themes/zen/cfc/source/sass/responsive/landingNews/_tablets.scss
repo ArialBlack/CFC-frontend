@@ -6,7 +6,6 @@
     min-height: 100%;
     height: auto;
     padding: 0;
-    margin-top: 15%;
 
     .news-item {
       width: 100%;
@@ -133,7 +132,6 @@
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .news-section {
-    min-height: 100%;
     height: auto;
     padding: 0;
     margin-top: 18%;

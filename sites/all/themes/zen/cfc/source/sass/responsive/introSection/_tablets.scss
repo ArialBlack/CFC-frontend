@@ -1,0 +1,129 @@
+/* ----------- iPad  ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-intro-section {
+    position: relative;
+    //margin: 0 auto;
+    min-height: 40vh;
+    margin-top: 0;
+    .logo-container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      svg {
+        fill: white;
+        opacity: 1;
+
+        .top-story-line {
+          opacity: 1;
+          fill: none;
+          stroke: lighten($line-stroke, 10);
+          stroke-width: 0.25;
+          animation: linesOnLogo 1s infinite;
+        }
+
+        .line-animated {
+          opacity: 0.01;
+          fill: none;
+          stroke: lighten($main-text-color, 40%);
+          stroke-width: 0.75;
+          stroke-dasharray: 0 500;
+        }
+
+        .first {
+          //  animation: lineAnimation 1.5s infinite 5s;
+        }
+
+        .second {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .third {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .fourth {
+          animation: topStoryLineAnimation 5s infinite;
+        }
+
+        .logo {
+          fill: $main-text-color;
+        }
+      }
+
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-intro-section {
+    position: relative;
+    //margin: 0 auto;
+    min-height: 60vh;
+    margin-top: 0;
+    .logo-container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      svg {
+        fill: white;
+        opacity: 1;
+
+        .top-story-line {
+          opacity: 1;
+          fill: none;
+          stroke: lighten($line-stroke, 10);
+          stroke-width: 0.25;
+          animation: linesOnLogo 1s infinite;
+        }
+
+        .line-animated {
+          opacity: 0.01;
+          fill: none;
+          stroke: lighten($main-text-color, 40%);
+          stroke-width: 0.75;
+          stroke-dasharray: 0 500;
+        }
+
+        .first {
+          //  animation: lineAnimation 1.5s infinite 5s;
+        }
+
+        .second {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .third {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .fourth {
+          animation: topStoryLineAnimation 5s infinite;
+        }
+
+        .logo {
+          fill: $main-text-color;
+        }
+      }
+
+    }
+  }
+}

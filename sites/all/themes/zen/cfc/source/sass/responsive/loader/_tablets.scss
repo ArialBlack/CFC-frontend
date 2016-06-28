@@ -4,18 +4,21 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   @include hideDesktopSections();
   @include showMain();
+  @include showHiddenSections();
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   @include hideDesktopSections();
   @include showMain();
+  @include showHiddenSections();
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   @include hideDesktopSections();
   @include showMain();
+  @include showHiddenSections();
 }
 
 /* ----------- iPad 1 and 2 ----------- */
@@ -23,31 +26,33 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   @include hideDesktopSections();
   @include showMain();
+  @include showHiddenSections();
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   @include hideDesktopSections();
   @include showMain();
+  @include showHiddenSections();
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-
+  @include showHiddenSections();
 }
 
 /* ----------- iPad 3 and 4 ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
+  @include showHiddenSections();
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-
+  @include showHiddenSections();
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-
+  @include showHiddenSections();
 }

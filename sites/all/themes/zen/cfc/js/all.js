@@ -2912,7 +2912,7 @@ if (typeof jQuery === 'undefined') {
             setTimeout(function () {
                 $('.logo, .line, .line-animated').show();
             }, 4000);
-            if ($('.loader').css('display') == 'none') {
+          if (!$('.loader').css('display')) {
                 $('.navigation, .team-section, .services-section, .news-section, .career-section, .contacts-section').show();
 
                 $('#main').css('visibility', 'visible');

@@ -21,6 +21,20 @@
         color: $main-text-color;
         text-decoration: none;
       }
+
+      .logo-container {
+        display: inline-block;
+        height: 50px;
+        width: 55%;
+        svg {
+          height: 90px;
+          width: 100%;
+          margin-top: -20%;
+          .logo {
+            fill: $main-text-color;
+          }
+        }
+      }
     }
 
     .side-nav-menu {
@@ -168,6 +182,20 @@
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+      }
+
+      .logo-container {
+        display: inline-block;
+        height: 50px;
+        width: 70%;
+        svg {
+          height: 90px;
+          width: 100%;
+          margin-top: -12%;
+          .logo {
+            fill: $main-text-color;
+          }
+        }
       }
     }
 
@@ -319,6 +347,20 @@
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+      }
+
+      .logo-container {
+        display: inline-block;
+        height: 50px;
+        width: 73%;
+        svg {
+          height: 90px;
+          width: 100%;
+          margin-top: -10%;
+          .logo {
+            fill: $main-text-color;
+          }
+        }
       }
     }
 

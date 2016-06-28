@@ -21,6 +21,14 @@
         margin-bottom: 20px;
         text-decoration: none;
         display: block;
+
+        &:after {
+          content: '';
+          display: block;
+          border-bottom: 4px solid $main-text-color;
+          width: 8%;
+          margin-top: 5px;
+        }
       }
     }
 
