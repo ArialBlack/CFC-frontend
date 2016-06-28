@@ -2980,6 +2980,16 @@ if (typeof jQuery === 'undefined') {
                 topOffset: 0           // offste (in px) for fixed top navigation
             });
 
+          //$('window').on('scroll', function(event) {
+          //    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+          //    alert(scrolled);
+          //        if ($(window).scrollTop() > 700) {
+          //            $('.mobile-navigation>.logo-container').css('display', 'inline-block');
+          //        } else {
+          //            $('.mobile-navigation>.logo-container').css('display', 'none');
+          //        }
+          //});
+
         });
     });
 }(jQuery));

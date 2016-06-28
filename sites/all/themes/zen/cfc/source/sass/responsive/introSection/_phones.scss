@@ -32,6 +32,32 @@
       }
 
     }
+
+    .carousel {
+      z-index: 110;
+      position: absolute;
+      width: 100%;
+      background-color: transparent;
+      li {
+        display: none;
+        float: left;
+        margin-top: 50%;
+        margin-left: 35%;
+
+        .views-field-title {
+          a {
+            color: $main-text-color;
+          }
+        }
+
+        .views-field-created {
+          span {
+            color: #a6a69d;
+            font-size: 16px;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -338,6 +338,11 @@ if ($lang == 'uk') {
                     </g>
 </svg>
             </div>
+
+            <?php
+            $block = module_invoke('views', 'block_view', 'news-block_2');
+            print render($block['content']);
+            ?>
         </section>
 
         <section class="mobile-top-story-section">
