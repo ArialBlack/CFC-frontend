@@ -466,16 +466,55 @@ if ($lang == 'uk') {
 
         <section class="services-section" id="services" data-scroll-index="2">
             <div class="background-text-wrapper">
-                <span class="background-text telenor">telenor</span>
-                <span class="background-text google">google</span>
-                <span class="background-text sap">sap</span>
-                <span class="background-text eyronext">nyse eyronext</span>
-                <span class="background-text uber">uber</span>
+                <span class="background-text first-line-companies">
+                    <div class="company">
+                        telenor
+                    </div>
+                     <div class="company">
+                         google
+                     </div>
+                     <div class="company">
+                         sap
+                     </div>
+                      <div class="company">
+                          WNISEF
+                      </div>
+                </span>
+                <span class="background-text second-line-companies">
+                       <div class="company">
+                           CNN
+                       </div>
+                     <div class="company">
+                         UCMC
+                     </div>
+                     <div class="company">
+                         UBER
+                     </div>
+                     <div class="company">
+                         EUROVISION
+                     </div>
+                </span>
+                <span class="background-text third-line-companies">
+                    <div class="company">
+                        USAID
+                    </div>
+                    <div class="company">
+                        NYSE Euronext
+                    </div>
+                     <div class="company">
+                         IDS Group
+                     </div>
+                     <div class="company">
+                         IBRC
+                     </div>
+                </span>
             </div>
+
             <?php
             $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
             print render($block['content']);
             ?>
+
 
         </section>
 

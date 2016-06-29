@@ -29,6 +29,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             &:hover {
@@ -75,6 +79,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             @include tabletModal();

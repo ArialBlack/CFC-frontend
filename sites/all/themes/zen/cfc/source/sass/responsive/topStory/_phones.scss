@@ -29,6 +29,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             &:hover {
@@ -49,7 +53,7 @@
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-top-story-section {
-    height: 110vh;
+    height: 120vh;
     padding-top: 15%;
     .view-display-id-block_2 {
       height: 100vh;
@@ -75,6 +79,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             @include mobileModal();
@@ -114,6 +122,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             @include mobileModal();
@@ -153,6 +165,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             @include mobileModal();
@@ -193,6 +209,10 @@
               text-align: center;
               font-family: "probaPro";
               text-transform: uppercase;
+
+              .body {
+                display: none;
+              }
             }
 
             @include mobileModal();
