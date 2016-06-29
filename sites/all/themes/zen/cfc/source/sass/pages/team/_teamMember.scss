@@ -2,7 +2,7 @@
   .news-feed {
     height: 100vh;
     max-height: 100vh;
-
+    padding-top: 120px;
     .node-team-member {
       position: absolute;
       z-index: 1;
@@ -10,110 +10,146 @@
       max-width: 1280px;
       margin-right: 90px;
 
-      .field-name-field-tags {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        margin-left: 48%;
-
-        &:after {
-          content: "";
-          display: block;
-          width: 2vw;
-          height: 1px;
-          margin-top: 10%;
-          border-bottom: 2px solid $main-text-color;
-        }
-      }
-
-      .field-name-field-position {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        margin-left: 48%;
-        margin-top: 5%;
-
-        &:after {
-          content: "";
-          display: block;
-          width: 2vw;
-          height: 1px;
-          margin-top: 10%;
-          border-bottom: 2px solid $main-text-color;
-        }
-      }
-
-      .field-name-field-image {
-        position: absolute;
-        float: left;
-        max-width: 49.5%;
-        height: 90vh;
-        max-height: 500px;
-        .field-items {
-          height: 100%;
+      .image-wrapper {
+        display: inline-block;
+        width: 48%;
+        .field-type-image {
           width: 100%;
-          .field-item {
-            height: 100%;
+          height: 100%;
+          .field-items {
             width: 100%;
-            img {
-              height: 100%;
+            height: 100%;
+            .field-item {
               width: 100%;
-              max-width: 490px;
+              height: 100%;
+              img {
+                width: 100%;
+                height: 100%;
+                max-height: 950px;
+              }
+            }
+          }
+        }
+      }
+      .text-wrapper {
+        display: inline-block;
+        width: 48%;
+        padding-left: 2%;
+        h2 {
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-family: 'probaPro';
+          color: $main-text-color;
+          text-decoration: none;
+          transition: all 0.3s;
+          font-size: $fs-md;
+          font-weight: 200;
+          &:after {
+            content: '';
+            display: block;
+            border-bottom: 2px solid $main-text-color;
+            width: 8%;
+            max-width: 25px;
+            margin-top: 5px;
+          }
+        }
+
+        .field-name-field-position {
+          .field-items {
+            .field-item {
+              font-size: 14px;
+              color: $main-text-color;
+              font-weight: 200;
+              text-transform: uppercase;
+              margin-bottom: 5px;
+            }
+          }
+        }
+
+        .field-name-field-linkedin {
+          display: inline-block;
+
+          .field-items {
+            .field-item {
+              a {
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                display: block;
+                width: 20px;
+                height: 20px;
+
+                &:before {
+                  content: ' ';
+                  background: url('../images/icons/linkedIn.png') no-repeat scroll center center;
+                  color: transparent;
+                  display: block;
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        .field-name-field-email {
+          display: inline-block;
+          .field-items {
+            .field-item {
+
+              a {
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                display: block;
+                width: 20px;
+                height: 20px;
+
+                &:before {
+                  content: "";
+                  background: url('../images/icons/envelope.png') no-repeat scroll center center;
+                  color: transparent;
+                  display: block;
+                  width: 20px;
+                  height: 20px;
+
+                }
+              }
+            }
+          }
+        }
+
+        .field-name-body {
+          &:before {
+            content: '';
+            display: block;
+            border-bottom: 2px solid $main-text-color;
+            width: 8%;
+            max-width: 25px;
+            margin-top: 10px;
+          }
+
+          .field-items {
+            .field-item {
+              p {
+                margin-top: 10px;
+                font-family: 'probaPro';
+                color: $main-text-color;
+              }
             }
           }
         }
       }
 
-      .field-name-body {
-        display: block;
-        margin-left: 48%;
-        margin-top: 12%;
-        .field-items {
-          .field-item {
-            p {
-              margin-top: 10px;
-            }
-          }
-        }
-      }
-
-      .field-name-field-linkedin {
+      .field-name-field-tags {
         display: none;
-        margin-left: 48%;
-        margin-top: -50vh;
-        // display: inline-block;
-
-        .field-items {
-          .field-item {
-            a {
-              display: block;
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
       }
-
-      .field-name-field-email {
-        display: none;
-        margin-top: -50vh;
-        width: 5%;
-        margin-left: 5%;
-        .field-items {
-          .field-item {
-            a {
-              display: block;
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-      }
-
       .flippy {
         color: $main-text-color;
         margin-top: 2vh;
-        margin-left: 48%;
+        margin-left: 25%;
+        width: 50%;
+        text-align: center;
         .prev {
           a {
             background: url('../images/icons/previous.png') no-repeat scroll center center;

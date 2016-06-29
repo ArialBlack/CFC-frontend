@@ -49,16 +49,14 @@ Position	field_position
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
-   ?> 
-   
-    <div>
+   ?>
+
+    <div class="image-wrapper">
         <?php print render($content['field_image']);?>
     </div>
-  
-    <div>
+
+    <div class="text-wrapper">
         <h2><?php print $title; ?></h2>
-        
-        <?php print render($content['field_tags']);?>
   
         <?php print render($content['field_position']);?>
   
@@ -67,12 +65,14 @@ Position	field_position
         <?php print render($content['field_email']);?>
   
         <?php print render($content['body']);?>
+
+        <?php print render($content); ?>
+
+
+        <?php print render($content['links']); ?>
   </div>
-  
-  <?php print render($content);?>
 
-  <?php print render($content['links']); ?>
 
-  <?php print render($content['comments']); ?>
+    <?php print render($content['comments']); ?>
 
 </article>
