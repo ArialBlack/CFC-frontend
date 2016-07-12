@@ -4,6 +4,7 @@
   max-height: 1024px;
   width: 100%;
   position: relative;
+  @include bottomLine();
   .team-content-wrapper {
     position: absolute;
     top: 0;

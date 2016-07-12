@@ -1,24 +1,32 @@
 
 
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   @include showMain();
   @include mobileSections(block);
   .section-mission {
-    background: url('../images/whoWeAre/team.jpg') no-repeat fixed 110% -100%;
-    background-size: 146% 90%;
+    //   background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 110% -100%;
+    // background-size: 100% 100%;
     .news-feed {
       height: auto;
       min-height: 100vh;
-      background: rgba(192, 192, 192, 0.7);
+      // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
-
+      background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 100% 100%;
+      background-position: top, left;
+      background-size: 100% 60%;
+      .view-content {
+        display: none;
+      }
       p {
+        &:first-child {
+          padding-top: 55vh;
+        }
         display: inline-block;
         width: 100%;
         color: $main-text-color;
         text-shadow: black;
-        padding: 15% 45px 0 0;
+        padding: 20px 45px 0 0;
 
         .title {
           font-family: 'probaPro';
@@ -52,20 +60,28 @@
   @include showMain();
   @include mobileSections(block);
   .section-mission {
-    background: url('../images/whoWeAre/team.jpg') no-repeat fixed 110% -100%;
-    background-size: 146% 90%;
+    //   background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 110% -100%;
+    // background-size: 100% 100%;
     .news-feed {
       height: auto;
       min-height: 100vh;
-      background: rgba(192, 192, 192, 0.7);
+      // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
-
+      background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 100% 100%;
+      background-position: top, left;
+      background-size: 100% 80%;
+      .view-content {
+        display: none;
+      }
       p {
+        &:first-child {
+          padding-top: 60vh;
+        }
         display: inline-block;
         width: 100%;
         color: $main-text-color;
         text-shadow: black;
-        padding: 15% 45px 0 0;
+        padding: 20px 45px 0 0;
 
         .title {
           font-family: 'probaPro';

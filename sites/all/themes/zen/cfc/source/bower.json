@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "ScrollIt": "*",
-    "jquery.onepage-scroll": "^1.1.10"
+    "jquery.onepage-scroll": "^1.1.10",
+    "jquery.cookie": "*"
   }
 }

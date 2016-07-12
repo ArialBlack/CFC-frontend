@@ -6,16 +6,18 @@
     height: 100vh;
     width: 100%;
     min-height: 100vh;
+    padding: 0;
 
-    background: url('../images/career/background-full-hd.jpg') no-repeat scroll 28% 0%;
-    background-size: 100% 100%;
+    background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 100%;
+    background-position: left, left;
+    background-size: 65% 100%;
 
     article {
-      width: 30%;
+      width: 33%;
       height: auto;
       float: right;
       color: $main-text-color;
-      padding: -1vh 90px 0 0;
+      padding: 18vh 138px 0 0;
 
       h2 {
         a {
@@ -43,11 +45,17 @@
 
       form {
         margin-top: 20px;
+
         input {
           display: block;
           margin-top: 8px;
+          border: 1px solid $main-text-color;
           padding: 7px;
           width: 100%;
+
+          &:focus {
+            border: 1.5px solid lighten($main-text-color, 20);
+          }
         }
 
         input[type=file] {

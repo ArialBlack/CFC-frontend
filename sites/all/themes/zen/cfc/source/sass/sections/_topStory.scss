@@ -4,6 +4,7 @@
   // min-height: 700px;
   max-height: 100vh;
   margin: 0 auto;
+  @include bottomLine();
 
   .logo-container {
     width: 100%;
@@ -155,6 +156,7 @@
     }
     &:hover {
       width: 250px;
+      //  z-index: 110;
     }
   }
 }

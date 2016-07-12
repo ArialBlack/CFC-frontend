@@ -3,18 +3,29 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .section-mission {
-    background: url('../images/whoWeAre/team.jpg') no-repeat scroll 350% 170%;
-    background-size: 107% 122%;
+    background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 115%;
+    background-attachment: scroll;
+    background-position: top, left;
+    background-size: 100% 50%;
     .news-feed {
       height: auto;
-      min-height: 100vh;
+      min-height: 60vh;
       background: transparent;
-      padding: 10vh 0 0 5%;
+      padding: 0 0 0 5%;
+      max-height: 150vh;
+
+      .view-content {
+        display: none;
+      }
       p {
+
+        &:first-child {
+          padding-top: 40vh;
+        }
         display: inline-block;
         width: 90%;
         color: $main-text-color;
-        padding: 80% 45px 0 50px;
+        padding: 10px 0 0 -1px;
 
       }
     }

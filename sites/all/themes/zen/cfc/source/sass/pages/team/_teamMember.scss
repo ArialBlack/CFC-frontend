@@ -2,7 +2,7 @@
   .news-feed {
     height: 100vh;
     max-height: 100vh;
-    padding-top: 120px;
+    padding-top: 130px;
     .node-team-member {
       position: absolute;
       z-index: 1;
@@ -33,7 +33,7 @@
       }
       .text-wrapper {
         display: inline-block;
-        width: 48%;
+        width: 40%;
         padding-left: 2%;
         h2 {
           text-transform: uppercase;
@@ -147,9 +147,13 @@
       .flippy {
         color: $main-text-color;
         margin-top: 2vh;
-        margin-left: 25%;
-        width: 50%;
+        width: 100%;
         text-align: center;
+
+        li {
+          display: inline-block;
+          width: 30%;
+        }
         .prev {
           a {
             background: url('../images/icons/previous.png') no-repeat scroll center center;

@@ -51,34 +51,39 @@
         };
 
         $(document).ready(function () {
-            if ($(window).width() > 1279) {
+
+            if ($.cookie('isNew') === undefined) {
+                $.cookie('isNew', false, {expires: 1});
+            } else {
+                $('.loader').css('display', 'none');
+                $('.navigation, .top-story-section, .team-section, .services-section, .news-section, .career-section, .contacts-section').show();
+
+                $('#main').css('visibility', 'visible');
+            }
+
+            if ($(window).width() > 1024) {
                 $(".mobile-top-story-section").remove();
             }
             //LOADER SETTINGS
             setTimeout(function () {
                 $('.logo, .line, .line-animated').show();
             }, 4000);
-            if (!$('.loader').css('display')) {
-                $('.navigation, .team-section, .services-section, .news-section, .career-section, .contacts-section').show();
-
-                $('#main').css('visibility', 'visible');
-            }
 
             setTimeout(function () {
                 $(".loader").addClass('softly-hidden');
-            }, 8600);
+            }, 6600);
 
             setTimeout(function () {
                 $('.navigation, .top-story-section, .team-section, .services-section, .news-section, .career-section, .contacts-section').css('display', 'block');
 
                 $('#main').css('visibility', 'visible');
 
-            }, 9400);
+            }, 7500);
 
             setTimeout(function () {
                 $(".loader").fadeOut(100);
                 //   $('.loader').css('transition','all, 0s').css('display', 'none');
-            }, 9400);
+            }, 7500);
 
             $("#menu_dropdown, .menu-icon").on('click', function () {
                 CFC.showMenuDropdown()
@@ -126,15 +131,14 @@
                 topOffset: 0           // offste (in px) for fixed top navigation
             });
 
-            //$('window').on('scroll', function(event) {
-            //    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            //    alert(scrolled);
-            //        if ($(window).scrollTop() > 700) {
-            //            $('.mobile-navigation>.logo-container').css('display', 'inline-block');
-            //        } else {
-            //            $('.mobile-navigation>.logo-container').css('display', 'none');
-            //        }
-            //});
+            $(window).on('scroll', function (event) {
+
+                if ($(window).scrollTop() > 700) {
+                    $('.logo-wrapper').css('display', 'inline-block');
+                } else {
+                    $('.logo-wrapper').css('display', 'none');
+                }
+            });
 
         });
     });

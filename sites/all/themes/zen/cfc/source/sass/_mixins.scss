@@ -350,3 +350,7 @@
     display: block !important;
   }
 }
+
+@mixin bottomLine() {
+  border-bottom: 1px solid $hr-color;
+}

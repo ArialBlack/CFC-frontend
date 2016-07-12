@@ -2698,6 +2698,125 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+/*!
+ * jQuery Cookie Plugin v1.4.1
+ * https://github.com/carhartl/jquery-cookie
+ *
+ * Copyright 2013 Klaus Hartl
+ * Released under the MIT license
+ */
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD
+    define(['jquery'], factory);
+  } else if (typeof exports === 'object') {
+    // CommonJS
+    factory(require('jquery'));
+  } else {
+    // Browser globals
+    factory(jQuery);
+  }
+}(function ($) {
+
+  var pluses = /\+/g;
+
+  function encode(s) {
+    return config.raw ? s : encodeURIComponent(s);
+  }
+
+  function decode(s) {
+    return config.raw ? s : decodeURIComponent(s);
+  }
+
+  function stringifyCookieValue(value) {
+    return encode(config.json ? JSON.stringify(value) : String(value));
+  }
+
+  function parseCookieValue(s) {
+    if (s.indexOf('"') === 0) {
+      // This is a quoted cookie as according to RFC2068, unescape...
+      s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+    }
+
+    try {
+      // Replace server-side written pluses with spaces.
+      // If we can't decode the cookie, ignore it, it's unusable.
+      // If we can't parse the cookie, ignore it, it's unusable.
+      s = decodeURIComponent(s.replace(pluses, ' '));
+      return config.json ? JSON.parse(s) : s;
+    } catch (e) {
+    }
+  }
+
+  function read(s, converter) {
+    var value = config.raw ? s : parseCookieValue(s);
+    return $.isFunction(converter) ? converter(value) : value;
+  }
+
+  var config = $.cookie = function (key, value, options) {
+
+    // Write
+
+    if (value !== undefined && !$.isFunction(value)) {
+      options = $.extend({}, config.defaults, options);
+
+      if (typeof options.expires === 'number') {
+        var days = options.expires, t = options.expires = new Date();
+        t.setTime(+t + days * 864e+5);
+      }
+
+      return (document.cookie = [
+        encode(key), '=', stringifyCookieValue(value),
+        options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+        options.path ? '; path=' + options.path : '',
+        options.domain ? '; domain=' + options.domain : '',
+        options.secure ? '; secure' : ''
+      ].join(''));
+    }
+
+    // Read
+
+    var result = key ? undefined : {};
+
+    // To prevent the for loop in the first place assign an empty array
+    // in case there are no cookies at all. Also prevents odd result when
+    // calling $.cookie().
+    var cookies = document.cookie ? document.cookie.split('; ') : [];
+
+    for (var i = 0, l = cookies.length; i < l; i++) {
+      var parts = cookies[i].split('=');
+      var name = decode(parts.shift());
+      var cookie = parts.join('=');
+
+      if (key && key === name) {
+        // If second argument (value) is a function it's a converter...
+        result = read(cookie, value);
+        break;
+      }
+
+      // Prevent storing a cookie that we couldn't decode.
+      if (!key && (cookie = read(cookie)) !== undefined) {
+        result[name] = cookie;
+      }
+    }
+
+    return result;
+  };
+
+  config.defaults = {};
+
+  $.removeCookie = function (key, options) {
+    if ($.cookie(key) === undefined) {
+      return false;
+    }
+
+    // Must not alter options, thus extending a fresh object...
+    $.cookie(key, '', $.extend({}, options, {expires: -1}));
+    return !$.cookie(key);
+  };
+
+}));
+
 /**
  * Created by v.ratyshniy on 06.05.2016.
  */
@@ -2905,34 +3024,39 @@ if (typeof jQuery === 'undefined') {
         };
 
         $(document).ready(function () {
-            if ($(window).width() > 1279) {
+
+          if ($.cookie('isNew') === undefined) {
+            $.cookie('isNew', false, {expires: 1});
+          } else {
+            $('.loader').css('display', 'none');
+            $('.navigation, .top-story-section, .team-section, .services-section, .news-section, .career-section, .contacts-section').show();
+
+            $('#main').css('visibility', 'visible');
+          }
+
+          if ($(window).width() > 1024) {
                 $(".mobile-top-story-section").remove();
             }
             //LOADER SETTINGS
             setTimeout(function () {
                 $('.logo, .line, .line-animated').show();
             }, 4000);
-          if (!$('.loader').css('display')) {
-                $('.navigation, .team-section, .services-section, .news-section, .career-section, .contacts-section').show();
-
-                $('#main').css('visibility', 'visible');
-            }
 
             setTimeout(function () {
                 $(".loader").addClass('softly-hidden');
-            }, 8600);
+            }, 6600);
 
             setTimeout(function () {
                 $('.navigation, .top-story-section, .team-section, .services-section, .news-section, .career-section, .contacts-section').css('display', 'block');
 
                 $('#main').css('visibility', 'visible');
 
-            }, 9400);
+            }, 7500);
 
             setTimeout(function () {
                 $(".loader").fadeOut(100);
                 //   $('.loader').css('transition','all, 0s').css('display', 'none');
-            }, 9400);
+            }, 7500);
 
             $("#menu_dropdown, .menu-icon").on('click', function () {
                 CFC.showMenuDropdown()
@@ -2980,15 +3104,14 @@ if (typeof jQuery === 'undefined') {
                 topOffset: 0           // offste (in px) for fixed top navigation
             });
 
-          //$('window').on('scroll', function(event) {
-          //    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-          //    alert(scrolled);
-          //        if ($(window).scrollTop() > 700) {
-          //            $('.mobile-navigation>.logo-container').css('display', 'inline-block');
-          //        } else {
-          //            $('.mobile-navigation>.logo-container').css('display', 'none');
-          //        }
-          //});
+          $(window).on('scroll', function (event) {
+
+            if ($(window).scrollTop() > 700) {
+              $('.logo-wrapper').css('display', 'inline-block');
+            } else {
+              $('.logo-wrapper').css('display', 'none');
+            }
+          });
 
         });
     });
