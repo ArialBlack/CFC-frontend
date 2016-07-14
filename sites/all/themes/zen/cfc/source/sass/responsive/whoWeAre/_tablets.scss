@@ -3,8 +3,7 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .section-mission {
-    background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 115%;
-    background-attachment: scroll;
+    background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 110% 115%;
     background-position: top, left;
     background-size: 100% 50%;
     .news-feed {
@@ -12,7 +11,11 @@
       min-height: 60vh;
       background: transparent;
       padding: 0 0 0 5%;
-      max-height: 150vh;
+      max-height: 500vh;
+
+      .view {
+        height: auto;
+      }
 
       .view-content {
         display: none;
@@ -40,7 +43,15 @@
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .section-mission {
+    .news-feed {
 
+      width: 100%;
+      margin-left: 0;
+      padding: 0vh 90px 0 90px;
+      .view {
+        height: auto;
+      }
+    }
     .mobile-navigation-section {
       background: transparent;
       top: 0;

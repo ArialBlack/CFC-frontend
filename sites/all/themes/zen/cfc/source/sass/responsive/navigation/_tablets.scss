@@ -13,7 +13,7 @@
     height: 7%;
     padding: 3% 10% 0 10%;
     color: $main-text-color;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 1);
     .mobile-navigation {
       @include menuIcon(16px);
 
@@ -175,7 +175,7 @@
     height: 10%;
     padding: 3% 10% 0 10%;
     color: $main-text-color;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 1);
     .mobile-navigation {
       @include menuIcon(16px);
 

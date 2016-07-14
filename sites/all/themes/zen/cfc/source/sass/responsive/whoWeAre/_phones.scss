@@ -12,9 +12,14 @@
       min-height: 100vh;
       // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
-      background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 100% 100%;
-      background-position: top, left;
-      background-size: 100% 60%;
+      background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
+      background-position: left 15vh;
+      background-size: 100% 50%;
+
+      .view {
+        height: auto;
+      }
+
       .view-content {
         display: none;
       }
@@ -67,9 +72,13 @@
       min-height: 100vh;
       // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
-      background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 100% 100%;
-      background-position: top, left;
-      background-size: 100% 80%;
+      background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
+      background-position: left 5vh;
+      background-size: 100% 100%;
+      .view {
+        height: auto;
+      }
+
       .view-content {
         display: none;
       }
