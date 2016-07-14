@@ -234,18 +234,18 @@
 
                         <?php print render($page['header']); ?>
                     </div>
-                    <div class="social-icons">
-                        <!-- Icon Bar -->
-                        <ul class="icon-bar">
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-
-                        </ul>
-                        <!-- Icon Bar -->
-                    </div>
                     <div class="footer">
+                        <div class="social-icons">
+                            <!-- Icon Bar -->
+                            <ul class="icon-bar">
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                            </ul>
+                            <!-- Icon Bar -->
+                        </div>
                         <div class="phone"></div>
                     </div>
                 </div>
@@ -345,14 +345,6 @@
             print render($block['content']);
             ?>
         </section>
-
-        <section class="mobile-top-story-section">
-            <?php
-            $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
-            print render($block['content']);
-            ?>
-        </section>
-
 
         <section class="top-story-section" id="top_story" data-scroll-index="0">
             <div class="logo-container">
@@ -464,6 +456,14 @@
                 ?>
             </div>
         </section>
+
+        <section class="mobile-top-story-section">
+            <?php
+            $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
+            print render($block['content']);
+            ?>
+        </section>
+
 
         <section class="services-section" id="services" data-scroll-index="2">
             <div class="background-text-wrapper">
@@ -697,7 +697,6 @@
                             </div>
                         </a>
                     </nav>
-
                     <nav class="right-side-nav" id="current_position">
                         <!-- Icon Bar -->
                         <ul class="icon-bar">

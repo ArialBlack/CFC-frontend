@@ -10,6 +10,7 @@
       padding: 0;
       .view {
         padding: 0;
+        padding-top: 10vh;
       }
       .view-content {
         height: auto;
@@ -94,7 +95,8 @@
                   }
 
                   .news-title {
-                    height: 20px;
+                    margin-top: 5px;
+                    height: auto;
                     a {
                       display: block;
                       margin-top: 5px;
@@ -116,6 +118,10 @@
                     &:hover {
                       text-decoration: none;
                     }
+                  }
+
+                  a {
+                    margin-top: 5px;
                   }
                 }
               }
@@ -183,11 +189,11 @@
       width: 100%;
       height: auto;
       min-height: 20vh;
-      margin-top: 15vh;
       padding: 0;
 
       .view {
         padding: 0;
+        padding-top: 20vh;
       }
 
       .view-content {
@@ -270,7 +276,8 @@
                 }
 
                 .news-title {
-                  height: 20px;
+                  height: auto;
+                  margin-top: 5px;
                   a {
                     display: block;
                     margin-top: 5px;
@@ -292,6 +299,10 @@
                   &:hover {
                     text-decoration: none;
                   }
+                }
+
+                a {
+                  margin-top: 5px;
                 }
               }
             }

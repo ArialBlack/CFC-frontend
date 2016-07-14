@@ -11,9 +11,10 @@
       .node-team-member {
         position: absolute;
         z-index: 1;
-        max-height: 90vh;
-        max-width: 1280px;
+        left: 0;
+        transform: none;
         margin-right: 0;
+        padding: 10vh 0 0 0;
 
         .image-wrapper {
           display: block;
@@ -31,8 +32,7 @@
                 height: 100%;
                 img {
                   width: 100%;
-                  height: 100%;
-                  max-height: 950px;
+                  height: auto;
                 }
               }
             }
@@ -137,8 +137,8 @@
             .field-items {
               .field-item {
                 p {
-                  text-align: left;
-                  padding: 0 20px;
+                  text-align: justify;
+                  padding: 0 10%;
                   margin-top: 10px;
                   font-family: 'probaPro';
                   color: $main-text-color;
@@ -153,20 +153,19 @@
         }
         .flippy {
           color: $main-text-color;
-          margin-top: 2vh;
-          margin-left: 0%;
+          padding: 2% 10% 0 10%;
           width: 100%;
           text-align: center;
           .prev {
             a {
-              background: url('../images/icons/previous.png') no-repeat scroll center center;
+              background: url('../images/icons/previous.png') no-repeat scroll left center;
               color: transparent;
             }
           }
           .mainpage-link {
             background: url('../images/icons/close.png') no-repeat scroll center center;
             color: transparent;
-            margin-right: 10px;
+            //  margin-right: 10px;
           }
 
           .mainpage-link:last-child {
@@ -175,7 +174,7 @@
 
           .next {
             a {
-              background: url('../images/icons/next.png') no-repeat scroll center center;
+              background: url('../images/icons/next.png') no-repeat scroll right center;
               color: transparent;
             }
           }
@@ -199,9 +198,10 @@
       .node-team-member {
         position: absolute;
         z-index: 1;
-        max-height: 90vh;
-        max-width: 1280px;
+        left: 0;
+        transform: none;
         margin-right: 0;
+        padding: 10vh 0 0 0;
 
         .image-wrapper {
           display: block;
@@ -219,8 +219,7 @@
                 height: 100%;
                 img {
                   width: 100%;
-                  height: 100%;
-                  max-height: 950px;
+                  height: auto;
                 }
               }
             }
@@ -265,6 +264,7 @@
 
           .field-name-field-linkedin {
             display: inline-block;
+
             .field-items {
               .field-item {
                 a {
@@ -324,8 +324,8 @@
             .field-items {
               .field-item {
                 p {
-                  text-align: left;
-                  padding: 0 20px;
+                  text-align: justify;
+                  padding: 0 10%;
                   margin-top: 10px;
                   font-family: 'probaPro';
                   color: $main-text-color;
@@ -340,20 +340,19 @@
         }
         .flippy {
           color: $main-text-color;
-          margin-top: 2vh;
-          margin-left: 0%;
+          padding: 2% 10% 0 10%;
           width: 100%;
           text-align: center;
           .prev {
             a {
-              background: url('../images/icons/previous.png') no-repeat scroll center center;
+              background: url('../images/icons/previous.png') no-repeat scroll left center;
               color: transparent;
             }
           }
           .mainpage-link {
             background: url('../images/icons/close.png') no-repeat scroll center center;
             color: transparent;
-            margin-right: 10px;
+            //  margin-right: 10px;
           }
 
           .mainpage-link:last-child {
@@ -362,7 +361,7 @@
 
           .next {
             a {
-              background: url('../images/icons/next.png') no-repeat scroll center center;
+              background: url('../images/icons/next.png') no-repeat scroll right center;
               color: transparent;
             }
           }

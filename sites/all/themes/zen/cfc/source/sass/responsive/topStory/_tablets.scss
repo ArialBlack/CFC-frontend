@@ -53,10 +53,11 @@
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .mobile-top-story-section {
-    height: 107vh;
-    //  padding-top: 10%;
+    height: auto;
+    position: relative;
+
     .view-display-id-block_2 {
-      height: 100vh;
+      height: 103vh;
       max-height: 730px;
       .view-content {
         height: 100%;
@@ -66,7 +67,7 @@
             vertical-align: top;
             display: inline-block;
             width: 49.7%;
-            height: 32.5%;
+            height: 34vh;
             cursor: pointer;
             background: $main-text-color;
             border: 1px solid #e9eaec;;

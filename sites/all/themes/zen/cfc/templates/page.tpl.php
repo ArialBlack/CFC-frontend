@@ -212,6 +212,7 @@
                             </div>
                         </a>
                     </nav>
+
                     <nav class="right-side-nav" id="current_position">
                         <!-- Icon Bar -->
                         <ul class="icon-bar">
@@ -221,18 +222,9 @@
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
                         </ul>
-                        <!-- Icon Bar -->
-
-                        <!-- Current Position -->
-                        <?php
-                        $block = module_invoke('block', 'block_view', '1');
-                        print render($block['content']);
-                        ?>
-                        <!-- Current Position -->
                     </nav>
                 </nav>
             <?php endif; ?>
-
             <?php print render($page['navigation']); ?>
         </div>
     </div>
