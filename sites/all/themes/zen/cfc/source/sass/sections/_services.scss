@@ -257,10 +257,19 @@
   }
 }
 
-.modal-open {
-  overflow: auto;
+.modal-open .modal {
+  overflow: visible;
+
+  //.modal{
+  //  overflow: visible;
+  //}
 }
 
+body {
+  &.modal-open {
+    overflow: visible;
+  }
+}
 .modal-backdrop.in {
   opacity: 0;
   position: relative;

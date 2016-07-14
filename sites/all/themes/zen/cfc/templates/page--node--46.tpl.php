@@ -623,7 +623,7 @@
 
                         <!-- Navigation Menu -->
                         <div class="nav-menu">
-                            <div class="menu-icon">
+                            <div class="menu-icon" id="menu_icon">
                                 <span class="line first"></span>
                                 <span class="line second"></span>
                                 <span class="line third"></span>

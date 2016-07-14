@@ -7,6 +7,7 @@
 
 
         var CFC = {};
+
         CFC.showMenuDropdown = function () {
 
             $('.navigation').toggleClass('overlay');
@@ -15,12 +16,25 @@
 
         };
 
+        CFC.closeDropdownMenu = function () {
+            $('.navigation').removeClass('overlay');
+            $("#menu_dropdown_content").removeClass("show");
+            $(".menu-icon").removeClass('active');
+        };
 
         CFC.headerBg = function (pageIndex) {
             if (pageIndex == 4) {
                 $('.navigation').css('background', 'transparent');
             } else {
                 $('.navigation').css('background', 'rgba(255, 255, 255, 0.6)');
+            }
+        };
+
+        CFC.logoOnNav = function (pageIndex) {
+            if (pageIndex == 0) {
+                $('.logo-wrapper').css('display', 'none');
+            } else {
+                $('.logo-wrapper').css('display', 'inline-block');
             }
         };
 
@@ -85,13 +99,15 @@
                 //   $('.loader').css('transition','all, 0s').css('display', 'none');
             }, 7500);
 
-            $("#menu_dropdown, .menu-icon").on('click', function (e) {
+            $("#menu_dropdown, #menu_icon").on('click', function (e) {
                 e.preventDefault();
-                CFC.showMenuDropdown()
+                CFC.showMenuDropdown();
             });
 
-            $("#menu_dropdown_content").on('mouseleave', function () {
-                CFC.hideMenuDropdown()
+            $('.navigation').on('click', function (e) {
+                if ($(e.target).attr('id') == undefined) {
+                    CFC.closeDropdownMenu();
+                }
             });
 
             $('.services-link').on('click', function (e) {
@@ -120,6 +136,7 @@
             });
             CFC.newsSlider();
 
+
             $.scrollIt({
                 upKey: 38,             // key code to navigate to the next section
                 downKey: 40,           // key code to navigate to the previous section
@@ -128,17 +145,9 @@
                 activeClass: 'active', // class given to the active nav element
                 onPageChange: function (pageIndex) {
                     CFC.headerBg(pageIndex);
+                    CFC.logoOnNav(pageIndex);
                 },    // function(pageIndex) that is called when page is changed
                 topOffset: 0           // offste (in px) for fixed top navigation
-            });
-
-            $(window).on('scroll', function (event) {
-
-                if ($(window).scrollTop() > 700) {
-                    $('.logo-wrapper').css('display', 'inline-block');
-                } else {
-                    $('.logo-wrapper').css('display', 'none');
-                }
             });
 
         });

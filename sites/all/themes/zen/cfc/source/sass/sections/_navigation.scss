@@ -90,7 +90,7 @@
   }
 
   .logo-wrapper {
-    display: none;
+    display: inline-block;
     position: fixed;
     z-index: 525;
     left: 42%;
@@ -133,7 +133,7 @@
     .current-position {
       float: right;
       width: 48px;
-      margin-top: 45px;
+      margin-top: 30px;
 
       li {
         float: right;

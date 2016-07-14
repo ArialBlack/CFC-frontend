@@ -345,14 +345,6 @@ if ($lang == 'uk') {
             ?>
         </section>
 
-        <section class="mobile-top-story-section">
-            <?php
-            $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
-            print render($block['content']);
-            ?>
-        </section>
-
-
         <section class="top-story-section" id="top_story" data-scroll-index="0">
             <div class="logo-container">
 
@@ -463,6 +455,14 @@ if ($lang == 'uk') {
                 ?>
             </div>
         </section>
+
+        <section class="mobile-top-story-section">
+            <?php
+            $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
+            print render($block['content']);
+            ?>
+        </section>
+
 
         <section class="services-section" id="services" data-scroll-index="2">
             <div class="background-text-wrapper">
@@ -622,7 +622,7 @@ if ($lang == 'uk') {
 
                         <!-- Navigation Menu -->
                         <div class="nav-menu">
-                            <div class="menu-icon">
+                            <div class="menu-icon" id="menu_icon">
                                 <span class="line first"></span>
                                 <span class="line second"></span>
                                 <span class="line third"></span>
