@@ -28,7 +28,7 @@
         position: relative;
         min-width: 360px;
         height: 100%;
-        padding: 100px 50px 50px 60px;
+        padding: 90px 50px 50px 60px;
         color: transparent;
         text-align: center;
         text-decoration: none;
@@ -73,12 +73,12 @@
 
         .news-title {
           a {
-
-            margin-top: 30px;
-            margin-bottom: 35px;
-            font-size: $fs-md;
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 15px;
             font-weight: 400;
-            letter-spacing: 1.5px;
+            letter-spacing: 0.5px;
             color: #a6a69d;
             &:hover {
               color: white;
@@ -88,11 +88,11 @@
         }
 
         p {
+          display: none;
           font-family: 'probaProSemibold';
           font-size: $fs-sm;
           line-height: 150%;
           &:hover {
-
             text-decoration: underline;
           }
         }
@@ -105,17 +105,17 @@
   .more-link {
     a {
       display: block;
-      width: 145px;
-      height: 30px;
-      margin: 60px;
-      margin-left: 45%;
-      padding-top: 10px;
+      width: 16%;
+      height: 37px;
+      margin: 50px;
+      margin-left: 42%;
+      padding-top: 8px;
       text-align: center;
       background-color: $main-text-color;
 
       font-family: 'probaPro';
       letter-spacing: 2px;
-      font-size: 10px;
+      font-size: 15px;
       text-decoration: none;
       color: $white;
 

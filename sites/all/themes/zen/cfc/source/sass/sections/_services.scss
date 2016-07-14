@@ -128,7 +128,7 @@
   &.fade.in {
     height: auto;
     min-height: 700px;
-    transform: translate(0, 5vh);
+    transform: translate(0, 0);
   }
 
   .modal-dialog {
@@ -207,7 +207,7 @@
         .modal-content-wrapper {
           display: inline-block;
           width: 100%;
-          padding: 50px;
+          padding: 0 60px;
 
           h2 {
             text-transform: uppercase;
@@ -226,19 +226,28 @@
           }
 
           p {
-            margin: 10px 0px 0px 0px;
-            font-size: $fs-sm;
+            color: #b9bec4;
+            margin: 15px 0px 0px 0px;
+            font-size: em($fs-sm);
             font-family: 'probaPro';
+            letter-spacing: 1px;
+            line-height: 125%;
+            word-spacing: 2px;
+
           }
 
           & > ul {
             margin-top: 15px;
             li {
+              color: #b9bec4;
               margin-left: 10px;
-              font-size: $fs-sm;
+              font-size: em($fs-sm);
               list-style-type: disc;
               display: list-item;
               width: 95%;
+              letter-spacing: 1px;
+              line-height: 125%;
+              font-family: 'probaProItalic';
             }
           }
 

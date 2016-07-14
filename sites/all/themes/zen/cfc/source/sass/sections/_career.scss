@@ -3,9 +3,9 @@
   width: 100%;
   min-height: 100vh;
 
-  background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 100%;
-  background-position: left, left;
-  background-size: 65% 100%;
+  background: url('../images/career/stairs.jpg') no-repeat scroll 100% 100%;
+  background-position: left;
+  background-size: 65% auto;
   @include bottomLine();
 
   article {
@@ -34,8 +34,11 @@
     }
 
     .field-name-body {
-      font-family: 'probaProSemibold';
+      font-family: 'probaPro';
+      text-align: justify;
+      color: #616062;
     }
+
     span.rdf-mta {
       display: block;
       width: 10%;
@@ -49,7 +52,7 @@
 
     form {
       margin-top: 20px;
-      input {
+      input[type=text], input[type=email], input[type=password] {
         display: block;
         margin-top: 8px;
         border: 1px solid $main-text-color;
@@ -103,6 +106,7 @@
 
       .form-actions {
         .form-submit {
+          padding: 4px;
           display: block;
           width: 150px;
           height: 30px;

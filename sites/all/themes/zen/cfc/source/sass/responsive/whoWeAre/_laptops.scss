@@ -1,79 +1,79 @@
-@media screen and (min-device-width: 1366px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .section-mission {
-    .navigation {
-      background: transparent;
-    }
-    .news-feed {
-      height: auto;
-      background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 100%;
-      background-size: 66% 100%;
-      padding-top: 110px;
-      .field-name-body {
-
-      }
-      p {
-        font-family: 'probaProSemibold';
-        display: block;
-        width: 35%;
-        color: $main-text-color;
-        padding: 0 45px 0 0px;
-
-        &:first-child {
-          font-family: 'probaPro';
-          font-size: $fs-md;
-          font-weight: 400;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          margin: 20px 0 10px 0;
-
-          &:after {
-            content: '';
-            display: block;
-            border-bottom: 4px solid $main-text-color;
-            width: 8%;
-            margin-top: 5px;
-          }
-        }
-
-        &:nth-child(3n) {
-          font-family: 'probaPro';
-          font-size: $fs-md;
-          font-weight: 400;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          margin: 20px 0 10px 0;
-
-          &:after {
-            content: '';
-            display: block;
-            border-bottom: 4px solid $main-text-color;
-            width: 8%;
-            margin-top: 5px;
-          }
-        }
-      }
-
-      .view-content {
-        right: 0;
-        bottom: 0;
-        top: 0;
-        position: absolute;
-        z-index: 10;
-        display: block;
-        width: 64%;
-        margin-left: 36%;
-        height: 100vh;
-      }
-
-      .links {
-        display: none;
-      }
-    }
-  }
-
-
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-}
+//@media screen and (min-device-width: 1366px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+//  .section-mission {
+//    .navigation {
+//      background: transparent;
+//    }
+//    .news-feed {
+//      height: auto;
+//      background: url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
+//      background-size: 66% auto;
+//      padding-top: 110px;
+//      .field-name-body {
+//
+//      }
+//      p {
+//        font-family: 'probaProSemibold';
+//        display: block;
+//        width: 35%;
+//        color: $main-text-color;
+//        padding: 0 45px 0 0px;
+//
+//        &:first-child {
+//          font-family: 'probaPro';
+//          font-size: $fs-md;
+//          font-weight: 400;
+//          letter-spacing: 2px;
+//          text-transform: uppercase;
+//          margin: 20px 0 10px 0;
+//
+//          &:after {
+//            content: '';
+//            display: block;
+//            border-bottom: 4px solid $main-text-color;
+//            width: 8%;
+//            margin-top: 5px;
+//          }
+//        }
+//
+//        &:nth-child(3n) {
+//          font-family: 'probaPro';
+//          font-size: $fs-md;
+//          font-weight: 400;
+//          letter-spacing: 2px;
+//          text-transform: uppercase;
+//          margin: 20px 0 10px 0;
+//
+//          &:after {
+//            content: '';
+//            display: block;
+//            border-bottom: 4px solid $main-text-color;
+//            width: 8%;
+//            margin-top: 5px;
+//          }
+//        }
+//      }
+//
+//      .view-content {
+//        right: 0;
+//        bottom: 0;
+//        top: 0;
+//        position: absolute;
+//        z-index: 10;
+//        display: block;
+//        width: 64%;
+//        margin-left: 36%;
+//        height: 100vh;
+//      }
+//
+//      .links {
+//        display: none;
+//      }
+//    }
+//  }
+//
+//
+//}
+//
+///* ----------- Retina Screens ----------- */
+//@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+//}

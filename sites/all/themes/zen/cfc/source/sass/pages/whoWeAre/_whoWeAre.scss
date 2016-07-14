@@ -4,19 +4,24 @@
   }
   .news-feed {
     height: auto;
-    min-height: 768px;
-    // max-width: 1280px;
-    max-height: 1080px;
-    background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 100%;
-    background-size: 66% 100%;
-
+    min-height: 100vh;
+    background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 90% 100%;
+    background-size: 66% auto;
+    padding: 15vh 90px 0 90px;
+    background-position: 90%;
+    .view {
+      padding: 0 0 0 0;
+      max-width: 100% !important;
+      height: 100vh !important;
+    }
     .field-name-body {
 
     }
     p {
-      font-family: 'probaProSemibold';
+      font-family: 'probaPro';
+      text-align: justify;
       display: block;
-      width: 33%;
+      width: 30%;
       color: $main-text-color;
       padding: 0 45px 0 0px;
 
@@ -56,15 +61,14 @@
     }
 
     .view-content {
-      //   max-height: 1024px;
       right: 0;
       bottom: 0;
       top: 0;
       position: absolute;
       z-index: 10;
       display: block;
-      width: 65%;
-      margin-left: 36%;
+      width: 66%;
+      margin-left: 34%;
       height: 100vh;
 
       .views-row {
@@ -81,7 +85,7 @@
             width: 100%;
             .member {
               display: none;
-              padding-top: 125px;
+              padding-top: 10vh;
               .member-info-container {
                 .member-info {
                   border-radius: 2px;
@@ -155,7 +159,7 @@
         }
 
         &.views-row-1 {
-          margin-left: 8%;
+          margin-left: 6%;
           .views-field {
             width: 100%;
             .field-content {
@@ -191,7 +195,7 @@
         }
 
         &.views-row-4 {
-          margin-left: 0;
+          margin-left: 2%;
           .views-field {
             width: 100%;
             .field-content {
@@ -202,7 +206,7 @@
         }
 
         &.views-row-5 {
-          margin-left: 0;
+          margin-left: 1%;
           .views-field {
             width: 100%;
             .field-content {
@@ -240,7 +244,7 @@
         }
 
         &.views-row-8 {
-          margin-left: 3%;
+          margin-left: 2%;
           width: 5%;
           .views-field {
             width: 100%;
@@ -265,7 +269,7 @@
 
         &.views-row-10 {
           margin-left: 0;
-          width: 7%;
+          width: 5%;
           .views-field {
             width: 100%;
             .field-content {

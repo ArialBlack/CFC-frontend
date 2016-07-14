@@ -26,11 +26,20 @@
           margin-bottom: 20px;
           text-decoration: none;
           display: block;
+
+          &:after {
+            content: '';
+            display: block;
+            border-bottom: 4px solid $main-text-color;
+            width: 8%;
+            margin-top: 5px;
+          }
         }
       }
 
       .field-name-body {
-        font-family: 'probaProSemibold';
+        font-family: 'probaPro';
+        color: #616062;
       }
       span.rdf-mta {
         display: block;
@@ -45,8 +54,7 @@
 
       form {
         margin-top: 20px;
-
-        input {
+        input[type=text], input[type=email], input[type=password] {
           display: block;
           margin-top: 8px;
           border: 1px solid $main-text-color;
@@ -100,6 +108,7 @@
 
         .form-actions {
           .form-submit {
+            padding: 4px;
             display: block;
             width: 150px;
             height: 30px;

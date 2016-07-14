@@ -41,6 +41,7 @@
     width: $size;
     height: $size;
     display: inline-block;
+    cursor: pointer;
 
     .line {
       width: 100%;
@@ -353,4 +354,11 @@
 
 @mixin bottomLine() {
   border-bottom: 1px solid $hr-color;
+}
+
+$browser-context: 16;
+// Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
 }

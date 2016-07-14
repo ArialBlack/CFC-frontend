@@ -3058,7 +3058,8 @@ if (typeof jQuery === 'undefined') {
                 //   $('.loader').css('transition','all, 0s').css('display', 'none');
             }, 7500);
 
-            $("#menu_dropdown, .menu-icon").on('click', function () {
+          $("#menu_dropdown, .menu-icon").on('click', function (e) {
+            e.preventDefault();
                 CFC.showMenuDropdown()
             });
 

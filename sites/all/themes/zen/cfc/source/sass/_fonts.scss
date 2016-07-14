@@ -10,7 +10,18 @@
 }
 
 @font-face {
-  font-family: probaProItalic;
+  font-family: probaProLightItalic;
   src: url('../fonts/Proba_Pro_Light_Italic.otf');
   font-style: italic;
+}
+
+@font-face {
+  font-family: probaProItalic;
+  src: url('../fonts/Proba_Pro_Italic.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: probaProMedium;
+  src: url('../fonts/Proba_Pro_Medium.otf');
 }
