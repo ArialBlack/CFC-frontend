@@ -1,7 +1,7 @@
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .mobile-top-story-section {
     height: 110vh;
     //padding-top: 20%;
@@ -137,10 +137,10 @@
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-top-story-section {
-    height: 125vh;
-    //  padding-top: 15%;
+    height: 105vh;
+    padding-top: 0;
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -181,9 +181,10 @@
 
 
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .mobile-top-story-section {
-    height: 125vh;
+    height: 105vh;
+    padding-top: 0;
     //  padding-top: 15%;
     .view-display-id-block_2 {
       height: 100vh;

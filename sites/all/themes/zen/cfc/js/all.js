@@ -3047,7 +3047,7 @@ if (typeof jQuery === 'undefined') {
                 $('#main').css('visibility', 'visible');
             }
 
-            if ($(window).width() > 1024) {
+          if ($(window).width() > 1279) {
                 $(".mobile-top-story-section").remove();
             }
             //LOADER SETTINGS

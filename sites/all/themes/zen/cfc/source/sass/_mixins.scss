@@ -95,7 +95,8 @@
   .modal {
     &.fade.in {
       height: auto;
-      min-height: 90vh;
+      min-height: 100vh;
+      overflow: auto;
       transform: translate(0, 0vh);
     }
 

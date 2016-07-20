@@ -7,10 +7,10 @@
     width: 100%;
     min-height: 100vh;
     padding: 0;
-
-    background: url('../images/career/background-full-hd_new.jpg') no-repeat scroll 100% 100%;
-    background-position: left, left;
-    background-size: 65% 100%;
+    background: url('../images/career/stairs.jpg') no-repeat scroll 100% 100%;
+    background-position: left;
+    background-size: 65% auto;
+    @include bottomLine();
 
     article {
       width: 33%;
@@ -39,8 +39,10 @@
 
       .field-name-body {
         font-family: 'probaPro';
+        text-align: justify;
         color: #616062;
       }
+
       span.rdf-mta {
         display: block;
         width: 10%;

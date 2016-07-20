@@ -1,0 +1,53 @@
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer-section {
+    height: 80px;
+    background: #455e86;
+
+    .footer-list {
+      background: $contacts-bg;
+      height: 60px;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        color: #b9bec4;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding: 0;
+
+        &.right {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer-section {
+    height: 80px;
+    background: #455e86;
+
+    .footer-list {
+      background: $contacts-bg;
+      height: 60px;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        color: #b9bec4;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding: 0;
+
+        &.right {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

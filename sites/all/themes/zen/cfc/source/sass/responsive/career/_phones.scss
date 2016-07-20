@@ -1,5 +1,5 @@
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   .mobile-career-section {
     box-sizing: border-box;
     height: auto;
@@ -10,7 +10,7 @@
     .photo-wrapper {
       height: 20%;
       min-height: 250px;
-      background: transparent url('../images/career/bg-mobile_new.jpg') no-repeat scroll top left;
+      background: transparent url('../images/career/stairs.jpg') no-repeat scroll top left;
       background-size: 100% 100%;
     }
     .text-wrapper {
@@ -61,7 +61,7 @@
     .photo-wrapper {
       height: 35%;
       min-height: 250px;
-      background: transparent url('../images/career/bg-mobile_new.jpg') no-repeat scroll top left;
+      background: transparent url('../images/career/bg-stairs.jpg') no-repeat scroll top left;
       background-size: 100% 100%;
     }
     .text-wrapper {

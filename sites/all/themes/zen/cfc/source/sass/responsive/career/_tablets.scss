@@ -12,7 +12,7 @@
     .photo-wrapper {
       height: 20%;
       min-height: 400px;
-      background: transparent url('../images/career/bg-tablet_new.jpg') no-repeat scroll top left;
+      background: transparent url('../images/career/stairs.jpg') no-repeat scroll top left;
       background-size: 100% 100%;
     }
     .text-wrapper {
@@ -52,7 +52,7 @@
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1279px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .mobile-career-section {
     box-sizing: border-box;
     height: auto;
@@ -63,7 +63,7 @@
     .photo-wrapper {
       height: 20%;
       min-height: 550px;
-      background: transparent url('../images/career/bg-tablet_new.jpg') no-repeat scroll top left;
+      background: transparent url('../images/career/stairs.jpg') no-repeat scroll top left;
       background-size: 100% 100%;
     }
     .text-wrapper {

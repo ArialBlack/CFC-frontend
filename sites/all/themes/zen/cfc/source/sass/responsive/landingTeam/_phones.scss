@@ -1,7 +1,7 @@
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .team-section {
     min-height: 100vh;
     .team-content-wrapper {
@@ -346,14 +346,15 @@
 @media only screen and (min-device-width: 568px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .team-section {
     height: auto;
-    min-height: 183vh;
+    min-height: 0;
+    max-height: none;
     .team-content-wrapper {
-      position: absolute;
+      position: relative;
       top: 0;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, 0%);
-      padding: 0 0 0 0;
+      left: 0;
+      margin-right: 0;
+      transform: none;
+      padding: 0;
       width: 100%;
       max-width: 1280px;
 
@@ -364,7 +365,7 @@
         .views-row {
           width: 49.5%;
           max-width: 400px;
-          height: 70vh;
+          height: 85vh;
           //background: grey;
           display: inline-block;
           margin: 0px 0px 0px 0px;

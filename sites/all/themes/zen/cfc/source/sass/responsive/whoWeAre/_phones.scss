@@ -1,7 +1,7 @@
 
 
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   @include showMain();
   @include mobileSections(block);
   .section-mission {
@@ -14,7 +14,7 @@
       padding: 10%;
       background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
       background-position: left 15vh;
-      background-size: 100% 50%;
+      background-size: 100% 20%;
 
       .view {
         height: auto;
@@ -73,8 +73,8 @@
       // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
       background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
-      background-position: left 5vh;
-      background-size: 100% 100%;
+      background-position: left 12vh;
+      background-size: 100% 40%;
       .view {
         height: auto;
       }

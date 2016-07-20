@@ -610,6 +610,22 @@ if ($lang == 'uk') {
             </div>
         </section>
 
+        <section class="footer-section" id="footer">
+            <ul class="footer-list">
+                <li class="left">
+                    <span class="footer-text">
+                        &copy;
+                        CFC Consulting
+                    </span>
+                </li>
+                <li class="right">
+                    <span class="footer-text">
+                        Relived at the Schroedinger's Cat Lab.
+                    </span>
+                </li>
+            </ul>
+        </section>
+
         <div id="navigation">
 
             <?php if ($main_menu): ?>

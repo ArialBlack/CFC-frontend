@@ -170,10 +170,10 @@
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) and (-webkit-min-device-pixel-ratio: 2) {
   .team-section {
     height: auto;
-    min-height: 177vh;
+    min-height: 160vh;
     max-height: none;
     position: relative;
     border-bottom: none;
@@ -191,7 +191,7 @@
         height: 90vh;
         .views-row {
           width: 49.7%;
-          max-width: 512px;
+          max-width: none;
           display: inline-block;
           margin: 0px 0px 0px 0px;
           height: auto;

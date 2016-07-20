@@ -1,0 +1,27 @@
+.footer-section {
+  height: 80px;
+  background: #455e86;
+  //  padding-top: 20px;
+  .footer-list {
+    background: $contacts-bg;
+    height: 60px;
+    padding: 0 150px 0 300px;
+
+    li {
+      display: inline-block;
+      color: #b9bec4;
+      width: 31%;
+      margin-right: 15px;
+      text-align: left;
+      padding: 24px 0 0 0;
+
+      .footer-text {
+        font-family: probaPro;
+        font-size: $fs-sm;
+      }
+      &.right {
+        margin-left: calc(31% + 15px);
+      }
+    }
+  }
+}
