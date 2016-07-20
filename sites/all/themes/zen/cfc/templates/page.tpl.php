@@ -118,7 +118,7 @@
                         <!-- Icon Bar -->
                     </div>
                     <div class="footer">
-                        <div class="phone"></div>
+                        <div class="phone"><span class="phone-number">+380 (44) 492-75-99</span></div>
                     </div>
                 </div>
 
