@@ -45,13 +45,13 @@
 
     .line {
       width: 100%;
-      border-bottom: $size/8 solid $main-text-color;
+      border-bottom: $size/12 solid $main-text-color;
       display: block;
       transition-property: width;
       transition-duration: 0.3s;
 
       &.second {
-        margin: $size/3 0px $size/3 0px;
+        margin: $size/3 0 $size/3 0;
         width: $size*0.7;
       }
 

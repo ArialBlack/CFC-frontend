@@ -1,9 +1,10 @@
 .news-section {
   max-width: 1280px;
-  max-height: 1024px;
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  overflow: auto;
+  min-height: 960px;
   padding: 26vh 90px 0 90px;
   @include bottomLine();
 

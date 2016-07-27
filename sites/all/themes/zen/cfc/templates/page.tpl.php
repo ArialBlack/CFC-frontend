@@ -169,7 +169,7 @@
                     </div>
 
                     <nav class="logo-wrapper">
-                        <a href="/" data-scroll-goto="0">
+                        <a href="http://test.schroedingerscatlab.com/" data-scroll-goto="0">
 
                             <div class="logo-container">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"

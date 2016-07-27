@@ -8,7 +8,7 @@
     background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 90% 100%;
     background-size: 66% auto;
     padding: 15vh 90px 0 90px;
-    background-position: 90%;
+    background-position: 90% 25%;
     .view {
       padding: 0 0 0 0;
       max-width: 100% !important;
@@ -20,9 +20,11 @@
     p {
       font-family: 'probaPro';
       text-align: justify;
+      letter-spacing: 1.5px;
       display: block;
       width: 30%;
       color: $main-text-color;
+      margin-top: 50px;
       padding: 0 45px 0 0px;
 
       &:first-child {
