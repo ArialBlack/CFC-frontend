@@ -134,6 +134,9 @@
             $("#close_mobile_menu").on('click', function () {
                 $('#side_nav_menu').removeClass('active');
             });
+
+            var whereAmI = $("#menu_dropdown_content>li.active>a").text();
+            $("#menu_dropdown").text(whereAmI);
             CFC.newsSlider();
 
 

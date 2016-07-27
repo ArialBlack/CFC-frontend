@@ -314,4 +314,28 @@
       display: none;
     }
   }
+
+  .footer-section {
+    height: 80px;
+    background: #455e86;
+    margin-top: -5px;
+    .footer-list {
+      background: $contacts-bg;
+      height: 60px;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        color: #b9bec4;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding: 0;
+
+        &.right {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
