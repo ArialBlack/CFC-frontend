@@ -227,6 +227,13 @@
             <?php endif; ?>
             <?php print render($page['navigation']); ?>
         </div>
+        
+<section class="footer-section" id="footer">
+    <?php print render($page['footer']); ?>
+</section>
+                
+        
     </div>
 </div>
+
 
