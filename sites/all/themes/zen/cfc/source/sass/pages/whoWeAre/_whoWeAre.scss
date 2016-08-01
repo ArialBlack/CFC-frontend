@@ -8,24 +8,35 @@
     background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 90% 100%;
     background-size: 66% auto;
     padding: 15vh 90px 0 90px;
-    background-position: 90% 25%;
+    background-position: 100% 50%;
     .view {
       padding: 0 0 0 0;
       max-width: 100% !important;
       height: 100vh;
     }
-    .field-name-body {
 
+    .block-views {
+      height: 0;
+    }
+
+    article {
+      width: 30%;
+      display: inline-block;
+      position: absolute;
+      z-index: 50;
+
+      .field-name-body > .field-items > .field-item {
+        max-height: 80vh;
+        overflow: auto;
+      }
     }
     p {
       font-family: 'probaPro';
       text-align: justify;
       letter-spacing: 1.5px;
       display: block;
-      width: 30%;
       color: $main-text-color;
       padding: 0 45px 0 0px;
-      overflow-y: scroll;
 
       &:first-child {
         font-size: $fs-md;
@@ -72,7 +83,7 @@
       position: absolute;
       z-index: 10;
       display: block;
-      width: 66%;
+      width: 60%;
       margin-left: 34%;
       height: 100vh;
 
@@ -90,7 +101,6 @@
             width: 100%;
             .member {
               display: none;
-              padding-top: 10vh;
               .member-info-container {
                 .member-info {
                   border-radius: 2px;
@@ -164,7 +174,7 @@
         }
 
         &.views-row-1 {
-          margin-left: 6%;
+          margin-left: 3%;
           .views-field {
             width: 100%;
             .field-content {
@@ -177,6 +187,7 @@
 
         &.views-row-2 {
           width: 8%;
+          margin-left: 4%;
           .views-field {
             width: 100%;
             .field-content {
@@ -200,7 +211,8 @@
         }
 
         &.views-row-4 {
-          margin-left: 2%;
+          margin-left: 5%;
+          width: 6%;
           .views-field {
             width: 100%;
             .field-content {
@@ -249,7 +261,7 @@
         }
 
         &.views-row-8 {
-          margin-left: 2%;
+          margin-left: 3%;
           width: 5%;
           .views-field {
             width: 100%;
@@ -285,7 +297,7 @@
         }
 
         &.views-row-11 {
-          margin-left: 0;
+          margin-left: 3%;
           width: 5%;
           .views-field {
             width: 100%;
@@ -318,22 +330,26 @@
   .footer-section {
     height: 80px;
     background: #455e86;
-    margin-top: -5px;
+    //  padding-top: 20px;
     .footer-list {
       background: $contacts-bg;
       height: 60px;
-      padding: 0;
+      padding: 0 150px 0 300px;
 
       li {
         display: inline-block;
         color: #b9bec4;
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-        padding: 0;
+        width: 31%;
+        margin-right: 15px;
+        text-align: left;
+        padding: 24px 0 0 0;
 
+        .footer-text {
+          font-family: probaPro;
+          font-size: $fs-sm;
+        }
         &.right {
-          margin-left: 0;
+          margin-left: calc(31% + 15px);
         }
       }
     }

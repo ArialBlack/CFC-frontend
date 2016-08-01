@@ -9,29 +9,29 @@
             function initialize() {
 
 
-                function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-                    directionsService.route({
-                        origin: {
-                            lat: 50.449686,
-                            lng: 30.523748
-                        },  // Subway
-                        destination: {
-                            lat: 50.452606,
-                            lng: 30.524959
-                        },  // Office.
-                        // Note that Javascript allows us to access the constant
-                        // using square brackets and a string value as its
-                        // "property."
-                        travelMode: google.maps.TravelMode.DRIVING
-                    }, function (response, status) {
-                        if (status == google.maps.DirectionsStatus.OK) {
-                            directionsDisplay.setDirections(response);
-
-                        } else {
-                            alert('Directions request failed due to ' + status);
-                        }
-                    });
-                }
+                //function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+                //    directionsService.route({
+                //        origin: {
+                //            lat: 50.449686,
+                //            lng: 30.523748
+                //        },  // Subway
+                //        destination: {
+                //            lat: 50.452606,
+                //            lng: 30.524959
+                //        },  // Office.
+                //        // Note that Javascript allows us to access the constant
+                //        // using square brackets and a string value as its
+                //        // "property."
+                //        travelMode: google.maps.TravelMode.DRIVING
+                //    }, function (response, status) {
+                //        if (status == google.maps.DirectionsStatus.OK) {
+                //            directionsDisplay.setDirections(response);
+                //
+                //        } else {
+                //            alert('Directions request failed due to ' + status);
+                //        }
+                //    });
+                //}
 
 
                 var mapId = document.getElementById("map");
@@ -39,7 +39,7 @@
                 var directionsDisplay = new google.maps.DirectionsRenderer({
                     preserveViewport: true
                 });
-                var directionsService = new google.maps.DirectionsService;
+                //var directionsService = new google.maps.DirectionsService;
 
                 var mapOptions = {
                     center: new google.maps.LatLng(50.452606, 30.524959),
@@ -124,9 +124,29 @@
                 };
                 map = new google.maps.Map(mapId, mapOptions);
                 map.setZoom(15);
+                var markerPosition = {
+                    lat: 50.452606,
+                    lng: 30.524959
+                };
+
+                var contentString = '<div class="default-text"> CFC Consulting</div> <span class="address"> 8 Kostolna str. Kyiv</span>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                var marker = new google.maps.Marker({
+                    position: markerPosition,
+                    map: map
+                });
+
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+
                 google.maps.event.trigger(map, "resize");
                 directionsDisplay.setMap(map);
-                calculateAndDisplayRoute(directionsService, directionsDisplay);
+                // calculateAndDisplayRoute(directionsService, directionsDisplay);
 
                 google.maps.event.addDomListener(window, "resize", function () {
 

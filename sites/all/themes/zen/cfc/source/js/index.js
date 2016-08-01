@@ -139,6 +139,9 @@
             $("#menu_dropdown").text(whereAmI);
             CFC.newsSlider();
 
+            var whereAmIMobile = $(".side-nav-menu-list>li.active>a").text();
+            $("#mobile_menu").text(whereAmIMobile);
+
 
             $.scrollIt({
                 upKey: 38,             // key code to navigate to the next section
@@ -152,6 +155,15 @@
                 },    // function(pageIndex) that is called when page is changed
                 topOffset: 0           // offste (in px) for fixed top navigation
             });
+
+
+            $(".field-item").niceScroll({
+                "cursorwidth": '3px',
+                "cursorcolor": "#374e73",
+                "cursorborder": "0 none",
+                "cursorborderradius": "6px"
+            });
+
 
         });
     });

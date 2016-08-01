@@ -3,25 +3,52 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .news-feed {
-    width: 95%;
+    width: 100%;
     height: auto;
-    min-height: 30vh;
+    min-height: 0;
     margin-top: 10vh;
-    margin-left: 5%;
+    margin-left: 0;
     padding: 0;
 
+    .node-news {
+      height: auto;
+      min-height: 80vh;
+      padding: 10%;
+
+      .field-name-body {
+        .field-item {
+          overflow: auto;
+          max-height: none;
+          word-wrap: break-word;
+        }
+      }
+    }
   }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
   .news-feed {
-    width: 95%;
+    width: 100%;
     height: auto;
-    min-height: 30vh;
+    min-height: 0;
     margin-top: 10vh;
-    margin-left: 5%;
+    margin-left: 0;
     padding: 0;
 
+    .node-news {
+      height: auto;
+      min-height: 80vh;
+      padding: 10%;
+
+      .field-name-body {
+        .field-item {
+          overflow: auto;
+          max-height: none;
+          word-wrap: break-word;
+        }
+      }
+
+    }
   }
 }

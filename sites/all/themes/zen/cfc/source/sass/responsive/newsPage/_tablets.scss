@@ -1,7 +1,7 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   body, html {
     overflow: initial !important;
   }
@@ -10,12 +10,11 @@
       width: 100%;
       height: auto;
       min-height: 20vh;
-      margin-top: 10vh;
+      margin: 0;
       padding: 0;
 
       .view {
         padding: 0;
-        padding-top: 8vh;
       }
 
       .view-content {
@@ -132,9 +131,9 @@
       }
 
       .item-list {
-
         ul.pager {
           text-align: center;
+          margin: 15px;
           li {
             display: inline-block;
             font-family: 'probaPro';
@@ -190,12 +189,11 @@
       width: 100%;
       height: auto;
       min-height: 20vh;
-      margin-top: 15vh;
+      margin: 0;
       padding: 0;
 
       .view {
         padding: 0;
-        padding-top: 10vh;
       }
 
       .view-content {
@@ -313,9 +311,9 @@
       }
 
       .item-list {
-        margin-top: 5vh;
         ul.pager {
           text-align: center;
+          margin: 15px;
           li {
             display: inline-block;
             font-family: 'probaPro';

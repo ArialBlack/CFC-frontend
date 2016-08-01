@@ -1,15 +1,20 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .section-team {
     .news-feed {
-      height: 100vh;
-      max-height: 100vh;
-      padding-top: 10vh;
+      height: auto;
+      max-height: none;
+      padding-top: 0;
+      margin: 0;
+      width: 100%;
       .node-team-member {
-        position: absolute;
+        position: relative;
         top: 0;
+        left: 0;
+        margin-right: 0;
+        transform: translate(0%, 0%);
         z-index: 1;
         padding: 7vh 0 0 0;
         // margin-right: 90px;
@@ -32,15 +37,19 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
   .section-team {
     .news-feed {
-      height: 100vh;
-      max-height: 100vh;
-      padding-top: 10vh;
+      height: auto;
+      max-height: none;
+      padding-top: 0;
+      margin: 0;
+      width: 100%;
       .node-team-member {
-        position: absolute;
+        position: relative;
         top: 0;
+        left: 0;
+        margin-right: 0;
+        transform: translate(0%, 0%);
         z-index: 1;
         padding: 7vh 0 0 0;
-        // margin-right: 90px;
 
         .image-wrapper {
           display: inline-block;

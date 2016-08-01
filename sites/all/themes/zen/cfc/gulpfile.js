@@ -22,6 +22,7 @@ var gulp = require('gulp'),
                 './source/bower_components/ScrollIt/scrollIt.min.js',
                 './source/bower_components/bootstrap/dist/js/bootstrap.js',
                 './source/bower_components/jquery.cookie/jquery.cookie.js',
+                './source/bower_components/jquery-nicescroll/jquery.nicescroll.min.js',
                 './source/js/map.js',
                 './source/js/index.js'
             ],

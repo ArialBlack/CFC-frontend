@@ -55,41 +55,30 @@
       }
       .field-name-field-image {
         display: none;
-        float: right;
-        width: 100%;
-        height: 250px;
-        margin-top: 0;
-        position: absolute;
-        .field-items {
-          width: 100%;
-          height: 100%;
-          .field-item {
-            width: 100%;
-            height: 100%;
-            img {
-              height: 100%;
-              width: 100%;
-            }
-          }
-        }
+
       }
 
       .field-name-body {
         display: inline-block;
-        width: 90%;
+        width: 100%;
         padding: 0;
 
+        .field-item {
+          overflow: auto;
+          max-height: none;
+          word-wrap: break-word;
+        }
       }
 
       .flippy {
         color: $main-text-color;
-
+        margin: 10px;
+        position: relative;
         li {
           width: 32%;
         }
         .prev {
           display: inline-block;
-          // width: 25%;
           a {
             display: block;
             background: url('../images/icons/previous.png') no-repeat scroll left center;
@@ -99,7 +88,6 @@
 
         .next {
           display: inline-block;
-          // width: 25%;
           a {
             background: url('../images/icons/next.png') no-repeat scroll right center;
             color: transparent;
@@ -135,17 +123,6 @@
         color: $main-text-color;
         background: url('../images/icons/previous.png') no-repeat scroll center center;
       }
-      //
-      //        &.close {
-      //          color: $main-text-color;
-      //          background: url('../images/icons/close.png') no-repeat scroll center center;
-      //        }
-      //
-      //      }
-      //
-      //    }
-      //  }
-      //}
 
       .submitted-by, .field-name-field-tags {
         display: inline-block;
@@ -183,34 +160,24 @@
       }
       .field-name-field-image {
         display: none;
-        float: right;
-        width: 100%;
-        height: 250px;
-        margin-top: 0;
-        .field-items {
-          width: 100%;
-          height: 100%;
-          .field-item {
-            width: 100%;
-            height: 100%;
-            img {
-              height: 100%;
-              width: 100%;
-            }
-          }
-        }
       }
 
       .field-name-body {
         display: inline-block;
-        width: 90%;
+        width: 100%;
         padding: 10px;
 
+        .field-item {
+          overflow: auto;
+          max-height: none;
+          word-wrap: break-word;
+        }
       }
 
       .flippy {
         color: $main-text-color;
-
+        margin: 10px;
+        position: relative;
         li {
           width: 32%;
         }

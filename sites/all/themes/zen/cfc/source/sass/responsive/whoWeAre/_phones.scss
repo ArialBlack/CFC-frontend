@@ -1,20 +1,27 @@
-
-
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   @include showMain();
   @include mobileSections(block);
   .section-mission {
-    //   background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 110% -100%;
-    // background-size: 100% 100%;
+
     .news-feed {
+      width: 100%;
       height: auto;
       min-height: 100vh;
-      // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
       background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
       background-position: left 15vh;
       background-size: 100% 20%;
+
+      article {
+        width: 95%;
+        padding-top: 40vh;
+        position: relative;
+        .field-name-body > .field-items > .field-item {
+          max-height: none;
+          overflow: auto;
+        }
+      }
 
       .view {
         height: auto;
@@ -25,13 +32,13 @@
       }
       p {
         &:first-child {
-          padding-top: 55vh;
+          padding-top: 0;
         }
         display: inline-block;
         width: 100%;
         color: $main-text-color;
         text-shadow: black;
-        padding: 20px 45px 0 0;
+        padding: 20px 0 0 0;
 
         .title {
           font-family: 'probaPro';
@@ -56,6 +63,8 @@
         display: none;
       }
     }
+
+    @include footerPortraitPhone();
   }
 
 }
@@ -65,16 +74,25 @@
   @include showMain();
   @include mobileSections(block);
   .section-mission {
-    //   background: url('../images/career/background-full-hd_new.jpg') no-repeat fixed 110% -100%;
-    // background-size: 100% 100%;
     .news-feed {
+      width: 100%;
       height: auto;
       min-height: 100vh;
-      // background: rgba(192, 192, 192, 0.7);
       padding: 10%;
       background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 100% 100%;
       background-position: left 12vh;
-      background-size: 100% 40%;
+      background-size: 100% auto;
+
+      article {
+        width: 95%;
+        padding-top: 65vh;
+        position: relative;
+        .field-name-body > .field-items > .field-item {
+          max-height: none;
+          overflow: auto;
+        }
+      }
+
       .view {
         height: auto;
       }
@@ -84,13 +102,13 @@
       }
       p {
         &:first-child {
-          padding-top: 60vh;
+          padding-top: 0;
         }
         display: inline-block;
         width: 100%;
         color: $main-text-color;
         text-shadow: black;
-        padding: 20px 45px 0 0;
+        padding: 20px 0 0 0;
 
         .title {
           font-family: 'probaPro';
@@ -115,5 +133,7 @@
         display: none;
       }
     }
+
+    @include footerLandscapePhone();
   }
 }

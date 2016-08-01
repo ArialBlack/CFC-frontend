@@ -11,6 +11,7 @@
     z-index: 50;
     width: 100%;
     height: 10vh;
+    min-height: 65px;
     padding: 6% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 1);
@@ -20,12 +21,15 @@
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+        display: inline-block;
+        height: 24px;
+        position: absolute;
+        z-index: 55;
       }
 
       .logo-container {
         display: inline-block;
         height: 50px;
-        width: 55%;
         svg {
           height: 90px;
           width: 100%;
@@ -186,6 +190,7 @@
     z-index: 50;
     width: 100%;
     height: 15vh;
+    min-height: 65px;
     padding: 4% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 1);
@@ -200,10 +205,9 @@
       .logo-container {
         display: inline-block;
         height: 50px;
-        width: 70%;
         svg {
           height: 90px;
-          width: 100%;
+          width: 85%;
           margin-top: -12%;
           .logo {
             fill: $main-text-color;
@@ -356,7 +360,7 @@
 /* ----------- iPhone 5, 5S, 6, 6s ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   @include mobileSections(block);
 
   .mobile-navigation-section {
@@ -366,6 +370,7 @@
     z-index: 50;
     width: 100%;
     height: 20vh;
+    min-height: 65px;
     padding: 5% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 1);

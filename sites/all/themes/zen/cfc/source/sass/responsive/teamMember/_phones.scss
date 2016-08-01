@@ -4,17 +4,17 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .section-team {
     .news-feed {
-      height: 100vh;
-      max-height: 100vh;
+      height: auto;
+      max-height: none;
       padding: 0;
       margin-top: 10vh;
       .node-team-member {
-        position: absolute;
+        position: relative;
         z-index: 1;
         left: 0;
         transform: none;
         margin-right: 0;
-        padding: 10vh 0 0 0;
+        padding: 0;
 
         .image-wrapper {
           display: block;
@@ -156,6 +156,7 @@
           padding: 2% 10% 0 10%;
           width: 100%;
           text-align: center;
+          margin-bottom: 15px;
           .prev {
             a {
               background: url('../images/icons/previous.png') no-repeat scroll left center;
@@ -191,17 +192,17 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .section-team {
     .news-feed {
-      height: 100vh;
-      max-height: 100vh;
+      height: auto;
+      max-height: none;
       padding: 0;
       margin-top: 10vh;
       .node-team-member {
-        position: absolute;
+        position: relative;
         z-index: 1;
         left: 0;
         transform: none;
         margin-right: 0;
-        padding: 10vh 0 0 0;
+        padding: 0;
 
         .image-wrapper {
           display: block;
@@ -343,6 +344,7 @@
           padding: 2% 10% 0 10%;
           width: 100%;
           text-align: center;
+          margin-bottom: 15px;
           .prev {
             a {
               background: url('../images/icons/previous.png') no-repeat scroll left center;
