@@ -1,11 +1,11 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .mobile-intro-section {
     position: relative;
     //margin: 0 auto;
-    min-height: 40vh;
+    min-height: 400px;
     margin-top: 0;
     .logo-container {
       width: 100%;

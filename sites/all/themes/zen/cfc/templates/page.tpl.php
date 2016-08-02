@@ -32,6 +32,7 @@
 
         <div class="mobile-navigation-section">
             <nav class="mobile-navigation">
+                <div class="menu-wrapper">
                 <div class="menu-icon" id="mobile_menu_icon">
                     <span class="line first"></span>
                     <span class="line second"></span>
@@ -39,7 +40,7 @@
                 </div>
 
                 <a href="#" class="mobile-menu uppercase" id="mobile_menu">Menu</a>
-
+                </div>
                 <div class="logo-container">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -144,7 +145,7 @@
                                 <span class="line third"></span>
                             </div>
 
-                            <a href="#" class="dropdown uppercase" id="menu_dropdown">Main</a>
+                            <a href="#" class="dropdown uppercase" id="menu_dropdown">News</a>
 
                             <?php
                             // This code snippet is hard to modify. We recommend turning off the

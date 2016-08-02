@@ -44,6 +44,7 @@
           border-bottom: 2px solid $main-text-color;
         }
         .node-title {
+          width: 100%;
           font-family: 'probaPro';
           font-weight: 400;
           letter-spacing: 2px;
@@ -72,7 +73,6 @@
 
       .flippy {
         color: $main-text-color;
-        margin: 10px;
         position: relative;
         li {
           width: 32%;
@@ -156,6 +156,7 @@
           color: $main-text-color;
           display: inline-block;
           text-transform: uppercase;
+          width: 100%;
         }
       }
       .field-name-field-image {
@@ -176,7 +177,6 @@
 
       .flippy {
         color: $main-text-color;
-        margin: 10px;
         position: relative;
         li {
           width: 32%;

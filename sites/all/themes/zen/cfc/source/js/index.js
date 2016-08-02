@@ -140,7 +140,9 @@
             CFC.newsSlider();
 
             var whereAmIMobile = $(".side-nav-menu-list>li.active>a").text();
-            $("#mobile_menu").text(whereAmIMobile);
+            if (whereAmIMobile !== undefined && whereAmIMobile.length !== 0) {
+                $("#mobile_menu").text(whereAmIMobile);
+            }
 
 
             $.scrollIt({
@@ -158,7 +160,7 @@
 
 
             $(".field-item").niceScroll({
-                "cursorwidth": '3px',
+                "cursorwidth": '2px',
                 "cursorcolor": "#374e73",
                 "cursorborder": "0 none",
                 "cursorborderradius": "6px"

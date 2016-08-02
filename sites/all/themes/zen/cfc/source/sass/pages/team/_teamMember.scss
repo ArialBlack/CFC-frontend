@@ -3,7 +3,7 @@
     padding-top: 140px;
     position: relative;
     overflow: hidden;
-
+    min-height: 0;
     .node-team-member {
       position: relative;
       top: 0;
@@ -133,14 +133,14 @@
 
           .field-items {
             .field-item {
-              max-height: 50vh;
+              max-height: 515px;
               overflow: auto;
               p {
                 width: 95%;
                 margin-top: 10px;
                 font-family: 'probaPro';
                 color: #4d4d4f;
-                text-align: justify;
+                text-align: left;
               }
             }
           }
@@ -156,7 +156,8 @@
         width: 19%;
         position: absolute;
         text-align: left;
-
+        bottom: 0;
+        margin-bottom: 15px;
         li {
           display: inline-block;
           width: 30%;
@@ -192,5 +193,9 @@
         display: none;
       }
     }
+  }
+
+  .footer-section {
+    margin-top: -5px;
   }
 }

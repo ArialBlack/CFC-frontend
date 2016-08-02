@@ -1,7 +1,7 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .news-feed {
     width: 100%;
     height: auto;
@@ -16,10 +16,73 @@
       padding: 10%;
 
       .field-name-body {
+
         .field-item {
           overflow: auto;
           max-height: none;
           word-wrap: break-word;
+        }
+      }
+
+      header {
+        &:before {
+          margin-bottom: 5px;
+          border-top: 2px solid $main-text-color;
+        }
+
+        &:after {
+          margin-top: 5px;
+          border-bottom: 2px solid $main-text-color;
+        }
+        .node-title {
+          width: 100%;
+          font-family: 'probaPro';
+          font-weight: 400;
+          letter-spacing: 2px;
+          margin: 5px 0 5px 0;
+          color: $main-text-color;
+          display: inline-block;
+          text-transform: uppercase;
+          text-align: left;
+        }
+      }
+      .field-name-field-image {
+        float: right;
+        width: 100%;
+        margin-top: 50px;
+        .field-items {
+          width: 100%;
+          .field-item {
+            width: 100%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+
+      .field-name-body {
+        width: 100%;
+        .field-item {
+          overflow: auto;
+          max-height: none;
+          word-wrap: break-word;
+        }
+      }
+
+      .flippy {
+        color: $main-text-color;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        margin: 15px 0;
+        li {
+          display: inline-block;
+          width: 27%;
+          vertical-align: top;
+          padding: 10px 0;
         }
       }
     }
@@ -42,6 +105,7 @@
       padding: 10%;
 
       .field-name-body {
+
         .field-item {
           overflow: auto;
           max-height: none;
@@ -49,6 +113,67 @@
         }
       }
 
+      header {
+        &:before {
+          margin-bottom: 5px;
+          border-top: 2px solid $main-text-color;
+        }
+
+        &:after {
+          margin-top: 5px;
+          border-bottom: 2px solid $main-text-color;
+        }
+        .node-title {
+          width: 100%;
+          font-family: 'probaPro';
+          font-weight: 400;
+          letter-spacing: 2px;
+          margin: 5px 0 5px 0;
+          color: $main-text-color;
+          display: inline-block;
+          text-transform: uppercase;
+          text-align: left;
+        }
+      }
+      .field-name-field-image {
+        float: right;
+        width: 100%;
+        margin-top: 50px;
+        .field-items {
+          width: 100%;
+          .field-item {
+            width: 100%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+
+      .field-name-body {
+        width: 100%;
+        .field-item {
+          overflow: auto;
+          max-height: none;
+          word-wrap: break-word;
+        }
+      }
+
+      .flippy {
+        color: $main-text-color;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        margin: 15px 0;
+        li {
+          display: inline-block;
+          width: 27%;
+          vertical-align: top;
+          padding: 10px 0;
+        }
+      }
     }
   }
 }

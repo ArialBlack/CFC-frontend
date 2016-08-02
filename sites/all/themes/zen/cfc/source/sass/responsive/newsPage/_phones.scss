@@ -5,7 +5,7 @@
     .news-feed {
       width: 100%;
       height: auto;
-      min-height: 20vh;
+      min-height: calc(100vh - 150px);
       margin-top: 10vh;
       padding: 0;
       .view {
@@ -96,6 +96,7 @@
                   .news-title {
                     margin-top: 5px;
                     height: auto;
+                    width: 75%;
                     a {
                       display: block;
                       margin-top: 5px;
@@ -103,7 +104,7 @@
                       font-size: 12px;
                       font-weight: 400;
                       letter-spacing: 0.5px;
-                      color: #a6a69d;
+                      color: $main-text-color;
                       &:hover {
                         color: $main-text-color;
 
@@ -188,7 +189,8 @@
     .news-feed {
       width: 100%;
       height: auto;
-      min-height: 20vh;
+      margin-top: 70px;
+      min-height: calc(100vh - 150px);
       padding: 0;
 
       .view {
@@ -284,11 +286,7 @@
                     font-size: 12px;
                     font-weight: 400;
                     letter-spacing: 0.5px;
-                    color: #a6a69d;
-                    &:hover {
-                      color: $main-text-color;
-
-                    }
+                    color: $main-text-color;
                   }
                 }
 

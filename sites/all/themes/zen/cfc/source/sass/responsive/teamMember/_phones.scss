@@ -136,6 +136,7 @@
 
             .field-items {
               .field-item {
+                max-height: none;
                 p {
                   text-align: justify;
                   padding: 0 10%;
@@ -155,6 +156,7 @@
           color: $main-text-color;
           padding: 2% 10% 0 10%;
           width: 100%;
+          position: relative;
           text-align: center;
           margin-bottom: 15px;
           .prev {
@@ -324,6 +326,7 @@
 
             .field-items {
               .field-item {
+                max-height: none;
                 p {
                   text-align: justify;
                   padding: 0 10%;
@@ -344,6 +347,7 @@
           padding: 2% 10% 0 10%;
           width: 100%;
           text-align: center;
+          position: relative;
           margin-bottom: 15px;
           .prev {
             a {

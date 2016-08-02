@@ -42,15 +42,17 @@
         display: none;
         float: left;
         margin-top: 50%;
-        margin-left: 35%;
-
+        width: 100%;
         .views-field-title {
+          text-align: center;
           a {
             color: $main-text-color;
           }
         }
 
         .views-field-created {
+          text-align: center;
+
           span {
             color: #a6a69d;
             font-size: 16px;
@@ -102,16 +104,18 @@
       li {
         display: none;
         float: left;
-        margin-top: 45%;
-        margin-left: 40%;
-
+        margin-top: 40%;
+        width: 100%;
         .views-field-title {
+          text-align: center;
           a {
             color: $main-text-color;
           }
         }
 
         .views-field-created {
+          text-align: center;
+
           span {
             color: #a6a69d;
             font-size: 16px;
@@ -163,16 +167,18 @@
       li {
         display: none;
         float: left;
-        margin-top: 45%;
-        margin-left: 40%;
-
+        margin-top: 40%;
+        width: 100%;
         .views-field-title {
+          text-align: center;
           a {
             color: $main-text-color;
           }
         }
 
         .views-field-created {
+          text-align: center;
+
           span {
             color: #a6a69d;
             font-size: 16px;

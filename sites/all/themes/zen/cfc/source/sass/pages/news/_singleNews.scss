@@ -3,16 +3,17 @@
 }
 
 .news-feed {
-  padding: 15vh 90px 0 90px;
+  padding: 140px 90px 0 90px;
   position: relative;
   overflow: hidden;
+  min-height: calc(100vh - 80px);
 
   .node-news {
     height: auto;
     color: #a6a69d;
     font-family: 'probaPro';
     text-align: justify;
-    min-height: 75vh;
+    min-height: 80vh;
     &.next {
       color: $main-text-color;
       background: url('../images/icons/next.png') no-repeat scroll center center;
@@ -48,21 +49,22 @@
         border-bottom: 2px solid $main-text-color;
       }
       .node-title {
-        width: 30%;
+        width: 35%;
         font-family: 'probaPro';
         font-weight: 400;
         letter-spacing: 2px;
-        margin: 20px 0px 10px 0px;
+        margin: 5px 0 5px 0;
         color: $main-text-color;
         display: inline-block;
         text-transform: uppercase;
         text-align: left;
+        height: auto;
       }
     }
     .field-name-field-image {
       float: right;
       width: 60%;
-      max-height: 50vh;
+      margin-top: -100px;
       .field-items {
         width: 100%;
         .field-item {
@@ -70,6 +72,7 @@
           img {
             width: 100%;
             height: auto;
+            max-height: 65vh;
           }
         }
       }
@@ -84,11 +87,11 @@
 
       .field-item {
         overflow: auto;
-        max-height: 50vh;
         word-wrap: break-word;
-
+        max-height: 475px;
         p {
           width: 95%;
+          text-align: left;
         }
       }
 
@@ -96,11 +99,12 @@
 
     .flippy {
       color: $main-text-color;
-      margin-top: 2vh;
+
       width: 100%;
       text-align: left;
       position: absolute;
       bottom: 0;
+      margin: 30px 0 15px 0;
       li {
         display: inline-block;
         width: 10%;

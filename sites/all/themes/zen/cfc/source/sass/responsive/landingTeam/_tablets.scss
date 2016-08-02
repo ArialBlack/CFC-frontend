@@ -1,9 +1,10 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .team-section {
     min-height: 100vh;
+    height: 1024px;
     .team-content-wrapper {
       position: absolute;
       top: 0;
@@ -19,7 +20,6 @@
         .views-row {
           width: 49.7%;
           max-width: 512px;
-          height: 33vh;
           //background: grey;
           display: inline-block;
           margin: 0px 0px 0px 0px;
@@ -45,7 +45,7 @@
                   position: absolute;
                   z-index: -1;
                   width: 49.7%;
-                  height: auto;
+                  //  height: auto;
                 }
 
                 .member-info-container {
@@ -77,13 +77,13 @@
                         color: white;
                         text-decoration: none;
                         transition: all 0.3s;
-                        font-size: 10px;
+                        font-size: 16px;
                         font-weight: 200;
                       }
                     }
                     .role {
                       height: 35%;
-                      font-size: 8px;
+                      font-size: 12px;
                       color: white;
 
                       font-weight: 200;
@@ -91,12 +91,12 @@
                     }
 
                     .title {
-                      font-size: 8px;
+                      font-size: 14px;
                       //color: white;
                     }
 
                     .member-quote {
-                      font-size: 8px;
+                      font-size: 12px;
                       color: transparent;
                       transition: color 0.9s;
                     }
@@ -148,7 +148,7 @@
                         height: 10%;
                       }
                       .member-quote {
-                        font-size: 7px;
+                        font-size: 12px;
                         color: $main-bg-color;
                         margin: 5px;
                       }
@@ -250,26 +250,25 @@
                         color: white;
                         text-decoration: none;
                         transition: all 0.3s;
-                        font-size: 10px;
+                        font-size: 20px;
                         font-weight: 200;
                       }
                     }
                     .role {
                       height: 35%;
-                      font-size: 8px;
+                      font-size: 14px;
                       color: white;
 
                       font-weight: 200;
-                      margin-top: 7px;
                     }
 
                     .title {
-                      font-size: 8px;
+                      font-size: 14px;
                       //color: white;
                     }
 
                     .member-quote {
-                      font-size: 8px;
+                      font-size: 14px;
                       color: transparent;
                       transition: color 0.9s;
                     }
@@ -321,7 +320,7 @@
                         height: 10%;
                       }
                       .member-quote {
-                        font-size: 7px;
+                        font-size: 14px;
                         color: $main-bg-color;
                         margin: 5px;
                       }

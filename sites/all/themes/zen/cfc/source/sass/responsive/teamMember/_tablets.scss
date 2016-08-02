@@ -26,7 +26,24 @@
         .text-wrapper {
           display: inline-block;
           width: 100%;
-          padding: 5% 10%;
+          padding: 5% 10% 0;
+
+          .field-name-body {
+            .field-items {
+              .field-item {
+                max-height: none;
+              }
+            }
+          }
+        }
+
+        .flippy {
+          color: $main-text-color;
+          padding: 2% 10% 0 10%;
+          width: 100%;
+          position: relative;
+          text-align: center;
+          margin-bottom: 15px;
         }
       }
     }
@@ -58,7 +75,24 @@
         .text-wrapper {
           display: inline-block;
           width: 100%;
-          padding: 5% 10%;
+          padding: 5% 10% 0;
+
+          .field-name-body {
+            .field-items {
+              .field-item {
+                max-height: none;
+              }
+            }
+          }
+        }
+
+        .flippy {
+          color: $main-text-color;
+          padding: 2% 10% 0 10%;
+          width: 100%;
+          position: relative;
+          text-align: center;
+          margin-bottom: 15px;
         }
       }
     }
