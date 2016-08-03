@@ -4,7 +4,11 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .mobile-top-story-section {
     height: 110vh;
-    //padding-top: 20%;
+
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -54,7 +58,11 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-top-story-section {
     height: 120vh;
-    //  padding-top: 15%;
+
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -97,7 +105,12 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-top-story-section {
     height: 125vh;
-    padding-top: 15%;
+    padding-top: 5%;
+
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -139,8 +152,12 @@
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-top-story-section {
-    height: 105vh;
-    padding-top: 0;
+    padding-top: 5%;
+
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -185,7 +202,11 @@
   .mobile-top-story-section {
     height: 105vh;
     padding-top: 0;
-    //  padding-top: 15%;
+
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;

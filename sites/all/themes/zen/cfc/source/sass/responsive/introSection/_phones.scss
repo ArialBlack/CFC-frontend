@@ -4,7 +4,7 @@
   .mobile-intro-section {
     position: relative;
     //margin: 0 auto;
-    min-height: 100vh;
+    min-height: 75vh;
     margin-top: 50%;
     .logo-container {
       width: 100%;
@@ -54,8 +54,8 @@
           text-align: center;
 
           span {
-            color: #a6a69d;
             font-size: 16px;
+            color: $main-text-color;
           }
         }
       }
@@ -67,8 +67,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-intro-section {
     position: relative;
-    //margin: 0 auto;
-    min-height: 100vh;
+    min-height: 75vh;
     .logo-container {
       width: 100%;
       height: 100%;
@@ -117,8 +116,7 @@
           text-align: center;
 
           span {
-            color: #a6a69d;
-            font-size: 16px;
+            color: $main-text-color;
           }
         }
       }
@@ -130,8 +128,7 @@
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-intro-section {
     position: relative;
-    //margin: 0 auto;
-    min-height: 100vh;
+    min-height: 95vh;
     .logo-container {
       width: 100%;
       height: 100%;
@@ -180,8 +177,7 @@
           text-align: center;
 
           span {
-            color: #a6a69d;
-            font-size: 16px;
+            color: $main-text-color;
           }
         }
       }

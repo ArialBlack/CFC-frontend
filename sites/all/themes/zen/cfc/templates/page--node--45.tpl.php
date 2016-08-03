@@ -449,6 +449,7 @@ if ($lang == 'uk') {
         </section>
 
         <section class="team-section" id="team" data-scroll-index="1">
+            <div class="section-name"> <?php print t("Our Team"); ?></div>
             <div class="team-content-wrapper">
                 <?php
                 $block = module_invoke('views', 'block_view', 'team-block');
@@ -458,6 +459,7 @@ if ($lang == 'uk') {
         </section>
 
         <section class="mobile-top-story-section">
+            <div class="section-name"> <?php print t("Services"); ?></div>
             <?php
             $block = module_invoke('views', 'block_view', 'frontteasers-block_2');
             print render($block['content']);
@@ -520,6 +522,7 @@ if ($lang == 'uk') {
         </section>
 
         <section class="news-section" id="news" data-scroll-index="3">
+            <div class="section-name"> <?php print t("News"); ?></div>
             <?php
             $block = module_invoke('views', 'block_view', 'news-block_1');
             print render($block['content']);
@@ -528,6 +531,7 @@ if ($lang == 'uk') {
         </section>
 
         <section class="mobile-career-section">
+            <div class="section-name"> <?php print t("Careers"); ?></div>
             <div class="photo-wrapper"></div>
             <div class="text-wrapper">On the other hand, we denounce with righteous indignation and dislike men who are
                 so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
@@ -546,7 +550,6 @@ if ($lang == 'uk') {
         </section>
 
         <section class="career-section" id="careers" data-scroll-index="4">
-
         <?php
             $nid = 43;
             print drupal_render(node_view(node_load($nid)));
@@ -554,6 +557,7 @@ if ($lang == 'uk') {
         
         </section>
         <section class="contacts-section" id="contacts" data-scroll-index="5">
+            <div class="section-name"> <?php print t("Contacts"); ?></div>
             <div class="map" id="map"></div>
 
             <div class="contacts-tab">
@@ -612,7 +616,8 @@ if ($lang == 'uk') {
         </section>
 
         <section class="footer-section" id="footer">
-            <ul class="footer-list">
+
+        <ul class="footer-list">
                 <li class="left">
                     <span class="footer-text">
                         &copy;

@@ -10,7 +10,7 @@
 
   .node-news {
     height: auto;
-    color: #a6a69d;
+    color: $main-text-color;
     font-family: 'probaPro';
     text-align: justify;
     min-height: 80vh;
@@ -29,7 +29,7 @@
       margin: -2px 10px 10px 0;
       a {
         text-decoration: none;
-        color: #a6a69d;
+        color: $main-text-color;
         font-size: 16px;
         font-family: 'probaPro';
         font-weight: 200;

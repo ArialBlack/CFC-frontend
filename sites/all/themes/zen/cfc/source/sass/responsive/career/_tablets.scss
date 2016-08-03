@@ -7,7 +7,11 @@
     height: auto;
     min-height: 50vh;
     position: relative;
-    margin-top: 10%;
+    margin-top: 0;
+
+    .section-name {
+      display: block;
+    }
 
     .photo-wrapper {
       height: 20%;
@@ -58,7 +62,11 @@
     height: auto;
     min-height: 50vh;
     position: relative;
-    margin-top: 10%;
+    margin-top: 0;
+
+    .section-name {
+      display: block;
+    }
 
     .photo-wrapper {
       height: 20%;

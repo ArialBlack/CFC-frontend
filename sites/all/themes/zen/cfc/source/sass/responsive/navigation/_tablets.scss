@@ -39,6 +39,11 @@
         position: absolute;
         z-index: 70;
         width: 90%;
+
+        a {
+          display: block;
+          height: auto;
+        }
         svg {
           height: 90px;
           width: 90%;
@@ -230,6 +235,11 @@
         position: absolute;
         z-index: 70;
         width: 90%;
+
+        a {
+          display: block;
+          height: auto;
+        }
         svg {
           height: 90px;
           width: 90%;

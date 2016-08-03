@@ -4,9 +4,18 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .team-section {
     min-height: 100vh;
-    height: 1024px;
+    border-bottom: 0 none;
+
+    .section-name {
+      display: block;
+      font-family: "ProbaPro";
+      font-size: 40px;
+      text-align: center;
+      color: $main-text-color;
+    }
+
     .team-content-wrapper {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 50%;
       margin-right: -50%;
@@ -176,9 +185,18 @@
     min-height: 160vh;
     max-height: none;
     position: relative;
-    border-bottom: none;
+    border-bottom: 0 none;
+
+    .section-name {
+      display: block;
+      font-family: "ProbaPro";
+      font-size: 40px;
+      text-align: center;
+      color: $main-text-color;
+    }
+
     .team-content-wrapper {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 50%;
       margin-right: -50%;

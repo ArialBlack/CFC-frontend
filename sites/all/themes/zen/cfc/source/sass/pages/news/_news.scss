@@ -81,7 +81,7 @@
               text-align: left;
               font-weight: 200;
               font-size: $fs-sm;
-              color: #a6a69d;
+              color: $main-text-color;
             }
 
             .news-title {
@@ -91,7 +91,7 @@
                 font-size: 14px;
                 font-weight: 200;
                 letter-spacing: 1px;
-                color: #000;
+                color: $main-text-color;
                 display: inline-block;
 
                 &:hover {
@@ -114,6 +114,9 @@
               text-align: left;
             }
 
+            .content-wrapper {
+              max-width: 360px;
+            }
           }
 
         }

@@ -97,7 +97,7 @@
     width: 16%;
     transition: all, 0.5s;
     a {
-      height: 50px;
+      height: auto;
       width: 100%;
       display: block;
       .logo-container {
@@ -154,7 +154,6 @@
 
         &:hover {
           width: 100%;
-          //margin-top: -15px;
           a {
             display: block;
           }
@@ -169,8 +168,6 @@
       }
 
     }
-
   }
-
 }
 

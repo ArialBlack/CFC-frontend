@@ -3,8 +3,12 @@
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .mobile-top-story-section {
+    margin-top: 50px;
 
-    //   padding-top: 10%;
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -56,6 +60,11 @@
   .mobile-top-story-section {
     height: auto;
     position: relative;
+    margin-top: 50px;
+
+    .section-name {
+      display: block;
+    }
 
     .view-display-id-block_2 {
       height: 103vh;
