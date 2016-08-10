@@ -3,34 +3,69 @@
 
   .mobile-intro-section {
     position: relative;
-    //margin: 0 auto;
-    min-height: 75vh;
-    margin-top: 50%;
+    min-height: 70vh;
+    margin-top: 70px;
+    border-top: 0.5px solid #374E72;
+
     .logo-container {
       width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      height: 120%;
+      margin: -25% auto;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       z-index: -1;
-      svg {
-        fill: white;
+      overflow: hidden;
+      border-bottom: 0.5px solid #374E72;
+      #tablet_lines, #mobile_landscape_lines {
+        display: none;
+      }
+
+      svg#mobile_portrait_lines {
+        fill: none;
         opacity: 1;
 
-        .line {
+        .top-story-line {
           opacity: 1;
           fill: none;
-          stroke: $main-text-color;
+          stroke: lighten($line-stroke, 10);
+          //  stroke: #;
+          stroke-width: 0.2;
+          animation: linesOnLogo 1s infinite;
         }
+
+        .line-animated {
+          opacity: 0.01;
+          fill: none;
+          stroke: lighten($main-text-color, 40%);
+          stroke-width: 0.75;
+          stroke-dasharray: 0 500;
+        }
+
+        .first {
+          //  animation: lineAnimation 1.5s infinite 5s;
+        }
+
+        .second {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .third {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .fourth {
+          animation: topStoryLineAnimation 5s infinite;
+        }
+
         .logo {
-          opacity: 1;
           fill: $main-text-color;
         }
       }
-
     }
 
     .carousel {
@@ -41,12 +76,14 @@
       li {
         display: none;
         float: left;
-        margin-top: 50%;
+        margin-top: 70%;
         width: 100%;
         .views-field-title {
           text-align: center;
           a {
             color: $main-text-color;
+            display: inline-block;
+            padding: 0 10%;
           }
         }
 
@@ -67,28 +104,65 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-intro-section {
     position: relative;
-    min-height: 75vh;
+    min-height: 100vh;
+    border-top: 0.5px solid #374E72;
+    margin-top: 70px;
     .logo-container {
       width: 100%;
       height: 100%;
-      margin: 0 auto;
+      margin: -5% auto;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       z-index: -1;
-      svg {
-        fill: white;
+      border-bottom: 0.5px solid #374E72;
+
+      #tablet_lines, #mobile_portrait_lines {
+        display: none;
+      }
+
+      svg#mobile_landscape_lines {
+        fill: none;
         opacity: 1;
 
-        .line {
+        .top-story-line {
           opacity: 1;
           fill: none;
-          stroke: $main-text-color;
+          stroke: lighten($line-stroke, 10);
+          //  stroke: #;
+          stroke-width: 0.2;
+          animation: linesOnLogo 1s infinite;
         }
+
+        .line-animated {
+          opacity: 0.01;
+          fill: none;
+          stroke: lighten($main-text-color, 40%);
+          stroke-width: 0.75;
+          stroke-dasharray: 0 500;
+        }
+
+        .first {
+          //  animation: lineAnimation 1.5s infinite 5s;
+        }
+
+        .second {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .third {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .fourth {
+          animation: topStoryLineAnimation 5s infinite;
+        }
+
         .logo {
-          opacity: 1;
           fill: $main-text-color;
         }
       }
@@ -128,32 +202,69 @@
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobile-intro-section {
     position: relative;
-    min-height: 95vh;
+    min-height: 100vh;
+    border-top: 0.5px solid #374E72;
+    margin-top: 70px;
     .logo-container {
       width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      height: 115%;
+      margin: -10% auto;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       z-index: -1;
-      svg {
-        fill: white;
+      border-bottom: 0.5px solid #374E72;
+      overflow: hidden;
+
+      #tablet_lines, #mobile_portrait_lines {
+        display: none;
+      }
+
+      svg#mobile_landscape_lines {
+        fill: none;
         opacity: 1;
 
-        .line {
+        .top-story-line {
           opacity: 1;
           fill: none;
-          stroke: $main-text-color;
+          stroke: lighten($line-stroke, 10);
+          //  stroke: #;
+          stroke-width: 0.2;
+          animation: linesOnLogo 1s infinite;
         }
+
+        .line-animated {
+          opacity: 0.01;
+          fill: none;
+          stroke: lighten($main-text-color, 40%);
+          stroke-width: 0.75;
+          stroke-dasharray: 0 500;
+        }
+
+        .first {
+          //  animation: lineAnimation 1.5s infinite 5s;
+        }
+
+        .second {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .third {
+          animation: topStoryLineAnimation 5s infinite;
+
+        }
+
+        .fourth {
+          animation: topStoryLineAnimation 5s infinite;
+        }
+
         .logo {
-          opacity: 1;
           fill: $main-text-color;
         }
       }
-
     }
 
     .carousel {
@@ -164,12 +275,14 @@
       li {
         display: none;
         float: left;
-        margin-top: 40%;
+        margin-top: 32%;
         width: 100%;
         .views-field-title {
           text-align: center;
           a {
             color: $main-text-color;
+            display: block;
+            padding: 0 10%;
           }
         }
 

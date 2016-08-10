@@ -13,7 +13,7 @@
     color: $main-text-color;
     font-family: 'probaPro';
     text-align: justify;
-    min-height: 80vh;
+    min-height: calc(80vh - 80px);
     &.next {
       color: $main-text-color;
       background: url('../images/icons/next.png') no-repeat scroll center center;
@@ -88,7 +88,7 @@
       .field-item {
         overflow: auto;
         word-wrap: break-word;
-        max-height: 475px;
+        max-height: 420px;
         p {
           width: 95%;
           text-align: left;

@@ -1,7 +1,7 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+@media (min-device-width: 768px) and (max-device-width: 1023px) {
   .mobile-intro-section {
     position: relative;
     //margin: 0 auto;
@@ -17,7 +17,12 @@
       bottom: 0;
       left: 0;
       z-index: -1;
-      svg {
+
+      #mobile_portrait_lines, #mobile_landscape_lines {
+        display: none;
+      }
+
+      svg#tablet_lines {
         fill: white;
         opacity: 1;
 
@@ -69,7 +74,7 @@
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
+@media (min-device-width: 1024px) and (max-device-width: 1279px) {
   .mobile-intro-section {
     position: relative;
     //margin: 0 auto;
@@ -86,7 +91,12 @@
       bottom: 0;
       left: 0;
       z-index: -1;
-      svg {
+
+      #mobile_portrait_lines, #mobile_landscape_lines {
+        display: none;
+      }
+
+      svg#tablet_lines {
         fill: white;
         opacity: 1;
 
