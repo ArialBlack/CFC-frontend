@@ -42,6 +42,7 @@ node_modules
 # Ignore IDE Intellij Idea files
 /.idea
 
+/temp/
 /sites/all/libraries/
 /sites/all/modules/
 /sites/all/themes/zen/cfc/node_modules/
@@ -51,3 +52,5 @@ sites/all/themes/zen/cfc/css/js/all.js
 sites/example.sites.php
 sites/README.txt
 README-FIRST.txt
+sites/all/themes/zen/cfc/css/style.css
+sites/all/themes/zen/cfc/images/topStory/lines.svg

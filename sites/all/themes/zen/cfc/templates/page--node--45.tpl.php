@@ -548,7 +548,9 @@ if ($lang == 'uk') {
 
         <?php
             $nid = 43;
-            print drupal_render(node_view(node_load($nid)));
+            $node = node_load($nid);
+            $nodeview = node_view($node);
+            print drupal_render($nodeview);
         ?>
         
         </section>

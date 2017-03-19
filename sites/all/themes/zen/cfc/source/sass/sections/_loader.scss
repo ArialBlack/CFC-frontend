@@ -13,6 +13,12 @@ a {
   display: none;
 }
 
+.page-user {
+  #main {
+    visibility: visible;
+  }
+}
+
 #main {
   visibility: hidden;
 
