@@ -239,7 +239,6 @@
                             <!-- Icon Bar -->
                             <ul class="icon-bar">
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
@@ -548,7 +547,7 @@
         <section class="career-section" id="careers" data-scroll-index="4">
 
             <?php
-            $nid = 43;
+            $nid = 44;
             $node = node_load($nid);
             $nodeview = node_view($node);
             print drupal_render($nodeview);
