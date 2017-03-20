@@ -239,7 +239,6 @@ if ($lang == 'uk') {
                             <!-- Icon Bar -->
                             <ul class="icon-bar">
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
@@ -636,7 +635,9 @@ if ($lang == 'uk') {
         <section class="career-section" id="careers" data-scroll-index="4">
         <?php
             $nid = 43;
-            print drupal_render(node_view(node_load($nid)));
+            $node = node_load($nid);
+            $nodeview = node_view($node);
+            print drupal_render($nodeview);
         ?>
         
         </section>
