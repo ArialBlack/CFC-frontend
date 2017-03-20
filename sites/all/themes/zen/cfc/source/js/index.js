@@ -75,7 +75,7 @@
                 $('#main').css('visibility', 'visible');
             }
 
-            if ($(window).width() > 1279) {
+            if ($(window).width() > 1240) {
                 $(".mobile-top-story-section").remove();
             }
             //LOADER SETTINGS
@@ -135,9 +135,11 @@
                 $('#side_nav_menu').removeClass('active');
             });
 
+            try {
             var whereAmI = $("#menu_dropdown_content>li.active>a");
             var whereAmIText = whereAmI[0].text();
             $("#menu_dropdown").text(whereAmIText);
+
 
             var whereAmIMobile = $(".side-nav-menu-list>li.active>a");
             var whereAmIMobileText = whereAmIMobile[0].text();
@@ -150,6 +152,9 @@
             activeNodes[0].css('display', 'none');
             var activeMobileNodes = $("#menu_dropdown_content>li.active");
             activeMobileNodes[0].css('display', 'none');
+            } catch (e) {
+                console.log(e);
+            }
 
             CFC.newsSlider();
 

@@ -44,23 +44,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         margin: 50px 0 10px 0;
-
-        &:after {
-          content: '';
-          display: block;
-          border-bottom: 4px solid $main-text-color;
-          width: 8%;
-          margin-top: 5px;
-        }
-      }
-
-      &:nth-child(3n) {
-        font-family: 'probaPro';
-        font-size: $fs-md;
-        font-weight: 400;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin: 20px 0 10px 0;
+        text-align: left;
 
         &:after {
           content: '';
