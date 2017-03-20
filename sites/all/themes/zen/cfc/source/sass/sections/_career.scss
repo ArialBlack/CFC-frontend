@@ -8,6 +8,8 @@
   background-position: left;
   background-size: 65% auto;
   @include bottomLine();
+  border-top: 1px solid $hr-color;
+
 
   article {
     width: 33%;
@@ -36,7 +38,7 @@
 
     .field-name-body {
       font-family: 'probaPro';
-      text-align: justify;
+      text-align: left;
       color: #616062;
       letter-spacing: 1.5px;
     }
@@ -115,6 +117,7 @@
           color: white;
           background-color: $main-text-color;
           margin-top: 30px;
+          margin-bottom: 50px;
 
           &:hover {
             background-color: lighten($main-text-color, 20);

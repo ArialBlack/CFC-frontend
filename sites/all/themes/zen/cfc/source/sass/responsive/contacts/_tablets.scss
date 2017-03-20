@@ -1,14 +1,18 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .contacts-section {
     position: relative;
     box-sizing: border-box;
-    margin-top: 10%;
+    margin-top: 25px;
     padding-top: 0;
     height: auto;
-    min-height: 0vh;
+    min-height: 0;
+
+    .section-name {
+      display: block;
+    }
 
     .map {
       height: 45vh;
@@ -111,10 +115,14 @@
   .contacts-section {
     position: relative;
     box-sizing: border-box;
-    margin-top: 10%;
+    margin-top: 25px;
     padding-top: 0;
     height: auto;
-    min-height: 0vh;
+    min-height: 0;
+
+    .section-name {
+      display: block;
+    }
 
     .map {
       height: 45vh;

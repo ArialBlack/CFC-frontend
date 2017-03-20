@@ -5,10 +5,14 @@
   .contacts-section {
     position: relative;
     box-sizing: border-box;
-    margin-top: 10%;
+    margin-top: 5%;
     padding-top: 0;
     height: auto;
     min-height: 100vh;
+
+    .section-name {
+      display: block;
+    }
 
     .map {
       height: 45vh;
@@ -111,10 +115,14 @@
   .contacts-section {
     position: relative;
     box-sizing: border-box;
-    margin-top: 10%;
+    margin-top: 5%;
     padding-top: 0;
     height: auto;
     min-height: 100vh;
+
+    .section-name {
+      display: block;
+    }
 
     .map {
       height: 45vh;

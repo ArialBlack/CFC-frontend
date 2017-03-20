@@ -97,7 +97,7 @@
     width: 16%;
     transition: all, 0.5s;
     a {
-      height: 50px;
+      height: auto;
       width: 100%;
       display: block;
       .logo-container {
@@ -131,7 +131,7 @@
 
     .current-position {
       float: right;
-      width: 48px;
+      width: 52px;
       margin-top: 30px;
 
       li {
@@ -144,7 +144,7 @@
         text-align: right;
         overflow: hidden;
         a {
-          width: 48px;
+          width: 52px;
           display: none;
           text-decoration: none;
           text-align: right;
@@ -154,7 +154,6 @@
 
         &:hover {
           width: 100%;
-          //margin-top: -15px;
           a {
             display: block;
           }
@@ -169,8 +168,6 @@
       }
 
     }
-
   }
-
 }
 

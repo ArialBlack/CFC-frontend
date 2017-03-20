@@ -11,25 +11,39 @@
     z-index: 50;
     width: 100%;
     height: 10vh;
+    min-height: 65px;
+    max-height: 70px;
     padding: 6% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 1);
     .mobile-navigation {
       @include menuIcon(16px);
 
+      .menu-wrapper {
+        position: absolute;
+        z-index: 75;
+        width: 100%;
+      }
+
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+        display: inline-block;
+        height: 24px;
+        padding: 5px;
+        margin-top: -8px;
       }
 
       .logo-container {
         display: inline-block;
         height: 50px;
-        width: 55%;
+        position: absolute;
+        z-index: 70;
+        width: 90%;
         svg {
           height: 90px;
-          width: 100%;
-          margin-top: -20%;
+          width: 90%;
+          margin-top: -30px;
           .logo {
             fill: $main-text-color;
           }
@@ -41,7 +55,7 @@
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 60;
+      z-index: 80;
       top: 0;
       left: 0;
       background-color: white;
@@ -186,25 +200,44 @@
     z-index: 50;
     width: 100%;
     height: 15vh;
+    min-height: 65px;
+    max-height: 70px;
     padding: 4% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 1);
     .mobile-navigation {
       @include menuIcon(16px);
 
+      .menu-wrapper {
+        position: absolute;
+        z-index: 75;
+        width: 100%;
+      }
+
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+        display: inline-block;
+        height: 24px;
+        padding: 5px;
+        margin-top: -8px;
       }
 
       .logo-container {
         display: inline-block;
         height: 50px;
-        width: 70%;
+        position: absolute;
+        z-index: 70;
+        width: 90%;
+
+        a {
+          display: block;
+          height: auto;
+        }
         svg {
           height: 90px;
-          width: 100%;
-          margin-top: -12%;
+          width: 90%;
+          margin-top: -30px;
           .logo {
             fill: $main-text-color;
           }
@@ -216,7 +249,7 @@
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 60;
+      z-index: 80;
       top: 0;
       left: 0;
       background-color: white;
@@ -356,7 +389,7 @@
 /* ----------- iPhone 5, 5S, 6, 6s ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   @include mobileSections(block);
 
   .mobile-navigation-section {
@@ -366,25 +399,44 @@
     z-index: 50;
     width: 100%;
     height: 20vh;
+    min-height: 65px;
+    max-height: 70px;
     padding: 5% 10% 0 10%;
     color: $main-text-color;
     background: rgba(255, 255, 255, 1);
     .mobile-navigation {
       @include menuIcon(16px);
 
+      .menu-wrapper {
+        position: absolute;
+        z-index: 75;
+        width: 100%;
+      }
+
       .mobile-menu {
         color: $main-text-color;
         text-decoration: none;
+        display: inline-block;
+        height: 24px;
+        padding: 5px;
+        margin-top: -8px;
       }
-
       .logo-container {
         display: inline-block;
         height: 50px;
-        width: 73%;
+        position: absolute;
+        z-index: 70;
+        width: 90%;
+
+        a {
+          display: block;
+          height: auto;
+        }
+
         svg {
           height: 90px;
-          width: 100%;
-          margin-top: -10%;
+          width: 90%;
+          margin-top: -30px;
           .logo {
             fill: $main-text-color;
           }
@@ -396,7 +448,7 @@
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 60;
+      z-index: 80;
       top: 0;
       left: 0;
       background-color: white;

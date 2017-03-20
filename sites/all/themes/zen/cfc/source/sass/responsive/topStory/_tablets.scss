@@ -1,10 +1,14 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .mobile-top-story-section {
+    margin-top: 50px;
 
-    //   padding-top: 10%;
+    .section-name {
+      display: block;
+    }
+
     .view-display-id-block_2 {
       height: 100vh;
       max-height: 730px;
@@ -23,7 +27,8 @@
             a {
               display: block;
               height: 100%;
-              padding: 30% 0 0 5%;
+              padding: 30% 10px 0 10px;
+              font-size: 20px;
               color: white;
               text-decoration: none;
               text-align: center;
@@ -55,6 +60,11 @@
   .mobile-top-story-section {
     height: auto;
     position: relative;
+    margin-top: 50px;
+
+    .section-name {
+      display: block;
+    }
 
     .view-display-id-block_2 {
       height: 103vh;
@@ -74,7 +84,8 @@
             a {
               display: block;
               height: 100%;
-              padding: 20% 0 0 0;
+              padding: 20% 10px 0 10px;
+              font-size: 20px;
               color: white;
               text-decoration: none;
               text-align: center;

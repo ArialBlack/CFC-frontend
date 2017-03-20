@@ -1,17 +1,31 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .section-mission {
-    background: #E6E6E6 url('../images/whoWeAre/team.jpg') no-repeat scroll 110% 115%;
-    background-position: top, left;
-    background-size: 100% 50%;
+    background: #E6E6E6;
     .news-feed {
       height: auto;
-      min-height: 60vh;
-      background: transparent;
-      padding: 0 0 0 5%;
+      background: #E6E6E6 url("../images/whoWeAre/team.jpg") no-repeat scroll 100% 100%;
+      background-size: 100% auto;
+      background-position: top left;
+      width: 100%;
+      margin-left: 0;
+      padding: 330px 0 0 5%;
+      min-height: 85vh;
       max-height: 500vh;
+
+      article {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        z-index: 50;
+
+        .field-name-body > .field-items > .field-item {
+          max-height: none;
+          overflow: auto;
+        }
+      }
 
       .view {
         height: auto;
@@ -23,10 +37,9 @@
       p {
 
         &:first-child {
-          padding-top: 40vh;
         }
         display: inline-block;
-        width: 90%;
+        width: 100%;
         color: $main-text-color;
         padding: 10px 0 0 -1px;
 
@@ -34,9 +47,11 @@
     }
 
     .mobile-navigation-section {
-      background: transparent;
+      background: transparent !important;
       top: 0;
     }
+
+    @include footerTabletPortrait();
   }
 }
 
@@ -48,13 +63,21 @@
       width: 100%;
       margin-left: 0;
       padding: 0vh 90px 0 90px;
+
+      .field-name-body > .field-items > .field-item {
+        max-height: none;
+        overflow: auto;
+      }
+
       .view {
         height: auto;
       }
     }
     .mobile-navigation-section {
-      background: transparent;
+      background: transparent !important;
       top: 0;
     }
+
+    @include footerTablet();
   }
 }

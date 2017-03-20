@@ -32,6 +32,7 @@
 
         <div class="mobile-navigation-section">
             <nav class="mobile-navigation">
+                <div class="menu-wrapper">
                 <div class="menu-icon" id="mobile_menu_icon">
                     <span class="line first"></span>
                     <span class="line second"></span>
@@ -39,8 +40,9 @@
                 </div>
 
                 <a href="#" class="mobile-menu uppercase" id="mobile_menu">Menu</a>
-
+                </div>
                 <div class="logo-container">
+                    <a href="http://test.schroedingerscatlab.com/">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 427.7 270.5" style="enable-background:new 0 0 427.7 270.5;" xml:space="preserve">
@@ -78,6 +80,7 @@
                                 />
                         </g>
 </svg>
+                    </a>
                 </div>
                 <div id="side_nav_menu" class="side-nav-menu">
                     <div class="top">
@@ -110,7 +113,6 @@
                         <!-- Icon Bar -->
                         <ul class="icon-bar">
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
@@ -144,7 +146,7 @@
                                 <span class="line third"></span>
                             </div>
 
-                            <a href="#" class="dropdown uppercase" id="menu_dropdown">Main</a>
+                            <a href="#" class="dropdown uppercase" id="menu_dropdown"></a>
 
                             <?php
                             // This code snippet is hard to modify. We recommend turning off the
@@ -169,7 +171,7 @@
                     </div>
 
                     <nav class="logo-wrapper">
-                        <a href="http://test.schroedingerscatlab.com/" data-scroll-goto="0">
+                        <a href="http://test.schroedingerscatlab.com/">
 
                             <div class="logo-container">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"

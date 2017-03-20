@@ -12,7 +12,6 @@
 <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
 <!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 <head>
 
 
@@ -43,6 +42,7 @@
   <?php endif; ?>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxc5g10jp8zZSf-gaNvlu8vMR5JRiUsOw&v=3.exp">
   </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
 </head>
 <body data-offset="10" data-target="#current_position" data-spy="scroll"
@@ -56,5 +56,7 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+
+
 </body>
 </html>

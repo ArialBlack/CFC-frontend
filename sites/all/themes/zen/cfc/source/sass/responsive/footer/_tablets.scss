@@ -1,55 +1,11 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .footer-section {
-    height: 80px;
-    background: #455e86;
-    margin-top: -5px;
-    .footer-list {
-      background: $contacts-bg;
-      height: 60px;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        color: #b9bec4;
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-        padding: 0;
-
-        &.right {
-          margin-left: 0;
-        }
-      }
-    }
-  }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  @include footerTabletPortrait();
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
-  .footer-section {
-    height: 80px;
-    background: #455e86;
-    margin-top: -5px;
-    .footer-list {
-      background: $contacts-bg;
-      height: 60px;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        color: #b9bec4;
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-        padding: 0;
-
-        &.right {
-          margin-left: 0;
-        }
-      }
-    }
-  }
+  @include footerTablet();
 }

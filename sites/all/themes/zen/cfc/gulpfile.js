@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     mqpacker = require("css-mqpacker"),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    cleanCSS = require('gulp-clean-css'),
     dirs = {
         'source': {
             'vendorJs': './source/js/vendor/',
@@ -22,6 +23,7 @@ var gulp = require('gulp'),
                 './source/bower_components/ScrollIt/scrollIt.min.js',
                 './source/bower_components/bootstrap/dist/js/bootstrap.js',
                 './source/bower_components/jquery.cookie/jquery.cookie.js',
+                './source/bower_components/jquery-nicescroll/jquery.nicescroll.min.js',
                 './source/js/map.js',
                 './source/js/index.js'
             ],
@@ -70,6 +72,7 @@ gulp.task('sass', function () {
         }).on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(sourcemaps.write())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest(dirs.build.css));
 });
 
@@ -77,7 +80,7 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
     return gulp.src(dirs.source.js)
         .pipe(plumber())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(concat("all.js"))
         .pipe(gulp.dest(dirs.build.js));
 });

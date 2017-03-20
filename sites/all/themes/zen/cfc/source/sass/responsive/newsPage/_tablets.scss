@@ -1,7 +1,7 @@
 /* ----------- iPad  ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   body, html {
     overflow: initial !important;
   }
@@ -9,13 +9,12 @@
     .news-feed {
       width: 100%;
       height: auto;
-      min-height: 20vh;
-      margin-top: 10vh;
+      margin-top: 70px;
+      min-height: calc(100vh - 150px);
       padding: 0;
 
       .view {
         padding: 0;
-        padding-top: 8vh;
       }
 
       .view-content {
@@ -42,7 +41,6 @@
               display: block;
               min-width: 360px;
               height: 100%;
-              max-height: 33vh;
               color: $main-text-color;
               text-align: left;
               text-decoration: none;
@@ -91,8 +89,8 @@
                   margin-top: 5px;
                   font-family: 'probaPro';
                   font-weight: 200;
-                  font-size: 10px;
-                  color: #a6a69d;
+                  font-size: 14px;
+                  color: $main-text-color;
                 }
 
                 .news-title {
@@ -102,10 +100,10 @@
                     display: block;
                     margin-top: 5px;
                     margin-bottom: 0;
-                    font-size: 12px;
+                    font-size: 18px;
                     font-weight: 400;
                     letter-spacing: 0.5px;
-                    color: #a6a69d;
+                    color: $main-text-color;
                     &:hover {
                       color: $main-text-color;
 
@@ -132,9 +130,9 @@
       }
 
       .item-list {
-
         ul.pager {
           text-align: center;
+          margin: 15px;
           li {
             display: inline-block;
             font-family: 'probaPro';
@@ -189,13 +187,12 @@
     .news-feed {
       width: 100%;
       height: auto;
-      min-height: 20vh;
-      margin-top: 15vh;
+      min-height: calc(100vh - 150px);
+      margin-top: 70px;
       padding: 0;
 
       .view {
         padding: 0;
-        padding-top: 10vh;
       }
 
       .view-content {
@@ -273,8 +270,8 @@
                   margin-top: 5px;
                   font-family: 'probaPro';
                   font-weight: 200;
-                  font-size: 10px;
-                  color: #a6a69d;
+                  font-size: 14px;
+                  color: $main-text-color;
                 }
 
                 .news-title {
@@ -284,10 +281,10 @@
                     display: block;
                     margin-top: 5px;
                     margin-bottom: 0;
-                    font-size: 12px;
+                    font-size: 18px;
                     font-weight: 400;
                     letter-spacing: 0.5px;
-                    color: #a6a69d;
+                    color: $main-text-color;
                     &:hover {
                       color: $main-text-color;
 
@@ -296,7 +293,7 @@
                 }
 
                 p {
-                  font-size: 10px;
+                  font-size: 18px;
                   line-height: 150%;
                   &:hover {
                     text-decoration: none;
@@ -313,9 +310,9 @@
       }
 
       .item-list {
-        margin-top: 5vh;
         ul.pager {
           text-align: center;
+          margin: 15px;
           li {
             display: inline-block;
             font-family: 'probaPro';
