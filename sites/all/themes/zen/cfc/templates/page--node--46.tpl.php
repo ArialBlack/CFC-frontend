@@ -808,17 +808,14 @@ if ($lang == 'uk') {
                     <nav class="right-side-nav" id="current_position">
                         <!-- Icon Bar -->
                         <ul class="icon-bar">
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-
+                            <li><a href="https://www.linkedin.com/company/cfc-consulting-company" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/pages/CFC-Dream-Office/669697216393821?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         </ul>
                         <!-- Icon Bar -->
 
                         <!-- Current Position -->
                         <?php
-                        $block = module_invoke('block', 'block_view', '1');
+                        $block = module_invoke('block', 'block_view', '2');
                         print render($block['content']);
                         ?>
                         <!-- Current Position -->
