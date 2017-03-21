@@ -659,9 +659,10 @@ if ($lang == 'uk') {
                         <ul class="contact-address">
                             <ul class="contact-address">
                                 <li><span class="icon pointer-icon"></span> <span class="address-text">
-                                8 Kostolna str.<br>
-                                5th floor<br>
-                                Kyiv, 01001, Ukraine
+                                CFC Consulting <br>
+                                Head office <br>
+                                8, Kostyolna Street, 6th floor<br>
+                                Kyiv, 01001, Ukraine <br>
                             </span></li>
                                 <li><span class="icon phone-icon"></span> <span class="address-text">
                                 Tel.: +380 (44) 492-75-99 <br>
@@ -669,7 +670,7 @@ if ($lang == 'uk') {
                                 </span>
                                 </li>
                                 <li><span class="icon email-address-icon"></span> <span class="address-text">
-                                gk@cfcentertainment.com
+                                inquiries@cfc.com.ua
                                 </span>
                                 </li>
                             </ul>
@@ -690,7 +691,7 @@ if ($lang == 'uk') {
                                 </span>
                             </li>
                             <li><span class="icon email-address-icon"></span> <span class="address-text">
-                                gk@cfcentertainment.com
+                                kg@cfc.com.ua
                                 </span>
                             </li>
                         </ul>

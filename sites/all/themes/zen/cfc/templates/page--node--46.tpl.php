@@ -660,17 +660,18 @@ if ($lang == 'uk') {
                         <ul class="contact-address">
                             <ul class="contact-address">
                                 <li><span class="icon pointer-icon"></span> <span class="address-text">
-                                8 Kostolna str.<br>
-                                5th floor<br>
-                                Kyiv, 01001, Ukraine
+                                CFC Consulting <br>
+                                Головний офіс <br>
+                                вул. Костьолна 8, 6 поверх, офіс 26<br>
+                                Київ 01001, Україна
                             </span></li>
                                 <li><span class="icon phone-icon"></span> <span class="address-text">
-                                Tel.: +380 (44) 492-75-99 <br>
-                                Fax: +380 (44) 278-39-07
+                                Тел.: +380 (44) 492-75-99 <br>
+                                Факс: +380 (44) 278-39-07
                                 </span>
                                 </li>
                                 <li><span class="icon email-address-icon"></span> <span class="address-text">
-                                gk@cfcentertainment.com
+                                kg@cfc.com.ua
                                 </span>
                                 </li>
                             </ul>
@@ -679,19 +680,19 @@ if ($lang == 'uk') {
                     <div id="dubai-office" class="tab-pane fade">
                         <ul class="contact-address">
                             <li><span class="icon pointer-icon"></span> <span class="address-text">
-                            Dubai Silicon Oasis <br>
-                            Headquarters Building, <br>
-                            4th floor, C&D Wing <br>
-                            P.O. Box 341041, <br>
-                            Dubai, UAE
+                            CFC Consulting <br>
+                            Офіс у Дубаї <br>
+                            Головна будівля Dubai Silicon Oasis <br>
+                            4-й поверх, крило C та D <br>
+                            Дубай 341041, ОАЕ<br>
                             </span></li>
                             <li><span class="icon phone-icon"></span> <span class="address-text">
-                                Tel.: +971 (04) 3724637 <br>
-                                Fax: +971 (04) 5015777
+                                Тел.: +971 (04) 3724637 <br>
+                                Факс: +971 (04) 5015777
                                 </span>
                             </li>
                             <li><span class="icon email-address-icon"></span> <span class="address-text">
-                                gk@cfcentertainment.com
+                                kg@cfc.com.ua
                                 </span>
                             </li>
                         </ul>
