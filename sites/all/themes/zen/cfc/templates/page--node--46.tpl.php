@@ -737,7 +737,7 @@ if ($lang == 'uk') {
                                 <span class="line third"></span>
                             </div>
 
-                            <a href="#" class="dropdown uppercase" id="menu_dropdown"><?php print t("Main"); ?></a>
+                            <a href="#" class="dropdown uppercase" id="menu_dropdown"><?php print t("Головна"); ?></a>
 
                             <?php
                             // This code snippet is hard to modify. We recommend turning off the
