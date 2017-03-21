@@ -671,7 +671,7 @@ if ($lang == 'uk') {
                                 </span>
                                 </li>
                                 <li><span class="icon email-address-icon"></span> <span class="address-text">
-                                kg@cfc.com.ua
+                                inquiries@cfc.com.ua
                                 </span>
                                 </li>
                             </ul>

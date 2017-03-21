@@ -137,21 +137,21 @@
 
             try {
             var whereAmI = $("#menu_dropdown_content>li.active>a");
-            var whereAmIText = whereAmI[0].text();
+            var whereAmIText = whereAmI[0].innerText;
             $("#menu_dropdown").text(whereAmIText);
 
 
             var whereAmIMobile = $(".side-nav-menu-list>li.active>a");
-            var whereAmIMobileText = whereAmIMobile[0].text();
+            var whereAmIMobileText = whereAmIMobile[0].innerText;
 
             if (whereAmIMobileText !== undefined && whereAmIMobileText.length !== 0) {
                 $("#mobile_menu").text(whereAmIMobileText);
             }
 
             var activeNodes = $(".side-nav-menu-list>li.active");
-            activeNodes[0].css('display', 'none');
+            activeNodes[0].style.display = 'none';
             var activeMobileNodes = $("#menu_dropdown_content>li.active");
-            activeMobileNodes[0].css('display', 'none');
+            activeMobileNodes[0].style.display = 'none';
             } catch (e) {
                 console.log(e);
             }

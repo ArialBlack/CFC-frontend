@@ -32,7 +32,7 @@
     }
     p {
       font-family: 'probaPro';
-      text-align: justify;
+      text-align: left;
       letter-spacing: 1.5px;
       display: block;
       color: $main-text-color;
@@ -70,6 +70,8 @@
       width: 60%;
       margin-left: 34%;
       height: 100vh;
+      // remove to show hovers
+      display: none;
 
       .views-row {
         padding-top: 2vh;

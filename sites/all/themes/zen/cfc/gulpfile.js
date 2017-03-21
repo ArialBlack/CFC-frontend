@@ -80,7 +80,7 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
     return gulp.src(dirs.source.js)
         .pipe(plumber())
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat("all.js"))
         .pipe(gulp.dest(dirs.build.js));
 });
