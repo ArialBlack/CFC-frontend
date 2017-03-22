@@ -19,9 +19,22 @@
       background: transparent url('../images/career/stairs.jpg') no-repeat scroll top left;
       background-size: 100% 100%;
     }
+
     .text-wrapper {
       height: 50%;
-      padding: 5%;
+      padding: 20px;
+
+      &>header>.node-title {
+        display: none !important;
+      }
+
+      &.webform-client-form-44 {
+        display: none !important;
+      }
+
+      &.links {
+        display: none !important;
+      }
     }
 
     .button-wrapper {
@@ -74,9 +87,22 @@
       background: transparent url('../images/career/stairs.jpg') no-repeat scroll top left;
       background-size: 100% 100%;
     }
+
     .text-wrapper {
       height: 50%;
-      padding: 5%;
+      padding: 20px;
+
+     &>header>.node-title {
+        display: none !important;
+      }
+
+      &.webform-client-form-44 {
+        display: none !important;
+      }
+
+      &.links {
+        display: none !important;
+      }
     }
 
     .button-wrapper {
