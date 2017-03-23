@@ -618,7 +618,7 @@ if ($lang == 'uk') {
             <div class="photo-wrapper"></div>
             <div class="text-wrapper">
                 <?php
-                $nid = 44;
+                $nid = 43;
                 $node = node_load($nid);
                 $nodeview = node_view($node);
                 print drupal_render($nodeview);
