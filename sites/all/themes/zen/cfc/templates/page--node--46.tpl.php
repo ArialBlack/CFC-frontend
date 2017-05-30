@@ -642,10 +642,10 @@ if ($lang == 'uk') {
 
             <div class="contacts-tab">
                 <ul class="nav nav-pills">
-                    <li id="#contacts_kyiv" class="active"><a data-toggle="pill" href="#main-office">Kyiv Office</a>
+                    <li id="contacts_kyiv" class="active"><a data-toggle="pill" href="#main-office">Kyiv Office</a>
                         <span class="line"></span>
                     </li>
-                    <li id="#contacts_dubai"><a data-toggle="pill" href="#dubai-office">Dubai Office</a>
+                    <li id="contacts_dubai"><a data-toggle="pill" href="#dubai-office">Dubai Office</a>
                         <span class="line"></span></li>
                 </ul>
 

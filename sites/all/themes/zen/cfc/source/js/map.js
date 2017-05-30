@@ -140,7 +140,9 @@
                     };
 
                     var contentString = '<div class="default-text"> CFC Consulting</div> <span class="address"> 8 Kostolna str. Kyiv</span>';
-
+                    if (placeToShow === 'dubai') {
+                      contentString = '<div class="default-text"> CFC Consulting</div> <span class="address"> Dubai Silicon Oasis, Headquarters Building,  4th floor, C&D Wing, Dubai, UAE</span>';
+                    }
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
@@ -178,12 +180,10 @@
                 }, 10000);
 
                 $('#contacts_kyiv').on('click', function() {
-                    console.log('hey kyiv');
                     initialize();
                 });
 
                 $('#contacts_dubai').on('click', function() {
-                    console.log('hey dubai');
                     initialize('dubai');
                 });
             } catch (err) {
