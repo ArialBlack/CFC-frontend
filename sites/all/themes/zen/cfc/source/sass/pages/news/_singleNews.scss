@@ -66,11 +66,9 @@
       width: 60%;
       margin-top: -100px;
       .field-items {
-        width: 100%;
         .field-item {
-          width: 100%;
+          text-align: center;
           img {
-            width: 100%;
             height: auto;
           }
         }
@@ -87,7 +85,6 @@
       .field-item {
         overflow: auto;
         word-wrap: break-word;
-        max-height: 420px;
         p {
           width: 95%;
           text-align: left;
@@ -101,7 +98,7 @@
 
       width: 100%;
       text-align: left;
-      position: absolute;
+      position: relative;
       bottom: 0;
       margin: 30px 0 15px 0;
       li {
