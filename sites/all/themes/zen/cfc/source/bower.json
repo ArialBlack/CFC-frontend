@@ -19,6 +19,7 @@
     "ScrollIt": "*",
     "jquery.onepage-scroll": "^1.1.10",
     "jquery.cookie": "*",
-    "jquery-nicescroll": "*"
+    "jquery-nicescroll": "*",
+    "owl.carousel": "^2.2.1"
   }
 }

@@ -8,22 +8,17 @@
     display: none;
   }
   .team-content-wrapper {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 0%);
     padding: 140px 90px 115px 90px;
     width: 100%;
     max-width: 1280px;
 
     .views-row {
-      width: 31.2%;
+      width: 360px;
       max-width: 360px;
       height: 320px;
       //background: grey;
       display: inline-block;
-      margin: 10px 0px 10px 0px;
+      margin: 10px 0 10px 0;
 
       &:nth-child(3n+2) {
         margin: 10px 30px 10px 30px;
@@ -65,7 +60,6 @@
                 text-align: center;
                 text-decoration: none;
                 transition: all 0.6s;
-                width: 100%;
 
                 .member-name {
                   a {
