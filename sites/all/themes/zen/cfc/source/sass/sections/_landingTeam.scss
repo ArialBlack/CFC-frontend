@@ -3,25 +3,67 @@
   min-height: 900px;
   width: 100%;
   position: relative;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  .owl-nav.disabled {
+    display: none;
+  }
+
+  .owl-stage-outer {
+    overflow: hidden;
+  }
+
+  .team-carousel-arrow {
+    color: $contacts-bg;
+    padding: 5px;
+    font-size: 40px;
+    line-height: 1;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -25px;
+
+    &.left {
+      position: absolute;
+      left: 15px;
+      z-index: 100;
+    }
+
+    &.right {
+      position: absolute;
+      right: 15px;
+      z-index: 100;
+    }
+  }
+
   @include bottomLine();
   .section-name {
     display: none;
   }
   .team-content-wrapper {
-    padding: 140px 90px 115px 90px;
+    margin: auto 60px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .owl-item {
+      display: inline-block;
+    }
 
     .views-row {
       width: 360px;
       max-width: 360px;
       height: 320px;
-      //background: grey;
-      display: inline-block;
+      display: block;
       margin: 10px 0 10px 0;
 
       &:nth-child(3n+2) {
-        margin: 10px 30px 10px 30px;
         // background: gray;
       }
       .views-field {
@@ -148,3 +190,4 @@
     }
   }
 }
+

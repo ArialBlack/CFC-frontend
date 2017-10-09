@@ -178,27 +178,40 @@
                 "cursorborder": "0 none",
                 "cursorborderradius": "6px"
             });
-	
-	
-	        var elems = $(".team-content-wrapper .view-id-team .views-row");
-	        var wrapper = $('<div class="slide" />');
-	        var pArrLen = elems.length;
-	        for (var i = 0;i < pArrLen;i+=2){
-		        elems.filter(':eq('+i+'),:eq('+(i+1)+')').wrapAll(wrapper);
-	        };
-	        $('.team-content-wrapper .view-id-team .view-content').addClass('team-carousel');
+    
+    
+            var elems = $(".team-content-wrapper .view-id-team .views-row");
+            var wrapper = $('<div class="owl-item" />');
+            var pArrLen = elems.length;
+            for (var i = 0;i < pArrLen;i+=2){
+                elems.filter(':eq('+i+'),:eq('+(i+1)+')').wrapAll(wrapper);
+            };
+            $('.team-content-wrapper .view-id-team .view-content').addClass('team-carousel');
             $('.team-carousel').owlCarousel({
-	            center: false,
-	            items: 3,
+                items: 3,
 	            loop: true,
-	            margin:5,
-	            slideBy: 1,
-	            dots: false,
-	            navText: ['&#60;', '&#62;'],
-	            nav: true,
-	            navContainer: 'team-carousel-container',
-	            navElement: 'span',
-	            navClass: ['team-carousel-nav-arrow left', 'team-carousel-nav-arrow right']
+	            center: true,
+                margin: 15,
+                dots: false,
+                dotsContent: false,
+                navElement: 'span',
+                navClass: ['team-carousel-arrow left fa fa-chevron-left', 'team-carousel-arrow fa fa-chevron-right right'],
+                navText: ['', ''],
+                nav: true,
+	            responsiveBaseElement: $('window'),
+	            responsiveClass:true,
+                responsive: {
+                    1024:{
+                        items:3
+                    },
+	                768:{
+		                items:1
+	                },
+                    320: {
+                        items: 1,
+                        margin: 10
+                    }
+                }
             });
         });
     });
