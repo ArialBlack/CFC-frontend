@@ -178,7 +178,7 @@
                 "cursorborder": "0 none",
                 "cursorborderradius": "6px"
             });
-    
+	        console.log('$.jqu', $().jquery);
     
             var elems = $(".team-content-wrapper .view-id-team .views-row");
             var wrapper = $('<div class="owl-item" />');
@@ -188,24 +188,32 @@
             };
             $('.team-content-wrapper .view-id-team .view-content').addClass('team-carousel');
             $('.team-carousel').owlCarousel({
-                items: 3,
 	            loop: true,
-	            center: true,
                 margin: 15,
                 dots: false,
-                dotsContent: false,
                 navElement: 'span',
                 navClass: ['team-carousel-arrow left fa fa-chevron-left', 'team-carousel-arrow fa fa-chevron-right right'],
                 navText: ['', ''],
                 nav: true,
-	            responsiveBaseElement: $('window'),
 	            responsiveClass:true,
+	            touchDrag: true,
+                mouseDrag: true,
                 responsive: {
+	                1440:{
+		                items:3,
+		                loop: true
+	                },
+	                1280:{
+		                items:3,
+		                loop: true
+	                },
                     1024:{
-                        items:3
+                        items:2,
+	                    loop: true,
                     },
 	                768:{
-		                items:1
+		                items:1,
+		                loop: true
 	                },
                     320: {
                         items: 1,

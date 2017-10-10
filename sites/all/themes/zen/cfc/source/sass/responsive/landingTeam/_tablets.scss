@@ -21,6 +21,7 @@
 
       .view-content {
         height: 90vh;
+        max-width: 360px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -172,7 +173,7 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
   .team-section {
     height: auto;
-    min-height: 160vh;
+    min-height: 100vh;
     max-height: none;
     position: relative;
     border-bottom: 0 none;
@@ -187,30 +188,24 @@
 
     .team-content-wrapper {
       position: relative;
-      top: 0;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, 0%);
-      padding: 0 0 0 0;
-      width: 100%;
-      max-width: 1280px;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .view-content {
-        height: 90vh;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 768px;
         .views-row {
-          width: 49.7%;
           max-width: none;
           display: inline-block;
-          margin: 0px 0px 0px 0px;
           height: auto;
-
-          &:nth-child(3n+2) {
-            margin: 0px 0px 0px 0px;
-            // background: gray;
-          }
           .views-field {
             height: auto;
-            min-width: 0px;
+            min-width: 0;
             max-width: 100%;
 
             .field-content {
@@ -224,7 +219,6 @@
                   max-width: inherit;
                   position: absolute;
                   z-index: -1;
-                  width: 49.7%;
                   height: auto;
                   max-height: 400px;
                 }
@@ -251,7 +245,7 @@
 
                     .member-name {
                       height: 60%;
-                      margin-top: 0px;
+                      margin-top: 0;
                       a {
                         letter-spacing: 0.5px;
                         margin-bottom: 2px;
